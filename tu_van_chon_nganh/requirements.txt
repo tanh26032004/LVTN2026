@@ -1,0 +1,8 @@
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.6.0
+streamlit==1.41.0
+matplotlib==3.10.0
+seaborn==0.13.2
+fastparquet==2024.11.0 # Useful for storing/loading datasets in production
+joblib==1.4.2

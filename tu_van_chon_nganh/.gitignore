@@ -1,0 +1,10 @@
+venv/
+*.pyc
+__pycache__/
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore actual models and data if desired (though for simple projects it might be fine to commit them)
+# data/raw_data.csv
+# model/*.joblib
