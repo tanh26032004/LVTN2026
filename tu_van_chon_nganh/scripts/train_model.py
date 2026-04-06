@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -64,12 +64,22 @@ def train_and_save_heuristic_model(data_path="data/student_data.csv", model_dir=
     print("🚀 ĐANG HUẤN LUYỆN VÀ SO SÁNH 3 MÔ HÌNH MACHINE LEARNING")
     print("="*50)
 
-    # 1. Random Forest (MÔ HÌNH CHÍNH)
-    rf_model = RandomForestClassifier(
-        n_estimators=300, max_depth=20, min_samples_leaf=2, min_samples_split=5, 
-        class_weight='balanced', random_state=random_state
-    )
-    rf_model.fit(X_train, y_train)
+    # 1. Random Forest (MÔ HÌNH CHÍNH) - TỐI ƯU SIÊU THAM SỐ
+    print("⏳ Đang tính toán Tối ưu hóa siêu tham số (GridSearchCV) cho Random Forest...")
+    rf_base = RandomForestClassifier(class_weight='balanced', random_state=random_state)
+    
+    param_grid = {
+        'n_estimators': [100, 200, 300],
+        'max_depth': [20, 30, None],
+        'min_samples_split': [2, 5],
+        'min_samples_leaf': [1, 2]
+    }
+    
+    grid_search = GridSearchCV(estimator=rf_base, param_grid=param_grid, cv=5, n_jobs=-1, scoring='f1_macro')
+    grid_search.fit(X_train, y_train)
+    
+    rf_model = grid_search.best_estimator_
+    print(f"🌟 [TỐI ƯU LƯỚI ĐA DIỆN] Tham số cấu hình tốt nhất: {grid_search.best_params_}")
 
     # 2. Decision Tree (MÔ HÌNH SO SÁNH) - Dễ giải thích bằng cây quyết định
     dt_model = DecisionTreeClassifier(
@@ -105,6 +115,15 @@ def train_and_save_heuristic_model(data_path="data/student_data.csv", model_dir=
     print("-" * 75)
 
     # In Báo cáo chi tiết và Feature Importances riêng cho Random Forest
+    print("\n[BÁO CÁO ĐÁNH GIÁ CHI TIẾT CỦA MÔ HÌNH RANDOM FOREST]:")
+    rf_pred = rf_model.predict(X_test)
+    try:
+        # In classification report hiển thị rõ f1-score cho từng chuyên ngành
+        cls_report = classification_report(y_test, rf_pred, target_names=target_encoder.classes_)
+        print(cls_report)
+    except Exception as e:
+        print(classification_report(y_test, rf_pred))
+
     print("\n[XAI] MỨC ĐỘ QUAN TRỌNG CỦA CÁC ĐẶC TRƯNG (Theo Random Forest):")
     fi_df = pd.DataFrame({
         'Feature': features, 

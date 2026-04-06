@@ -1,0 +1,482 @@
+[
+    {
+        "id": "mbti_q1",
+        "text": "Phục hồi năng lượng sau khi làm việc:",
+        "options": [
+            "E: Giao tiếp, gặp gỡ mọi người.",
+            "I: Ở một mình, làm việc cá nhân."
+        ]
+    },
+    {
+        "id": "mbti_q2",
+        "text": "Trong các buổi tiệc, bạn thường:",
+        "options": [
+            "E: Làm quen và nói chuyện với nhiều người mới.",
+            "I: Trò chuyện sâu với một vài người quen thuộc."
+        ]
+    },
+    {
+        "id": "mbti_q3",
+        "text": "Khi đối mặt với môi trường mới:",
+        "options": [
+            "E: Chủ động làm quen và tạo mối quan hệ rộng.",
+            "I: Quan sát kỹ trước khi tham gia vào nhóm."
+        ]
+    },
+    {
+        "id": "mbti_q4",
+        "text": "Cách bạn suy nghĩ khi thảo luận:",
+        "options": [
+            "E: Phát biểu ý kiến trước rồi mới suy nghĩ.",
+            "I: Suy nghĩ chín chắn trước khi phát biểu."
+        ]
+    },
+    {
+        "id": "mbti_q5",
+        "text": "Khi có nhiều thời gian rảnh, bạn thích:",
+        "options": [
+            "E: Tham gia các hoạt động tập thể, sự kiện.",
+            "I: Đọc sách, nghe nhạc, tận hưởng không gian riêng."
+        ]
+    },
+    {
+        "id": "mbti_q6",
+        "text": "Trong lớp học hoặc cuộc họp, bạn thường:",
+        "options": [
+            "E: Hăng hái phát biểu và chia sẻ.",
+            "I: Lắng nghe, ghi chép và tự ngẫm lại."
+        ]
+    },
+    {
+        "id": "mbti_q7",
+        "text": "Khi điện thoại reo, bạn cảm thấy:",
+        "options": [
+            "E: Hào hứng và muốn nghe máy ngay.",
+            "I: Hơi ngần ngại và đôi khi để lại tin nhắn."
+        ]
+    },
+    {
+        "id": "mbti_q8",
+        "text": "Bạn thích làm việc theo nhóm hay cá nhân:",
+        "options": [
+            "E: Làm việc nhóm giúp kích thích sáng tạo.",
+            "I: Làm việc cá nhân để tập trung sâu hơn."
+        ]
+    },
+    {
+        "id": "mbti_q9",
+        "text": "Phong cách làm quen của bạn:",
+        "options": [
+            "E: Dễ dàng bắt chuyện với bất kỳ ai.",
+            "I: Chỉ mở lời khi có lý do hoặc hoàn cảnh phù hợp."
+        ]
+    },
+    {
+        "id": "mbti_q10",
+        "text": "Nguồn cảm hứng của bạn thường đến từ:",
+        "options": [
+            "E: Thế giới bên ngoài, sự kiện và con người.",
+            "I: Thế giới nội tâm, suy nghĩ và cảm xúc."
+        ]
+    },
+    {
+        "id": "mbti_q11",
+        "text": "Khi gặp vấn đề khó khăn, bạn muốn:",
+        "options": [
+            "E: Thảo luận với người khác để tìm hướng ra.",
+            "I: Tự mình suy nghĩ và tìm cách giải quyết."
+        ]
+    },
+    {
+        "id": "mbti_q12",
+        "text": "Bạn đánh giá cao môi trường làm việc:",
+        "options": [
+            "E: Sôi động, cởi mở và linh hoạt.",
+            "I: Yên tĩnh, ngăn nắp và riêng tư."
+        ]
+    },
+    {
+        "id": "mbti_q13",
+        "text": "Bạn dễ dàng:",
+        "options": [
+            "E: Tập trung vào nhiều việc cùng lúc.",
+            "I: Tập trung sâu vào một việc duy nhất."
+        ]
+    },
+    {
+        "id": "mbti_q14",
+        "text": "Về các mối quan hệ, bạn thích:",
+        "options": [
+            "E: Có nhiều bạn bè ở các nhóm khác nhau.",
+            "I: Có ít bạn nhưng rất thân thiết."
+        ]
+    },
+    {
+        "id": "mbti_q15",
+        "text": "Khi đứng trước một bài thuyết trình:",
+        "options": [
+            "E: Cảm thấy tràn đầy năng lượng.",
+            "I: Cảm thấy khá căng thẳng dù đã chuẩn bị."
+        ]
+    },
+    {
+        "id": "mbti_q16",
+        "text": "Tiếp nhận thông tin bằng cách:",
+        "options": [
+            "S: Nhìn vào dữ liệu, sự thật hiện tại.",
+            "N: Tìm kiếm ý nghĩa ẩn giấu và tầm nhìn tương lai."
+        ]
+    },
+    {
+        "id": "mbti_q17",
+        "text": "Bạn tin tưởng vào:",
+        "options": [
+            "S: Kinh nghiệm thực tiễn và những gì đã xảy ra.",
+            "N: Trực giác và linh cảm về những điều có thể đến."
+        ]
+    },
+    {
+        "id": "mbti_q18",
+        "text": "Khi học một kỹ năng mới:",
+        "options": [
+            "S: Làm theo hướng dẫn từng bước một.",
+            "N: Hiểu nguyên lý chung và tự mày mò."
+        ]
+    },
+    {
+        "id": "mbti_q19",
+        "text": "Bạn bị thu hút bởi:",
+        "options": [
+            "S: Chi tiết cụ thể và tính ứng dụng thực tế.",
+            "N: Ý tưởng mới lạ và các lý thuyết trừu tượng."
+        ]
+    },
+    {
+        "id": "mbti_q20",
+        "text": "Cách bạn miêu tả một sự vật:",
+        "options": [
+            "S: Nói chính xác nó có hình dáng, màu sắc thế nào.",
+            "N: Dùng phép ẩn dụ và liên tưởng đến điều khác."
+        ]
+    },
+    {
+        "id": "mbti_q21",
+        "text": "Khi giải quyết vấn đề, bạn thích:",
+        "options": [
+            "S: Sử dụng các phương pháp đã được kiểm chứng.",
+            "N: Sáng tạo ra cách làm hoàn toàn mới."
+        ]
+    },
+    {
+        "id": "mbti_q22",
+        "text": "Tầm nhìn của bạn thường hướng về:",
+        "options": [
+            "S: Hiện tại, những gì đang diễn ra trước mắt.",
+            "N: Tương lai, những tiềm năng chưa được khai phá."
+        ]
+    },
+    {
+        "id": "mbti_q23",
+        "text": "Trong công việc, bạn được đánh giá là người:",
+        "options": [
+            "S: Thực tế, tỉ mỉ và đáng tin cậy.",
+            "N: Sáng tạo, nhìn xa trông rộng và đột phá."
+        ]
+    },
+    {
+        "id": "mbti_q24",
+        "text": "Khi xem xét một dự án:",
+        "options": [
+            "S: Tập trung vào tính khả thi và chi phí.",
+            "N: Tập trung vào chiến lược và cơ hội đột phá."
+        ]
+    },
+    {
+        "id": "mbti_q25",
+        "text": "Bạn thích loại sách/phim nào hơn:",
+        "options": [
+            "S: Dựa trên sự thật, lịch sử, hồi ký.",
+            "N: Khoa học viễn tưởng, giả tưởng, viễn cảnh tương lai."
+        ]
+    },
+    {
+        "id": "mbti_q26",
+        "text": "Người khác nhận xét bạn là:",
+        "options": [
+            "S: Người thực tế, chạm chân trên mặt đất.",
+            "N: Người hay mơ mộng, đầu óc trên mây."
+        ]
+    },
+    {
+        "id": "mbti_q27",
+        "text": "Đứng trước một vấn đề phức tạp, bạn ưu tiên:",
+        "options": [
+            "S: Gỡ rối từng vấn đề nhỏ gọn.",
+            "N: Tìm ra bức tranh tổng thể trước."
+        ]
+    },
+    {
+        "id": "mbti_q28",
+        "text": "Bạn cảm thấy thoải mái hơn với:",
+        "options": [
+            "S: Các quy tắc và giới hạn rõ ràng.",
+            "N: Sự tự do và các khả năng vô tận."
+        ]
+    },
+    {
+        "id": "mbti_q29",
+        "text": "Bạn có xu hướng nhớ:",
+        "options": [
+            "S: Sự kiện cụ thể và chi tiết xảy ra.",
+            "N: Cảm giác và ý nghĩa của trải nghiệm đó."
+        ]
+    },
+    {
+        "id": "mbti_q30",
+        "text": "Khi giao tiếp, bạn thường:",
+        "options": [
+            "S: Đi thẳng vào vấn đề thực tế.",
+            "N: Thích dùng các khái niệm phong phú."
+        ]
+    },
+    {
+        "id": "mbti_q31",
+        "text": "Khi đưa ra quyết định quan trọng, bạn dựa vào:",
+        "options": [
+            "T: Logic, lý trí và phân tích khách quan.",
+            "F: Giá trị cốt lõi, cảm xúc và sự hòa hợp."
+        ]
+    },
+    {
+        "id": "mbti_q32",
+        "text": "Tiêu chí để đánh giá một vấn đề:",
+        "options": [
+            "T: Đúng sai, hợp lý hay không hợp lý.",
+            "F: Tốt xấu, ảnh hưởng đến người khác ra sao."
+        ]
+    },
+    {
+        "id": "mbti_q33",
+        "text": "Khi phản biện hoặc góp ý cho ai đó:",
+        "options": [
+            "T: Nói thẳng vào sự thật, dù có hơi phũ phàng.",
+            "F: Chọn lời lẽ nhẹ nhàng để tránh làm họ tổn thương."
+        ]
+    },
+    {
+        "id": "mbti_q34",
+        "text": "Bạn trân trọng tính cách nào hơn ở người lãnh đạo:",
+        "options": [
+            "T: Minh bạch, công bằng và hiệu quả.",
+            "F: Thấu cảm, hỗ trợ và truyền cảm hứng."
+        ]
+    },
+    {
+        "id": "mbti_q35",
+        "text": "Trong cuộc tranh luận, mục tiêu của bạn là:",
+        "options": [
+            "T: Tìm ra sự thật và giải pháp đúng nhất.",
+            "F: Duy trì mối quan hệ và sự đồng thuận."
+        ]
+    },
+    {
+        "id": "mbti_q36",
+        "text": "Điều gì thuyết phục bạn dễ dàng hơn:",
+        "options": [
+            "T: Lập luận logic, số liệu và bằng chứng.",
+            "F: Những câu chuyện cảm động và giá trị nhân văn."
+        ]
+    },
+    {
+        "id": "mbti_q37",
+        "text": "Khi bạn bè gặp khó khăn, phản ứng đầu tiên của bạn:",
+        "options": [
+            "T: Phân tích tình huống, đưa ra lời khuyên giải quyết.",
+            "F: Lắng nghe, an ủi và thể hiện sự đồng cảm."
+        ]
+    },
+    {
+        "id": "mbti_q38",
+        "text": "Bạn cảm thấy phiền lòng hơn khi gặp sự:",
+        "options": [
+            "T: Bất hợp lý, thiếu logic.",
+            "F: Vô cảm, thiếu quan tâm."
+        ]
+    },
+    {
+        "id": "mbti_q39",
+        "text": "Từ ngữ miêu tả bạn đúng nhất:",
+        "options": [
+            "T: Người lý trí, khách quan.",
+            "F: Người ấm áp, bao dung."
+        ]
+    },
+    {
+        "id": "mbti_q40",
+        "text": "Trong công việc, bạn cho rằng:",
+        "options": [
+            "T: Hoàn thành mục tiêu là quan trọng nhất.",
+            "F: Sự hài lòng của đội ngũ là ưu tiên hàng đầu."
+        ]
+    },
+    {
+        "id": "mbti_q41",
+        "text": "Khi xem xét một lỗi lầm, bạn sẽ:",
+        "options": [
+            "T: Đánh giá theo quy định và sự công bằng.",
+            "F: Đánh giá tình huống và hoàn cảnh cá nhân."
+        ]
+    },
+    {
+        "id": "mbti_q42",
+        "text": "Bạn cảm thấy tự hào khi được khen ngợi về:",
+        "options": [
+            "T: Năng lực, trí tuệ và sự chuẩn xác.",
+            "F: Lòng tốt, sự tận tâm và sự hỗ trợ."
+        ]
+    },
+    {
+        "id": "mbti_q43",
+        "text": "Trong vai trò giám khảo, bạn sẽ:",
+        "options": [
+            "T: Chấm điểm cực kỳ khách quan dựa trên tiêu chí.",
+            "F: Khuyến khích và cộng điểm cho sự nỗ lực."
+        ]
+    },
+    {
+        "id": "mbti_q44",
+        "text": "Bạn gặp khó khăn hơn khi phải:",
+        "options": [
+            "T: Tỏ ra thông cảm với người làm sai luật.",
+            "F: Đưa ra quyết định phạt nặng một ai đó."
+        ]
+    },
+    {
+        "id": "mbti_q45",
+        "text": "Đối với bạn, công lý là:",
+        "options": [
+            "T: Sự bình đẳng tuyệt đối trước luật lệ.",
+            "F: Khoan dung và cho người khác cơ hội làm lại."
+        ]
+    },
+    {
+        "id": "mbti_q46",
+        "text": "Trong công việc và cuộc sống, bạn ưu tiên:",
+        "options": [
+            "J: Kế hoạch rõ ràng, chuẩn bị trước mọi thứ.",
+            "P: Sự linh hoạt, tùy cơ ứng biến."
+        ]
+    },
+    {
+        "id": "mbti_q47",
+        "text": "Môi trường làm việc lý tưởng:",
+        "options": [
+            "J: Có trật tự, kỷ luật và thời hạn cụ thể.",
+            "P: Thoải mái, linh động, không bị gò bó."
+        ]
+    },
+    {
+        "id": "mbti_q48",
+        "text": "Khi đi du lịch, bạn có xu hướng:",
+        "options": [
+            "J: Lên lịch trình chi tiết từng ngày.",
+            "P: Chỉ đặt vé và đến nơi rồi mới quyết định đi đâu."
+        ]
+    },
+    {
+        "id": "mbti_q49",
+        "text": "Đối phó với thay đổi bất ngờ trong kế hoạch:",
+        "options": [
+            "J: Cảm thấy khó chịu, cố gắng khôi phục trật tự.",
+            "P: Thấy thú vị, dễ dàng thích nghi với tình hình mới."
+        ]
+    },
+    {
+        "id": "mbti_q50",
+        "text": "Bạn thường hoàn thành công việc theo cách:",
+        "options": [
+            "J: Làm xong sớm để có thời gian dư dả.",
+            "P: Thích áp lực sát hạn chót (Deadline) để bứt phá."
+        ]
+    },
+    {
+        "id": "mbti_q51",
+        "text": "Góc làm việc hoặc phòng ngủ của bạn thường:",
+        "options": [
+            "J: Ngăn nắp, đồ vật được sắp xếp có hệ thống.",
+            "P: Hơi lộn xộn, nhưng bạn luôn biến nơi để đồ."
+        ]
+    },
+    {
+        "id": "mbti_q52",
+        "text": "Quy trình hay kết quả quan trọng hơn:",
+        "options": [
+            "J: Cần tuân thủ quy trình để đạt kết quả chuẩn.",
+            "P: Kết quả cuối cùng quan trọng hơn cách làm."
+        ]
+    },
+    {
+        "id": "mbti_q53",
+        "text": "Trong quản lý thời gian, bạn thấy mình:",
+        "options": [
+            "J: Sát sao và kiểm soát tốt thời gian.",
+            "P: Thường quên giờ giấc và bị cuốn vào sự kiện."
+        ]
+    },
+    {
+        "id": "mbti_q54",
+        "text": "Bạn thích các câu hỏi:",
+        "options": [
+            "J: Đã có đáp án rõ ràng, dứt khoát.",
+            "P: Mở và có thể thay đổi sau này."
+        ]
+    },
+    {
+        "id": "mbti_q55",
+        "text": "Trước một nhiệm vụ kéo dài, bạn:",
+        "options": [
+            "J: Chia nhỏ và đặt mục tiêu hoàn thành từng phần.",
+            "P: Làm theo cảm hứng và tăng tốc lúc cuối."
+        ]
+    },
+    {
+        "id": "mbti_q56",
+        "text": "Sau khi đưa ra một quyết định, bạn:",
+        "options": [
+            "J: Cảm thấy nhẹ nhõm vì đã chốt xong vấn đề.",
+            "P: Vẫn tự hỏi liệu có lựa chọn nào tốt hơn không."
+        ]
+    },
+    {
+        "id": "mbti_q57",
+        "text": "Phong cách làm việc của bạn phù hợp với:",
+        "options": [
+            "J: Lịch trình cố định, giờ hành chính.",
+            "P: Thời gian linh hoạt, làm việc theo dự án."
+        ]
+    },
+    {
+        "id": "mbti_q58",
+        "text": "Bạn định nghĩa sự hoàn hảo là:",
+        "options": [
+            "J: Tất cả mọi thứ đúng theo kế hoạch ban đầu.",
+            "P: Mọi thứ diễn ra thuận lợi ở phút chót."
+        ]
+    },
+    {
+        "id": "mbti_q59",
+        "text": "Điều gì khiến bạn mệt mỏi hơn:",
+        "options": [
+            "J: Tình trạng lấp lửng không có quyết định cuối.",
+            "P: Phải chốt quyết định khi chưa đủ trải nghiệm."
+        ]
+    },
+    {
+        "id": "mbti_q60",
+        "text": "Bạn trân trọng tính từ nào hơn:",
+        "options": [
+            "J: Có tổ chức.",
+            "P: Linh hoạt."
+        ]
+    }
+]
