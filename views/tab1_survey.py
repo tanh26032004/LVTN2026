@@ -3,7 +3,7 @@ import random
 from scripts.hybrid_recommender import get_hybrid_recommendations
 from data.major_db import get_major_code
 
-def render_tab(active_model, active_model_name, mbti_encoder, target_encoder, major_dict):
+def render_tab(active_model, active_model_name, preprocessor, target_encoder, major_dict):
     col_input, col_result = st.columns([1.2, 1], gap="large")
     
     with col_input:
@@ -73,7 +73,6 @@ def render_tab(active_model, active_model_name, mbti_encoder, target_encoder, ma
         elif predict_btn:
             with st.spinner('AI đang tính toán không gian vector và trích xuất đặc trưng...'):
                 try:
-                    user_mbti_encoded = mbti_encoder.transform([user_mbti])[0]
                     neutral_score = 5.0 
                     final_scores = { "math": neutral_score, "lit": neutral_score, "eng": neutral_score, "physics": neutral_score, "chem": neutral_score, "bio": neutral_score, "hist": neutral_score }
                     
@@ -83,8 +82,8 @@ def render_tab(active_model, active_model_name, mbti_encoder, target_encoder, ma
                     user_scores = [final_scores["math"], final_scores["lit"], final_scores["eng"], final_scores["physics"], final_scores["chem"], final_scores["bio"], final_scores["hist"]]
                     
                     top_3_hybrid, ml_scores, cf_scores, matching_students = get_hybrid_recommendations(
-                        user_scores=user_scores, user_mbti_encoded=user_mbti_encoded, base_model=active_model, 
-                        mbti_encoder=mbti_encoder, target_encoder=target_encoder, major_dict=major_dict
+                        user_scores=user_scores, user_mbti=user_mbti, base_pipeline=active_model, 
+                        preprocessor=preprocessor, target_encoder=target_encoder, major_dict=major_dict
                     )
                     
                     st.session_state['matching_students'] = matching_students

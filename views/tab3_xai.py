@@ -12,17 +12,30 @@ def render_tab(active_model, model_choice):
         if model_choice.startswith("SVM"):
             st.info("Thuật toán SVM (RBF Kernel) chiếu dữ liệu lên không gian phi tuyến tính, làm giới hạn khả năng trích xuất trọng số tuyến tính trực quan.")
         else:
-            # Danh sách nhãn đặc trưng (Cần khớp với số lượng đặc trưng đầu vào của mô hình)
-            ALL_FEATURE_LABELS = ['Toán', 'Ngữ văn', 'Tiếng Anh', 'Vật lý', 'Hóa học', 'Sinh học', 'Lịch sử', 'MBTI']
-            
             try:
-                importances = active_model.feature_importances_
-                feature_names = ALL_FEATURE_LABELS[:len(importances)]
+                classifier = active_model.named_steps['classifier']
+                importances = classifier.feature_importances_
+                
+                preprocessor = active_model.named_steps['preprocessor']
+                numerical_features = ['math_score', 'literature_score', 'english_score', 'physics_score', 'chemistry_score', 'biology_score', 'history_score', 'avg_score', 'natural_science_score', 'social_science_score']
+                categorical_features = ['mbti_type']
+                
+                ohe_step = preprocessor.named_transformers_['cat']
+                ohe_feature_names = ohe_step.get_feature_names_out(categorical_features)
+                feature_names = numerical_features + list(ohe_feature_names)
+                
+                NAME_MAP = {
+                    'math_score': 'Toán', 'literature_score': 'Ngữ văn', 'english_score': 'Tiếng Anh',
+                    'physics_score': 'Vật lý', 'chemistry_score': 'Hóa học', 'biology_score': 'Sinh học',
+                    'history_score': 'Lịch sử', 'avg_score': 'Điểm TB',
+                    'natural_science_score': 'KHTN (Toán Lý Hóa Sinh)', 'social_science_score': 'KHXH (Văn Sử Anh)'
+                }
+                display_names = [NAME_MAP.get(f, f.replace('mbti_type_', 'MBTI ')) for f in feature_names]
                 
                 fi_df = pd.DataFrame({
-                    'Yếu tố': feature_names, 
+                    'Yếu tố': display_names, 
                     'Đóng góp (%)': importances * 100
-                }).sort_values(by='Đóng góp (%)', ascending=True)
+                }).sort_values(by='Đóng góp (%)', ascending=True).tail(15) # Chỉ lấy top 15 cho gọn biểu đồ
                 
                 fig = px.bar(fi_df, x='Đóng góp (%)', y='Yếu tố', orientation='h', 
                              color='Đóng góp (%)', color_continuous_scale='Viridis',
@@ -35,12 +48,12 @@ def render_tab(active_model, model_choice):
                     xaxis_title="Tỉ trọng ảnh hưởng (%)",
                     yaxis_title="",
                     coloraxis_showscale=False,
-                    height=max(300, len(importances)*40)
+                    height=max(300, len(fi_df)*40)
                 )
                 
                 st.plotly_chart(fig, use_container_width=True, theme="streamlit")
-            except Exception:
-                st.warning("Không thể trích xuất trọng số từ mô hình hiện tại.")
+            except Exception as e:
+                st.warning(f"Không thể trích xuất trọng số từ mô hình hiện tại.")
 
     with xai_col2:
         st.markdown("<h4 style='font-weight: 700; font-size: 1.1rem; margin-bottom: 15px;'>Phân phối Dữ liệu Gốc</h4>", unsafe_allow_html=True)

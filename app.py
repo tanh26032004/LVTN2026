@@ -32,14 +32,14 @@ def load_ml_models():
         rf_model = joblib.load('model/random_forest_model.joblib')
         dt_model = joblib.load('model/decision_tree_model.joblib')
         svm_model = joblib.load('model/svm_model.joblib')
-        mbti_encoder = joblib.load('model/mbti_encoder.joblib')
+        preprocessor = joblib.load('model/preprocessor.joblib')
         target_encoder = joblib.load('model/target_encoder.joblib')
         major_dict = joblib.load('model/major_groups_dict.joblib')
-        return rf_model, dt_model, svm_model, mbti_encoder, target_encoder, major_dict
+        return rf_model, dt_model, svm_model, preprocessor, target_encoder, major_dict
     except Exception as e:
         return None, None, None, None, None, None
 
-rf_model, dt_model, svm_model, mbti_encoder, target_encoder, major_dict = load_ml_models()
+rf_model, dt_model, svm_model, preprocessor, target_encoder, major_dict = load_ml_models()
 
 if rf_model is None or dt_model is None or svm_model is None:
     st.error("Lỗi hệ thống: Không tìm thấy dữ liệu mô hình. Vui lòng kiểm tra thư mục 'model/'.")
@@ -62,7 +62,7 @@ with tab1:
         title="Hệ Thống Gợi Ý Chuyên Ngành Đại Học", 
         subtitle=f"Nhận diện năng lực cốt lõi dựa trên <b>{model_choice}</b> kết hợp không gian vector <b>KNN</b>"
     )
-    tab1_survey.render_tab(active_model, model_choice, mbti_encoder, target_encoder, major_dict)
+    tab1_survey.render_tab(active_model, model_choice, preprocessor, target_encoder, major_dict)
 
 # Nội dung Tab 2
 with tab2:
