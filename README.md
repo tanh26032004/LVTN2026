@@ -1,4 +1,4 @@
-# Hệ Thống Gợi Ý Chuyên Ngành Đại Học Dựa Trên AI
+# Nghiên cứu và Xây dựng hệ thống hỗ trợ tư vấn chọn ngành đại học dựa trên kỹ thuật Phân lớp dữ liệu đa yếu tố: Tính cách và Năng lực học tập
 **Dự án Khóa luận Tốt nghiệp (LVTN 2026)**
 
 > **Tên đề tài tiếng Anh**: "Development of a University Major Recommendation System using Multi-factor Classification: Personality Traits (MBTI) and Academic Performance"
