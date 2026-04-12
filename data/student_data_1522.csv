@@ -1,0 +1,1523 @@
+﻿student_id,math_score,literature_score,english_score,physics_score,chemistry_score,biology_score,history_score,mbti_type,major_group,specific_major,major_rating
+SV10000,7.7,6.9,8.3,8.9,7.1,7.2,7.7,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.1
+SV10001,6.1,5.6,6.0,4.6,5.8,5.0,6.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.8
+SV10002,6.8,6.8,5.6,5.7,6.3,7.0,7.0,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.15
+SV10003,7.8,5.8,7.6,6.3,5.5,7.3,5.7,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.6
+SV10004,9.9,8.9,7.7,9.2,8.6,8.7,9.2,ENTJ,Sư phạm & Giáo dục,Sư phạm Tin học,3.75
+SV10005,8.5,7.2,8.4,8.8,7.7,8.5,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.75
+SV10006,9.7,8.5,9.7,10.0,9.5,8.7,8.3,ENTP,Sư phạm & Giáo dục,Sư phạm Tin học,4.65
+SV10007,7.6,5.8,6.5,7.0,9.1,6.8,6.8,ESFP,Kinh tế & Quản lý,Kinh tế,4.25
+SV10008,7.8,6.3,8.0,6.2,6.6,5.9,6.9,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.6
+SV10009,7.7,6.1,7.6,5.8,5.6,7.3,7.6,INTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,4.1
+SV10010,5.7,7.3,4.9,5.7,4.7,6.9,6.0,ENTP,Nghệ thuật & Thiết kế,Âm nhạc học,3.6
+SV10011,7.9,5.4,7.3,7.2,7.9,8.6,7.2,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.6
+SV10012,5.6,6.4,4.1,5.0,6.8,6.1,5.3,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.95
+SV10013,6.2,6.4,7.5,6.1,7.7,7.5,9.3,ESFP,Kinh tế & Quản lý,Marketing,2.9
+SV10014,7.6,5.5,7.1,7.0,8.8,6.4,6.6,ESFP,Y tế & Sức khỏe,Dược học,3.0
+SV10015,6.3,5.7,5.8,6.9,6.2,8.5,8.2,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,3.55
+SV10016,7.1,7.5,7.7,7.8,7.5,6.9,7.3,ESFP,Kinh tế & Quản lý,Kinh tế số,3.35
+SV10017,8.8,7.0,8.4,9.4,9.0,9.4,8.5,INTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.0
+SV10018,6.0,7.8,6.0,5.3,6.8,6.2,7.1,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.4
+SV10019,8.5,7.7,7.8,7.0,9.1,7.7,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.15
+SV10020,9.6,7.2,8.1,9.7,9.6,8.6,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.6
+SV10021,5.5,6.4,6.2,5.4,6.8,5.4,7.6,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.75
+SV10022,8.3,8.3,8.2,9.4,8.1,6.9,7.9,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.9
+SV10023,6.4,6.5,6.8,6.9,8.0,7.4,9.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.15
+SV10024,8.4,8.5,8.1,7.7,8.5,9.1,7.7,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.6
+SV10025,7.7,7.0,8.7,8.5,8.4,9.2,8.8,ENTJ,Du lịch & Dịch vụ,Quản trị khách sạn,3.9
+SV10026,6.7,7.8,6.3,7.3,8.4,6.7,8.6,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.25
+SV10027,6.8,6.5,6.7,5.4,6.0,5.3,7.4,ENTP,Y tế & Sức khỏe,Dược học,4.05
+SV10028,8.1,6.5,7.7,8.2,7.0,8.2,7.3,ESFP,Luật & Xã hội,Luật,3.55
+SV10029,7.5,6.4,8.0,7.4,8.2,6.1,7.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.7
+SV10030,8.4,7.9,8.9,7.6,8.0,8.0,8.6,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.55
+SV10031,8.6,7.7,7.6,9.6,8.9,8.6,9.0,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.8
+SV10032,9.7,7.4,8.1,9.3,9.5,9.8,8.0,ESTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.85
+SV10033,8.7,8.1,6.2,9.2,8.3,8.7,8.2,ESFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.3
+SV10034,7.8,8.2,5.6,6.3,8.9,8.9,8.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.25
+SV10035,7.8,8.5,8.7,7.7,8.8,9.1,9.1,ESTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.25
+SV10036,7.7,7.0,6.1,9.9,8.4,9.1,8.4,ESFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.95
+SV10037,5.7,8.0,5.5,7.2,5.3,8.2,7.5,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,2.85
+SV10038,7.9,8.4,7.6,6.2,6.4,8.2,7.1,ESFP,Y tế & Sức khỏe,Dược học,3.2
+SV10039,6.5,6.2,3.8,5.9,7.2,6.5,6.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.95
+SV10040,8.2,5.7,6.6,6.7,8.1,7.0,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.2
+SV10041,7.6,8.6,7.9,8.0,8.7,8.1,9.6,INFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.95
+SV10042,8.4,7.5,6.9,8.5,8.3,9.1,7.8,ENTP,Kinh tế & Quản lý,Kế toán,3.8
+SV10043,9.2,7.9,7.3,8.0,8.4,8.1,8.4,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.7
+SV10044,7.1,7.4,7.6,7.1,6.7,5.3,6.7,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.1
+SV10045,10.0,8.2,10.0,10.0,9.2,9.0,8.6,ENTP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.5
+SV10046,8.0,7.0,6.8,7.2,9.2,7.8,6.1,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.6
+SV10047,8.4,7.5,8.0,7.0,8.8,8.3,8.4,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.4
+SV10048,7.0,8.7,9.1,7.7,8.0,9.4,8.2,ISTJ,Kinh tế & Quản lý,Kế toán,4.0
+SV10049,9.4,6.1,8.0,8.0,9.0,8.7,9.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,2.95
+SV10050,8.2,8.8,6.8,8.6,8.5,8.9,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.0
+SV10051,7.3,4.7,6.1,6.9,8.5,5.9,5.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.65
+SV10052,8.0,5.9,8.2,6.7,8.4,6.0,6.0,ESFP,Kinh tế & Quản lý,Marketing,3.5
+SV10053,6.5,6.2,8.2,7.3,7.6,8.2,8.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.15
+SV10054,6.6,6.8,6.6,5.1,5.3,5.3,7.7,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.35
+SV10055,10.0,7.9,7.8,7.8,8.5,8.6,8.7,ENTJ,Kinh tế & Quản lý,Fintech,4.3
+SV10056,9.2,8.1,8.8,9.3,9.2,7.9,8.2,ENTJ,Du lịch & Dịch vụ,Du lịch,3.45
+SV10057,6.2,5.8,4.1,6.2,6.4,8.1,6.3,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.7
+SV10058,8.1,5.3,7.7,7.4,7.8,8.6,7.5,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,4.0
+SV10059,5.3,6.5,5.5,6.4,6.9,6.5,6.2,ESFP,Y tế & Sức khỏe,Dược học,4.35
+SV10060,8.6,7.8,6.8,7.3,8.2,7.5,6.9,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.6
+SV10061,8.4,8.0,8.6,9.8,8.5,9.6,9.0,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.75
+SV10062,4.7,6.6,5.0,6.2,5.2,5.9,5.8,ENTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.3
+SV10063,8.8,7.8,8.6,9.6,9.3,9.5,9.4,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.25
+SV10064,9.2,7.2,6.1,7.8,8.1,5.2,8.2,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.25
+SV10065,7.2,6.4,8.2,7.6,6.7,7.0,7.0,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.55
+SV10066,8.9,8.4,8.2,9.5,9.8,9.4,8.7,ENFJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.8
+SV10067,8.2,7.4,8.9,7.6,8.9,7.6,9.0,ESTP,Sư phạm & Giáo dục,Sư phạm Toán,4.35
+SV10068,8.9,7.3,7.4,8.7,8.4,9.6,8.4,ENTJ,Kinh tế & Quản lý,Quản trị kinh doanh,4.05
+SV10069,8.9,7.8,5.8,6.9,8.2,9.9,8.4,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.55
+SV10070,9.1,9.0,6.2,9.8,8.0,8.9,9.3,ESFJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.05
+SV10071,9.0,6.5,7.9,9.1,9.1,8.6,8.2,ENTJ,Kinh tế & Quản lý,Marketing,4.6
+SV10072,9.6,7.3,7.9,10.0,8.1,9.6,9.1,INTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.85
+SV10073,5.2,5.7,4.0,4.6,8.5,5.5,7.2,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,4.65
+SV10074,8.8,7.5,8.4,8.6,8.2,9.4,8.4,ENTP,Kinh tế & Quản lý,Kinh tế,2.55
+SV10075,9.0,8.2,8.8,9.2,9.8,9.6,8.9,ENTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.25
+SV10076,8.0,7.8,7.9,7.2,8.0,7.3,8.6,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV10077,7.1,8.3,8.0,7.9,9.0,7.0,9.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.7
+SV10078,7.8,5.3,6.8,7.9,8.0,6.8,8.2,ESFP,Kinh tế & Quản lý,Thương mại điện tử,3.9
+SV10079,9.6,8.0,8.8,8.2,9.1,7.9,9.2,ENTJ,Kinh tế & Quản lý,Fintech,2.85
+SV10080,8.2,8.8,8.3,9.0,9.1,9.1,8.8,ESTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.75
+SV10081,8.0,6.5,8.0,6.5,6.3,8.0,6.7,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.05
+SV10082,10.0,7.4,8.0,9.3,8.2,7.9,8.9,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.6
+SV10083,6.6,6.7,6.8,6.9,7.5,7.0,6.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.6
+SV10084,9.7,8.2,9.1,10.0,9.0,9.3,9.0,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.45
+SV10085,9.6,6.5,8.8,8.8,9.6,9.4,9.6,ENTP,Nghệ thuật & Thiết kế,Kiến trúc,3.6
+SV10086,7.1,6.2,7.3,8.3,7.7,6.5,5.9,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.3
+SV10087,9.1,7.6,8.3,9.8,9.1,9.4,8.6,INTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.0
+SV10088,9.2,6.9,9.0,8.9,8.2,8.0,8.9,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,3.6
+SV10089,8.7,7.5,9.3,8.5,10.0,9.5,8.6,ESTP,Kinh tế & Quản lý,Kinh tế số,4.1
+SV10090,9.1,8.3,8.6,9.5,10.0,7.8,9.4,ENFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.9
+SV10091,5.1,5.5,5.6,6.0,5.4,7.1,7.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.35
+SV10092,5.5,6.9,7.2,7.0,7.2,6.1,5.8,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.5
+SV10093,8.7,6.8,8.4,7.0,8.9,8.1,8.2,ISTJ,Truyền thông & Báo chí,Báo chí,3.7
+SV10094,9.3,8.0,8.9,9.4,9.0,10.0,8.6,ENTP,Y tế & Sức khỏe,Y khoa,3.65
+SV10095,7.3,6.7,4.4,5.9,7.4,7.7,5.4,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.1
+SV10096,6.7,7.3,6.4,7.2,8.0,6.6,7.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.0
+SV10097,8.4,8.6,8.3,7.5,9.2,9.0,9.0,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.0
+SV10098,8.1,8.5,5.7,7.3,8.5,9.4,9.4,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.85
+SV10099,8.1,7.2,7.6,7.1,8.4,8.1,7.9,ESFP,Kinh tế & Quản lý,Marketing,3.75
+SV10100,9.1,7.6,9.0,9.4,9.0,8.2,9.4,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.15
+SV10101,8.4,6.6,7.3,7.3,8.3,7.1,7.1,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.65
+SV10102,6.4,7.7,7.7,6.9,6.7,8.6,7.4,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.7
+SV10103,6.4,7.0,7.8,6.8,6.0,5.0,7.1,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.45
+SV10104,8.4,8.8,9.1,9.3,8.8,9.8,9.2,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.75
+SV10105,6.6,6.7,5.5,8.5,9.7,8.3,8.7,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.05
+SV10106,7.9,8.3,7.8,7.7,6.5,8.3,8.0,ESFP,Y tế & Sức khỏe,Y khoa,4.8
+SV10107,7.7,8.1,8.9,7.1,8.5,8.0,8.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.95
+SV10108,8.1,8.2,6.1,7.7,8.2,8.6,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.0
+SV10109,7.5,7.3,8.0,7.4,8.4,8.0,8.6,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.8
+SV10110,9.1,5.9,6.4,7.7,8.3,7.9,8.3,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,2.9
+SV10111,7.2,6.5,7.9,6.8,7.2,7.8,7.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.85
+SV10112,5.8,6.1,4.5,6.3,7.9,5.8,6.7,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.9
+SV10113,7.7,7.2,6.5,9.3,9.7,8.5,8.0,ESTJ,Y tế & Sức khỏe,Răng - Hàm - Mặt,5.0
+SV10114,7.3,7.7,7.2,7.5,7.4,7.6,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,3.75
+SV10115,7.8,6.8,6.8,5.4,8.0,6.4,6.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.0
+SV10116,9.6,7.8,8.9,8.0,8.3,7.8,9.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.85
+SV10117,6.2,6.4,5.0,7.8,5.6,7.9,7.5,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.25
+SV10118,7.8,7.6,8.0,8.2,8.3,6.1,7.6,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.4
+SV10119,8.6,7.4,7.0,8.2,6.7,8.3,9.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.25
+SV10120,8.1,6.8,7.1,5.5,8.1,7.3,6.6,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.25
+SV10121,8.3,8.1,5.7,8.4,7.9,7.6,9.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.4
+SV10122,8.7,7.4,8.6,7.9,9.1,7.3,8.3,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.55
+SV10123,9.0,8.1,9.6,8.4,9.4,8.3,8.8,ISTP,Kinh tế & Quản lý,Thương mại điện tử,3.15
+SV10124,9.2,6.5,8.4,9.3,9.3,9.9,8.9,ENTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.15
+SV10125,7.6,5.4,5.8,5.9,8.9,6.0,6.5,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.95
+SV10126,5.6,6.1,5.3,5.2,10.0,7.2,5.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.35
+SV10127,10.0,7.4,7.4,7.9,9.4,8.1,7.9,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.55
+SV10128,9.0,6.6,6.9,9.1,7.4,7.1,8.4,ENTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.9
+SV10129,8.7,8.2,7.3,7.5,8.1,7.9,8.5,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.6
+SV10130,7.9,7.2,6.4,6.1,6.2,8.3,7.5,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.05
+SV10131,9.1,9.7,8.4,9.8,8.2,8.4,8.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.9
+SV10132,8.0,5.4,5.7,7.3,6.6,7.4,6.3,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.3
+SV10133,6.5,7.7,6.0,6.0,6.9,7.6,8.5,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.1
+SV10134,6.5,5.6,6.5,7.4,6.1,6.5,7.3,ESFP,Y tế & Sức khỏe,Dược học,3.4
+SV10135,7.9,8.0,7.8,7.5,6.9,8.5,7.3,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.6
+SV10136,8.5,8.1,7.6,6.5,8.5,6.7,7.5,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.45
+SV10137,9.7,8.2,8.1,10.0,9.4,8.4,8.5,ESFP,Kinh tế & Quản lý,Kế toán,3.7
+SV10138,9.2,7.8,9.4,8.9,9.2,9.0,9.2,ISTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.25
+SV10139,9.0,7.3,8.4,8.0,8.8,7.3,8.1,ESFJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.25
+SV10140,7.5,5.5,6.7,7.6,7.6,5.9,6.6,ESFP,Kinh tế & Quản lý,Kế toán,3.95
+SV10141,8.7,7.8,7.3,8.8,8.7,7.4,7.7,ESFP,Kinh tế & Quản lý,Thương mại điện tử,4.5
+SV10142,7.9,5.1,7.3,7.4,8.2,8.4,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.05
+SV10143,9.8,8.1,8.6,9.4,9.1,8.8,8.2,ENTP,Kinh tế & Quản lý,Kế toán,3.95
+SV10144,7.0,7.2,7.6,8.9,7.8,8.4,7.8,INFJ,Kinh tế & Quản lý,Thương mại điện tử,4.0
+SV10145,7.3,7.3,5.3,5.9,6.8,8.1,7.5,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.25
+SV10146,5.7,4.6,4.0,4.2,4.8,6.3,5.4,ENTP,Nghệ thuật & Thiết kế,Âm nhạc học,3.25
+SV10147,7.6,7.2,7.6,8.3,8.7,8.4,7.3,ESTJ,Y tế & Sức khỏe,Điều dưỡng,3.2
+SV10148,7.6,6.8,7.5,8.2,8.9,7.0,8.2,ESTJ,Luật & Xã hội,Luật,4.1
+SV10149,7.7,8.6,8.7,8.2,9.7,8.8,8.5,ESTP,Kinh tế & Quản lý,Fintech,4.0
+SV10150,7.4,5.7,6.6,6.9,7.6,6.7,7.7,ESFP,Kinh tế & Quản lý,Fintech,4.0
+SV10151,8.1,7.8,7.3,8.0,8.7,8.1,7.8,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.0
+SV10152,8.6,6.7,8.7,8.7,9.1,8.1,9.0,ENTJ,Kinh tế & Quản lý,Kinh tế số,3.5
+SV10153,8.7,7.9,8.5,9.6,9.8,8.4,8.7,ENFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.95
+SV10154,9.7,7.7,8.5,9.7,8.9,9.7,9.4,ESFP,Y tế & Sức khỏe,Y khoa,4.0
+SV10155,7.6,6.4,6.2,8.4,8.0,6.6,10.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.5
+SV10156,7.6,7.1,7.2,8.3,8.6,8.9,8.1,INFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.8
+SV10157,5.8,6.5,7.7,7.2,6.2,8.7,6.0,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.1
+SV10158,7.9,7.5,6.7,7.6,7.1,7.0,8.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.25
+SV10159,5.5,6.1,5.5,4.6,5.7,4.4,5.9,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.2
+SV10160,9.0,8.1,6.5,9.6,8.1,8.9,8.6,ESFJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.35
+SV10161,9.7,7.6,8.0,8.9,9.7,8.0,8.5,ENTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.25
+SV10162,6.1,5.5,5.9,7.4,5.9,7.3,6.9,ESTP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.45
+SV10163,6.3,5.5,5.0,7.2,6.6,6.2,7.1,ESFP,Kinh tế & Quản lý,Fintech,3.45
+SV10164,6.7,5.9,6.4,5.8,7.8,5.5,7.0,ESFP,Kinh tế & Quản lý,Marketing,4.35
+SV10165,6.6,6.2,6.5,4.6,4.9,6.0,6.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.05
+SV10166,6.0,7.1,5.4,5.0,9.4,7.1,7.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.25
+SV10167,5.3,7.0,6.1,6.0,8.0,5.1,6.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.8
+SV10168,6.3,6.1,6.0,3.6,4.6,5.9,4.9,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.75
+SV10169,7.5,5.5,7.6,6.7,5.8,6.2,7.7,INTJ,Sư phạm & Giáo dục,Sư phạm Toán,3.45
+SV10170,7.7,5.6,7.5,6.3,8.6,6.3,6.5,ESFP,Y tế & Sức khỏe,Y khoa,3.4
+SV10171,7.1,6.7,7.1,8.0,7.0,7.0,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.45
+SV10172,8.2,8.0,8.5,6.5,7.8,8.5,9.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.8
+SV10173,9.8,7.1,7.2,7.8,9.9,7.9,8.1,ENTJ,Kinh tế & Quản lý,Kinh tế số,4.0
+SV10174,9.4,7.6,8.3,10.0,9.1,8.5,9.6,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.0
+SV10175,8.8,7.9,7.6,8.4,8.8,8.9,9.4,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.25
+SV10176,6.0,6.7,8.2,7.7,8.9,8.2,8.8,INFJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.85
+SV10177,9.1,8.0,8.7,8.4,8.1,9.4,8.6,ISTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.6
+SV10178,8.2,6.8,7.5,8.3,8.5,6.9,8.1,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.7
+SV10179,9.6,7.4,8.5,8.7,8.6,8.0,9.1,ENTJ,Kinh tế & Quản lý,Kinh tế số,5.0
+SV10180,9.4,6.2,8.3,9.1,8.7,8.2,9.2,ENTJ,Du lịch & Dịch vụ,Du lịch,4.15
+SV10181,6.5,6.7,5.8,5.3,4.8,5.5,7.7,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.4
+SV10182,7.8,6.4,6.4,5.2,5.6,7.9,7.6,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.3
+SV10183,5.2,6.4,4.5,5.2,9.2,5.7,6.8,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,4.1
+SV10184,9.2,9.3,9.5,9.0,9.7,9.8,9.6,ESTP,Nghệ thuật & Thiết kế,Kiến trúc,3.75
+SV10185,9.6,8.6,8.0,8.5,9.7,8.9,9.8,ENTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.2
+SV10186,8.2,7.8,5.9,8.8,7.5,9.0,8.6,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.1
+SV10187,8.7,7.5,6.9,7.3,8.9,9.1,8.7,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.8
+SV10188,8.8,7.6,8.3,9.6,8.0,8.1,8.5,ENTJ,Kinh tế & Quản lý,Marketing,3.45
+SV10189,8.3,8.5,6.8,7.2,8.7,6.8,7.7,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.1
+SV10190,8.3,7.5,7.4,7.1,8.4,7.2,8.7,ESFP,Truyền thông & Báo chí,Báo chí,3.65
+SV10191,7.6,7.2,8.2,8.4,7.4,7.2,6.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.3
+SV10192,6.3,4.1,4.3,7.5,5.8,5.5,5.5,ENTP,Y tế & Sức khỏe,Dược học,3.95
+SV10193,6.5,7.2,7.5,6.7,7.5,7.1,8.6,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.25
+SV10194,6.9,7.5,8.7,6.9,8.4,7.2,7.8,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.95
+SV10195,9.7,7.8,7.9,9.5,8.6,7.8,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.05
+SV10196,7.9,7.9,7.3,7.9,7.7,7.1,8.0,ESFP,Kinh tế & Quản lý,Kinh tế số,3.4
+SV10197,9.1,6.4,8.3,6.8,8.4,9.2,8.8,ISTJ,Y tế & Sức khỏe,Y khoa,3.95
+SV10198,6.2,6.5,6.4,5.3,7.0,6.9,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.9
+SV10199,7.0,9.0,8.3,7.9,9.3,7.8,8.9,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.3
+SV10200,8.2,6.8,8.5,8.5,7.3,7.2,8.3,ENTP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.05
+SV10201,6.5,6.9,3.6,6.8,5.6,8.2,6.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.15
+SV10202,8.3,6.3,6.9,9.1,7.6,7.2,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.4
+SV10203,10.0,7.1,9.7,9.6,8.8,8.0,8.1,ENTP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.4
+SV10204,8.9,9.0,8.1,8.9,9.5,9.3,9.0,INTP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.15
+SV10205,5.9,4.3,4.4,6.9,6.6,5.0,5.3,ENTP,Kinh tế & Quản lý,Kế toán,3.4
+SV10206,5.0,5.3,3.4,5.2,5.6,5.1,6.1,ENTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.1
+SV10207,6.9,8.4,9.3,8.1,8.2,8.2,9.3,INTJ,Kinh tế & Quản lý,Quan hệ quốc tế,4.1
+SV10208,4.8,5.5,5.6,6.3,8.8,6.1,6.9,ESFP,Y tế & Sức khỏe,Y khoa,4.1
+SV10209,7.6,7.4,6.8,7.5,8.5,7.9,6.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,5.0
+SV10210,9.4,7.7,7.7,9.2,8.8,9.2,9.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.15
+SV10211,7.2,5.8,4.0,4.6,5.2,6.9,5.2,ENTP,Kinh tế & Quản lý,Kế toán,4.4
+SV10212,8.4,8.0,8.0,7.1,7.8,7.2,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.35
+SV10213,8.3,7.0,8.2,9.2,8.9,7.2,6.9,ENTJ,Kinh tế & Quản lý,Marketing,4.2
+SV10214,7.8,8.2,8.1,6.9,7.8,7.8,7.7,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.7
+SV10215,5.5,7.1,6.3,6.7,7.0,7.9,9.1,ESFP,Kinh tế & Quản lý,Fintech,4.25
+SV10216,6.7,7.9,8.5,7.0,8.3,8.4,8.6,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.45
+SV10217,7.5,8.1,9.4,6.6,7.7,9.2,8.9,ISTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.75
+SV10218,8.9,8.1,6.5,7.4,8.4,7.7,8.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.6
+SV10219,7.7,6.7,6.6,4.4,5.8,7.8,8.1,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.9
+SV10220,6.1,5.6,4.9,7.2,6.3,6.6,8.0,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,5.0
+SV10221,8.8,8.3,7.9,9.2,8.9,8.8,8.9,ENTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,2.9
+SV10222,7.3,8.3,7.0,7.9,8.8,9.5,9.0,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.2
+SV10223,9.2,6.9,8.1,8.3,9.4,8.2,8.6,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.05
+SV10224,7.5,6.3,7.2,7.4,5.2,6.7,6.8,INTJ,Kinh tế & Quản lý,Kế toán,3.6
+SV10225,8.9,7.6,9.2,8.8,8.6,8.5,9.4,ENTP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.4
+SV10226,8.4,8.0,6.9,7.3,8.7,9.0,9.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.9
+SV10227,5.3,6.4,4.5,6.9,5.0,6.1,5.9,ENTP,Kinh tế & Quản lý,Marketing,3.3
+SV10228,8.1,6.6,7.1,7.5,6.8,6.7,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.5
+SV10229,9.5,8.0,9.0,9.8,10.0,8.1,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.2
+SV10230,7.7,8.0,7.8,8.7,9.6,8.4,8.1,ESTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.5
+SV10231,7.4,5.9,7.4,5.5,6.5,6.8,7.2,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.95
+SV10232,7.9,6.9,8.5,7.3,7.8,7.7,8.8,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.85
+SV10233,6.8,7.7,7.4,8.0,8.1,7.5,7.4,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.5
+SV10234,9.1,9.0,8.2,9.0,10.0,9.8,8.3,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.9
+SV10235,6.5,6.4,8.0,6.3,6.3,5.0,6.5,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.15
+SV10236,7.4,8.3,7.6,8.7,9.6,9.2,9.0,ESTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,2.85
+SV10237,7.6,6.9,5.4,9.3,7.8,7.0,9.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.95
+SV10238,7.3,7.0,7.5,7.6,8.9,8.3,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.5
+SV10239,10.0,7.7,7.9,9.4,10.0,9.8,9.6,ENFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.3
+SV10240,8.1,7.0,6.9,8.4,7.4,9.4,9.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.45
+SV10241,7.8,7.2,8.7,7.3,7.0,7.9,8.7,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.8
+SV10242,8.0,7.5,7.4,7.0,9.0,7.1,8.0,ESFP,Kinh tế & Quản lý,Kinh tế,4.1
+SV10243,7.1,6.3,4.5,4.5,6.1,5.7,5.3,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.3
+SV10244,9.3,7.9,8.6,10.0,9.2,8.1,8.2,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.25
+SV10245,8.3,7.4,8.0,7.4,9.0,10.0,7.0,ENTP,Kinh tế & Quản lý,Kế toán,3.7
+SV10246,7.2,6.2,4.6,5.5,4.8,6.5,4.8,ENTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.6
+SV10247,6.9,7.5,7.4,8.9,7.7,8.3,7.6,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.5
+SV10248,6.4,6.9,7.5,6.0,6.2,7.6,7.6,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.75
+SV10249,8.4,7.1,7.2,7.6,7.5,7.5,8.9,ESFP,Kinh tế & Quản lý,Marketing,4.05
+SV10250,9.8,7.7,8.8,9.4,9.9,8.9,8.0,ENFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.2
+SV10251,9.8,7.9,8.5,9.2,9.0,8.0,8.7,ENTJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.3
+SV10252,7.6,7.4,7.8,7.2,7.1,7.0,8.4,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.9
+SV10253,10.0,7.9,9.3,9.5,9.8,8.8,9.4,ENTP,Luật & Xã hội,Luật,4.35
+SV10254,8.2,8.2,8.4,8.2,8.3,9.0,8.6,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.1
+SV10255,7.1,5.3,7.5,5.8,9.0,7.8,7.5,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.6
+SV10256,7.4,7.9,6.4,6.3,8.2,7.9,8.5,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.5
+SV10257,7.7,8.4,8.1,8.5,8.8,9.6,7.6,ISTP,Y tế & Sức khỏe,Điều dưỡng,3.5
+SV10258,6.8,7.3,5.2,7.1,7.2,8.9,8.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.05
+SV10259,8.5,8.1,8.0,9.3,8.2,8.7,8.9,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.25
+SV10260,8.2,7.8,8.4,10.0,8.9,8.4,8.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.4
+SV10261,6.1,7.0,7.4,6.0,8.1,5.0,5.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.8
+SV10262,8.5,7.4,8.7,8.1,9.6,7.9,7.3,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,2.25
+SV10263,8.3,7.7,7.6,7.3,9.8,8.2,8.6,INFP,Y tế & Sức khỏe,Dược học,3.35
+SV10264,8.6,7.3,8.1,6.9,8.1,8.0,7.6,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.7
+SV10265,9.2,6.5,9.8,8.0,7.2,6.8,8.0,INFJ,Kinh tế & Quản lý,Thương mại điện tử,3.25
+SV10266,6.4,5.4,2.9,1.7,4.9,7.9,5.1,ENTP,Nghệ thuật & Thiết kế,Kiến trúc,4.65
+SV10267,8.4,8.4,8.6,8.5,8.4,7.4,9.8,ESTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.15
+SV10268,6.9,6.0,6.6,6.0,5.8,5.0,5.8,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.65
+SV10269,8.3,8.6,7.7,9.1,7.9,8.7,8.7,ESFP,Luật & Xã hội,Luật,3.9
+SV10270,7.7,6.5,6.2,5.8,9.3,6.8,6.7,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.55
+SV10271,8.3,8.2,6.6,6.3,8.7,8.7,8.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.15
+SV10272,7.8,6.8,8.2,7.9,6.7,6.7,6.4,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.45
+SV10273,5.9,6.7,5.0,5.8,7.3,6.6,7.2,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.85
+SV10274,6.0,5.6,7.1,6.2,8.4,6.1,8.0,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.35
+SV10275,9.8,7.7,8.4,9.7,9.5,9.5,8.9,ENFJ,Kinh tế & Quản lý,Thương mại điện tử,4.1
+SV10276,8.3,7.9,6.8,8.8,8.9,9.2,8.6,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.95
+SV10277,8.4,8.1,9.1,9.1,8.5,9.4,9.8,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.55
+SV10278,8.1,5.7,6.4,7.2,5.6,6.2,7.8,ESTJ,Kinh tế & Quản lý,Kinh tế,3.9
+SV10279,6.6,6.7,7.4,4.4,5.1,6.2,6.1,ENTP,Kinh tế & Quản lý,Quản trị kinh doanh,3.65
+SV10280,8.6,8.3,7.5,7.2,8.6,9.4,7.5,ENTJ,Sư phạm & Giáo dục,Sư phạm Tin học,3.9
+SV10281,9.4,7.7,7.0,8.8,9.2,9.0,8.2,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.2
+SV10282,7.6,7.2,5.8,7.5,7.4,8.2,9.0,ESFP,Y tế & Sức khỏe,Y khoa,4.65
+SV10283,9.1,7.5,8.3,9.8,8.8,9.1,8.5,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.25
+SV10284,6.1,7.1,6.1,5.5,4.8,5.6,7.5,ENTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.9
+SV10285,4.4,6.1,5.9,4.1,7.1,4.4,7.7,ESFP,Y tế & Sức khỏe,Dược học,2.85
+SV10286,8.5,8.2,8.4,8.5,9.2,8.9,7.8,ENTJ,Kinh tế & Quản lý,Kinh tế số,3.75
+SV10287,8.2,8.0,7.3,7.7,7.6,8.2,9.1,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.15
+SV10288,7.5,4.5,7.1,6.2,8.8,7.2,7.2,ESFP,Kinh tế & Quản lý,Kinh tế số,4.0
+SV10289,8.7,7.1,8.1,8.7,8.4,8.2,7.9,ENTJ,Sư phạm & Giáo dục,Sư phạm Tin học,3.55
+SV10290,8.4,7.0,6.8,8.7,9.6,6.9,8.7,ESTJ,Luật & Xã hội,Luật,3.75
+SV10291,6.5,5.1,6.2,7.6,7.4,7.4,7.5,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.6
+SV10292,7.1,6.0,5.9,5.3,4.4,6.6,8.1,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.55
+SV10293,7.8,7.5,7.4,9.0,8.7,7.7,9.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.25
+SV10294,7.4,7.9,7.0,7.9,8.5,8.4,7.1,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.05
+SV10295,6.9,6.8,5.3,7.3,6.7,7.9,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.5
+SV10296,5.5,7.6,5.8,6.3,6.0,6.8,9.5,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,4.3
+SV10297,8.6,7.0,6.9,8.7,9.1,8.5,8.1,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.0
+SV10298,7.7,6.9,8.5,7.3,8.3,8.7,9.0,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.25
+SV10299,8.5,6.4,6.6,5.7,7.2,5.8,5.9,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.15
+SV10300,8.7,8.0,8.8,9.5,8.8,10.0,9.0,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.45
+SV10301,8.0,7.2,7.1,8.2,8.8,9.0,9.5,ESFP,Y tế & Sức khỏe,Y khoa,3.55
+SV10302,7.5,6.0,8.3,6.3,8.7,7.7,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.2
+SV10303,8.4,7.2,9.0,6.8,6.8,6.9,7.3,INTJ,Kinh tế & Quản lý,Quản trị kinh doanh,4.15
+SV10304,7.7,7.3,6.1,8.2,9.2,8.9,8.3,ESFP,Du lịch & Dịch vụ,Du lịch,3.85
+SV10305,8.4,6.1,7.9,7.7,7.6,7.8,7.9,INTJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.9
+SV10306,9.3,7.5,8.6,8.4,8.9,8.3,9.7,ENTJ,Y tế & Sức khỏe,Y khoa,4.5
+SV10307,8.4,6.8,5.2,9.0,8.5,6.5,8.7,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.55
+SV10308,7.3,7.3,9.1,7.6,7.7,8.5,8.2,ENTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,4.1
+SV10309,8.3,7.5,7.2,8.4,7.9,8.5,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.75
+SV10310,4.8,7.0,4.0,5.8,4.7,7.1,8.1,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.75
+SV10311,9.3,8.0,8.8,7.5,10.0,8.3,8.1,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.4
+SV10312,9.6,6.7,8.7,8.8,10.0,9.4,9.6,ENFJ,Sư phạm & Giáo dục,Sư phạm Tin học,4.25
+SV10313,8.9,8.3,8.2,8.5,8.5,7.9,7.8,ENTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,4.25
+SV10314,6.7,7.7,6.8,6.8,6.6,6.9,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.5
+SV10315,7.6,7.2,8.5,8.3,8.1,7.0,8.0,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.85
+SV10316,6.0,6.1,8.4,7.4,8.1,7.0,8.4,ESTP,Truyền thông & Báo chí,Báo chí,4.2
+SV10317,7.5,6.8,7.3,6.2,6.3,7.6,6.8,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.7
+SV10318,7.8,5.2,6.9,6.6,8.3,5.8,5.9,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.0
+SV10319,5.6,8.3,7.3,7.8,6.7,7.5,8.5,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.8
+SV10320,7.9,7.5,6.8,8.9,8.6,8.0,8.0,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.9
+SV10321,6.9,6.7,7.4,7.1,8.2,7.8,5.9,ESFP,Kinh tế & Quản lý,Marketing,4.15
+SV10322,9.0,7.0,8.4,9.6,9.1,9.3,8.5,INTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.45
+SV10323,8.2,7.4,7.4,8.8,7.2,7.8,7.4,ENTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.9
+SV10324,9.5,6.7,8.2,9.7,10.0,8.6,9.4,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.35
+SV10325,9.8,5.7,8.8,9.4,9.5,8.2,8.6,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.25
+SV10326,7.6,7.5,9.3,8.0,8.3,7.2,8.9,INTJ,Y tế & Sức khỏe,Điều dưỡng,4.45
+SV10327,7.8,7.1,7.1,8.8,7.7,8.6,7.3,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.25
+SV10328,8.9,7.4,7.3,8.1,7.2,8.2,8.2,ESFP,Du lịch & Dịch vụ,Du lịch,4.15
+SV10329,8.4,5.1,6.9,8.0,7.8,8.8,7.8,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.15
+SV10330,8.1,6.9,6.9,6.9,9.1,6.5,6.9,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.85
+SV10331,7.2,7.1,6.7,6.3,8.1,8.0,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.4
+SV10332,7.7,6.5,6.2,8.9,6.6,8.0,7.5,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.9
+SV10333,8.4,5.8,8.2,6.9,9.2,7.8,8.4,ESFP,Kinh tế & Quản lý,Kế toán,3.5
+SV10334,8.6,8.0,6.6,8.2,7.3,7.0,7.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.35
+SV10335,7.0,7.2,6.2,6.6,5.9,7.3,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.8
+SV10336,6.4,8.0,6.5,4.6,4.9,6.1,6.2,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.45
+SV10337,8.7,7.7,6.4,7.4,8.8,9.2,8.9,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.7
+SV10338,7.7,7.4,8.0,8.9,8.6,8.9,8.2,INFJ,Sư phạm & Giáo dục,Sư phạm Toán,4.05
+SV10339,9.6,7.4,6.5,9.3,9.5,6.7,8.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.55
+SV10340,5.1,7.1,5.7,6.6,7.3,5.9,6.0,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.45
+SV10341,8.2,8.3,8.5,8.1,9.1,8.1,9.6,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.95
+SV10342,9.2,7.5,8.0,9.0,8.6,8.8,9.0,ENTJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.95
+SV10343,8.1,7.6,8.6,7.1,7.9,9.0,8.1,ENTJ,Kinh tế & Quản lý,Marketing,3.6
+SV10344,9.2,7.1,8.3,9.9,9.3,7.9,8.7,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.6
+SV10345,8.3,7.5,7.3,7.4,9.0,9.0,6.8,ENTJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.95
+SV10346,7.0,7.6,4.3,6.2,7.8,7.7,6.0,ESFP,Kinh tế & Quản lý,Kinh tế,3.15
+SV10347,7.9,6.9,6.7,6.1,8.5,6.9,6.7,ESFP,Kinh tế & Quản lý,Kinh tế,3.15
+SV10348,5.9,7.2,6.8,6.6,7.2,7.3,9.1,ESFP,Luật & Xã hội,Luật,3.5
+SV10349,9.8,8.1,8.7,9.8,9.2,7.8,7.4,ENTP,Y tế & Sức khỏe,Điều dưỡng,3.75
+SV10350,6.8,7.8,5.5,7.2,5.0,8.5,7.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.0
+SV10351,8.9,6.2,7.0,9.3,7.1,7.5,7.4,ENTP,Kinh tế & Quản lý,Fintech,4.6
+SV10352,9.5,9.2,9.4,9.6,9.8,9.4,9.0,INTJ,Kinh tế & Quản lý,Marketing,4.3
+SV10353,5.2,6.6,4.7,5.3,8.8,5.3,6.4,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.75
+SV10354,5.2,7.2,3.6,5.6,5.0,7.0,6.7,ENTP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.85
+SV10355,8.2,6.7,6.2,7.2,8.5,5.8,7.3,ESFP,Kinh tế & Quản lý,Thương mại điện tử,3.35
+SV10356,7.4,6.9,6.3,9.0,8.5,9.2,8.8,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.85
+SV10357,9.5,8.0,8.0,9.5,7.5,8.0,9.4,ENTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,3.7
+SV10358,7.0,7.1,7.8,7.8,7.8,7.6,8.3,ESTJ,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.0
+SV10359,7.8,6.9,7.5,7.8,8.4,7.2,6.9,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.45
+SV10360,4.8,7.1,6.0,4.5,6.3,5.0,8.0,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.1
+SV10361,8.3,8.7,6.4,7.2,8.2,7.7,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.6
+SV10362,7.8,6.6,7.3,5.0,7.0,8.6,6.3,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.8
+SV10363,9.0,8.4,8.2,9.7,9.2,8.2,8.4,ENTJ,Y tế & Sức khỏe,Y khoa,4.05
+SV10364,9.1,7.0,8.2,8.5,8.6,9.5,8.2,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.2
+SV10365,4.4,6.2,4.3,5.8,8.7,5.3,6.7,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.65
+SV10366,7.4,6.7,7.9,7.4,8.5,7.6,9.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.95
+SV10367,8.3,6.6,8.5,7.1,6.6,7.7,8.4,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.85
+SV10368,8.9,8.4,8.2,9.3,8.6,8.6,9.9,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.9
+SV10369,5.9,5.9,6.7,8.1,8.3,8.1,7.0,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.45
+SV10370,8.0,7.5,8.3,8.1,8.4,8.1,9.6,ESTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.85
+SV10371,7.2,8.0,8.2,7.4,8.6,6.2,9.4,ESTP,Kinh tế & Quản lý,Kế toán,4.1
+SV10372,9.6,6.7,8.8,8.1,9.0,8.4,8.8,ISTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.6
+SV10373,8.3,8.3,9.1,9.2,9.8,9.3,9.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.35
+SV10374,9.1,7.9,6.2,9.1,7.8,9.8,8.9,ESFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.95
+SV10375,7.8,8.5,6.2,8.3,7.7,7.4,8.9,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.45
+SV10376,9.4,7.2,8.2,9.5,8.7,8.2,8.2,ENTJ,Y tế & Sức khỏe,Điều dưỡng,4.3
+SV10377,6.3,7.5,8.0,6.9,4.9,6.6,8.8,INTJ,Y tế & Sức khỏe,Dược học,3.95
+SV10378,5.6,6.7,6.3,7.9,5.3,7.8,5.9,ESFP,Kinh tế & Quản lý,Kế toán,4.95
+SV10379,9.0,8.7,9.3,8.1,9.9,8.6,9.4,ISTP,Y tế & Sức khỏe,Điều dưỡng,3.45
+SV10380,6.9,7.1,8.4,6.9,7.9,8.1,8.5,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.45
+SV10381,8.5,8.2,8.7,8.9,9.7,8.6,7.7,ESTP,Y tế & Sức khỏe,Dược học,3.55
+SV10382,9.7,7.5,8.3,7.6,9.3,8.5,8.1,ENTJ,Kinh tế & Quản lý,Marketing,2.8
+SV10383,5.5,6.5,5.3,5.0,5.1,6.0,8.0,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.6
+SV10384,9.4,8.3,7.7,9.7,9.0,9.0,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.45
+SV10385,7.9,7.3,8.0,8.5,8.2,8.3,9.6,ESTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.95
+SV10386,8.2,6.5,7.8,7.4,8.2,7.9,8.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.0
+SV10387,9.5,7.0,8.8,8.9,10.0,8.8,8.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.8
+SV10388,8.9,9.3,8.0,9.2,9.4,9.2,8.7,ENFJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.35
+SV10389,7.9,6.3,7.8,7.6,7.1,7.1,7.2,ESTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.55
+SV10390,8.5,7.7,8.2,9.6,9.5,9.2,8.6,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.4
+SV10391,9.3,6.7,7.6,9.8,8.6,7.6,8.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.1
+SV10392,6.8,7.0,8.0,8.1,7.5,8.8,7.9,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.2
+SV10393,6.4,6.3,8.3,5.7,7.8,6.8,7.7,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.75
+SV10394,8.7,5.2,6.8,7.4,8.5,7.5,8.2,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.45
+SV10395,7.5,7.0,8.6,8.2,7.9,7.6,8.0,ESTP,Kinh tế & Quản lý,Fintech,3.6
+SV10396,8.8,8.0,8.4,8.9,9.3,8.4,8.6,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.0
+SV10397,8.7,8.7,8.0,9.1,8.7,8.6,9.3,ENTJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.55
+SV10398,7.5,8.5,6.4,8.8,8.8,8.7,8.3,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.8
+SV10399,9.7,8.0,9.8,9.6,9.4,8.7,9.0,ESFP,Kinh tế & Quản lý,Thương mại điện tử,4.45
+SV10400,6.0,7.8,7.2,6.7,6.8,8.2,7.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.05
+SV10401,7.5,7.9,6.5,5.9,9.2,8.2,8.4,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.55
+SV10402,7.5,7.2,5.7,8.2,7.1,7.3,8.6,ESTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.85
+SV10403,5.1,6.7,5.5,5.4,7.4,5.4,7.1,ESFP,Y tế & Sức khỏe,Dược học,3.85
+SV10404,10.0,7.8,9.4,9.6,8.5,8.7,9.3,ESFP,Kinh tế & Quản lý,Thương mại điện tử,3.6
+SV10405,8.4,7.9,7.9,9.5,9.3,8.9,8.7,ENFJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.15
+SV10406,10.0,7.4,9.2,9.1,8.9,7.5,9.1,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.3
+SV10407,8.4,7.8,7.1,7.2,8.4,8.8,8.5,INFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.8
+SV10408,8.8,9.1,9.4,8.7,10.0,8.9,9.2,ESTP,Kinh tế & Quản lý,Thương mại điện tử,3.9
+SV10409,9.8,9.3,7.8,9.7,10.0,10.0,8.1,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.1
+SV10410,6.6,6.8,7.7,9.1,8.1,8.0,8.2,ENTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.2
+SV10411,9.3,6.6,8.5,9.0,8.6,8.5,8.8,ENTJ,Luật & Xã hội,Luật,3.3
+SV10412,7.0,7.3,5.8,7.1,6.1,6.8,9.4,ESTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.1
+SV10413,8.8,6.5,7.7,9.6,9.0,8.5,8.2,ESFP,Kinh tế & Quản lý,Fintech,4.5
+SV10414,9.1,6.6,8.8,8.9,9.6,9.0,7.8,ISTP,Kinh tế & Quản lý,Kế toán,4.0
+SV10415,8.1,5.5,7.7,6.8,8.4,7.0,6.4,ESFP,Y tế & Sức khỏe,Y khoa,3.5
+SV10416,8.3,8.6,6.1,8.0,9.2,8.8,8.3,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.65
+SV10417,7.7,6.8,7.9,7.0,6.3,7.9,6.8,INTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.9
+SV10418,8.7,7.6,6.9,7.1,8.4,7.6,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.45
+SV10419,10.0,7.2,9.6,10.0,10.0,8.1,8.9,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.9
+SV10420,7.0,7.4,8.0,6.5,6.0,5.6,6.5,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.9
+SV10421,8.0,7.5,6.4,6.9,9.2,7.5,6.7,ESFP,Kinh tế & Quản lý,Marketing,4.75
+SV10422,8.5,5.8,7.1,7.8,7.1,6.7,7.1,ESFP,Kinh tế & Quản lý,Fintech,3.75
+SV10423,8.8,7.6,8.9,8.3,8.1,9.6,7.2,ISTJ,Y tế & Sức khỏe,Điều dưỡng,4.35
+SV10424,7.7,5.2,6.5,7.4,9.1,7.3,8.7,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.15
+SV10425,8.9,8.5,7.0,6.6,8.5,8.2,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.55
+SV10426,9.1,7.3,9.9,8.4,9.4,9.0,8.4,ISTP,Kinh tế & Quản lý,Quan hệ quốc tế,3.35
+SV10427,9.7,8.4,7.2,8.3,8.3,8.5,9.1,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.2
+SV10428,9.3,8.3,7.3,9.8,8.7,9.3,8.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.4
+SV10429,10.0,7.7,7.7,9.4,8.9,7.9,8.8,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,2.95
+SV10430,7.9,7.3,7.4,6.8,8.1,7.6,9.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.25
+SV10431,7.7,5.4,4.4,7.2,6.9,7.3,6.2,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,2.85
+SV10432,7.8,8.0,9.6,5.7,6.8,7.5,8.9,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.7
+SV10433,6.8,7.1,4.2,7.5,6.4,7.4,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.2
+SV10434,7.7,5.4,6.1,8.2,5.8,5.8,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.6
+SV10435,7.3,7.9,8.5,7.7,8.3,8.3,7.5,INFJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.9
+SV10436,8.5,7.2,7.9,8.8,7.9,8.7,9.5,ENTP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.65
+SV10437,8.6,9.0,7.8,8.7,8.4,7.8,8.3,ESFJ,Kinh tế & Quản lý,Quản trị kinh doanh,3.15
+SV10438,7.8,6.3,7.4,5.9,6.6,7.2,6.9,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.0
+SV10439,8.8,8.7,8.0,10.0,7.9,8.0,8.4,ENTJ,Sư phạm & Giáo dục,Sư phạm Toán,3.8
+SV10440,7.9,7.4,8.5,7.5,8.5,8.8,9.6,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.05
+SV10441,9.1,8.0,9.0,9.0,9.9,9.2,8.1,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.85
+SV10442,8.9,7.8,8.8,10.0,9.8,7.8,7.7,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,2.8
+SV10443,9.4,7.3,8.3,8.1,8.6,8.4,8.6,ENTJ,Du lịch & Dịch vụ,Du lịch,3.8
+SV10444,9.3,6.2,6.9,8.4,9.3,8.9,8.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.2
+SV10445,7.6,6.1,6.1,7.1,7.7,7.9,6.4,ESFP,Y tế & Sức khỏe,Dược học,4.2
+SV10446,7.5,7.6,7.5,7.0,8.2,8.1,8.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.05
+SV10447,8.3,8.9,9.4,9.1,8.3,9.5,8.9,ENTJ,Kinh tế & Quản lý,Fintech,3.4
+SV10448,8.8,8.6,7.2,9.3,8.4,9.1,9.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.6
+SV10449,7.5,7.7,7.2,8.4,7.6,8.7,7.5,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.3
+SV10450,7.8,7.5,6.5,7.9,7.8,8.1,7.2,ESFP,Kinh tế & Quản lý,Marketing,3.8
+SV10451,6.9,7.2,5.9,6.4,6.7,5.8,7.8,ENTP,Y tế & Sức khỏe,Dược học,4.35
+SV10452,7.4,8.8,7.2,7.6,7.5,7.4,8.6,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.35
+SV10453,7.2,7.8,7.9,7.5,9.3,6.1,8.7,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.1
+SV10454,8.0,8.1,9.5,7.5,8.4,8.3,9.5,ENTJ,Y tế & Sức khỏe,Dược học,3.6
+SV10455,8.1,7.8,7.5,9.0,8.4,8.8,8.5,ENFJ,Kinh tế & Quản lý,Fintech,3.45
+SV10456,7.5,6.3,7.0,6.5,5.9,7.3,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.8
+SV10457,9.3,8.4,7.9,9.8,8.4,9.2,8.9,ENTJ,Kinh tế & Quản lý,Marketing,3.35
+SV10458,7.0,5.6,8.2,7.4,7.9,7.9,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.55
+SV10459,6.3,7.4,6.5,4.9,5.2,5.9,7.7,ENTP,Luật & Xã hội,Luật,3.25
+SV10460,9.1,7.3,7.0,10.0,8.3,9.2,8.5,ESFJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.85
+SV10461,9.0,8.7,7.0,9.7,9.2,9.7,8.4,ENFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.85
+SV10462,8.8,8.1,9.4,9.0,9.2,9.2,9.0,ENTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.5
+SV10463,9.1,8.1,8.3,7.2,9.5,8.1,9.2,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.95
+SV10464,8.0,6.7,8.6,6.6,7.3,8.1,6.7,ESFP,Kinh tế & Quản lý,Kế toán,3.8
+SV10465,8.5,8.1,9.1,6.5,7.4,7.8,8.6,INTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.75
+SV10466,9.9,8.5,7.6,8.1,7.9,8.4,9.1,ENTJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.15
+SV10467,7.7,7.6,8.2,8.2,8.0,7.7,8.3,ESFP,Kinh tế & Quản lý,Kinh tế số,4.25
+SV10468,8.7,6.8,9.0,8.5,8.3,8.6,8.1,ESTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.6
+SV10469,8.8,6.4,7.0,6.8,6.5,6.1,6.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.55
+SV10470,9.6,7.1,8.7,8.7,8.3,8.6,8.2,ISTP,Sư phạm & Giáo dục,Sư phạm Tin học,3.7
+SV10471,8.7,8.3,9.3,9.0,9.4,9.4,9.5,ENTP,Kinh tế & Quản lý,Marketing,2.7
+SV10472,6.4,6.5,5.4,8.0,7.9,8.0,9.0,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.1
+SV10473,8.1,8.2,7.0,9.2,9.5,9.4,8.2,ESTJ,Du lịch & Dịch vụ,Quản trị khách sạn,4.55
+SV10474,4.8,6.3,6.9,6.9,7.4,7.1,6.0,ESFP,Du lịch & Dịch vụ,Du lịch,4.65
+SV10475,8.5,8.0,8.6,7.4,7.9,8.2,8.3,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.75
+SV10476,9.2,8.2,7.6,9.3,9.9,9.2,8.6,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.15
+SV10477,7.8,7.5,7.2,8.7,7.8,9.0,9.0,INFJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.0
+SV10478,9.5,8.0,8.6,9.1,9.0,8.4,8.5,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,5.0
+SV10479,7.1,7.0,7.4,7.6,7.7,7.2,9.1,ESFP,Luật & Xã hội,Luật,4.4
+SV10480,8.6,7.0,8.5,8.2,7.5,7.2,9.2,ESFP,Kinh tế & Quản lý,Fintech,3.8
+SV10481,9.7,6.9,8.9,8.9,9.0,7.7,8.7,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.35
+SV10482,8.7,7.1,8.2,8.3,7.1,7.8,8.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.05
+SV10483,7.5,7.3,7.1,7.9,8.1,7.7,7.2,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.95
+SV10484,8.4,7.2,7.3,8.2,8.1,8.9,7.5,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.45
+SV10485,8.4,6.1,8.1,8.4,8.4,7.0,8.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.15
+SV10486,7.2,6.5,8.4,7.1,6.7,7.1,8.0,INTJ,Du lịch & Dịch vụ,Du lịch,3.55
+SV10487,8.3,6.6,7.2,7.1,8.8,6.8,6.9,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.3
+SV10488,8.9,7.0,6.0,6.5,8.7,7.2,7.1,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.7
+SV10489,7.5,7.7,7.5,7.0,7.3,7.3,8.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.3
+SV10490,8.7,7.5,9.0,8.8,9.1,9.0,9.1,ESTP,Du lịch & Dịch vụ,Quản trị khách sạn,3.85
+SV10491,9.4,7.0,7.4,8.3,9.5,8.8,8.5,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.6
+SV10492,8.1,5.3,6.7,6.6,9.1,7.9,6.8,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.9
+SV10493,6.2,7.8,7.8,7.9,8.7,7.8,8.7,ESTP,Du lịch & Dịch vụ,Du lịch,3.4
+SV10494,9.4,7.8,9.5,10.0,8.7,9.6,8.8,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.6
+SV10495,6.5,5.9,5.7,5.0,4.6,5.5,6.3,ENTP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.1
+SV10496,7.8,6.5,8.4,8.0,8.0,8.3,9.3,ESTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.35
+SV10497,8.3,8.2,8.0,7.1,8.5,6.4,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.75
+SV10498,9.9,7.4,8.8,8.8,9.4,9.7,9.3,INTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.4
+SV10499,9.0,6.9,7.4,8.1,9.4,6.7,7.9,ENTJ,Y tế & Sức khỏe,Điều dưỡng,3.15
+SV10500,7.0,5.4,6.2,7.2,6.3,8.5,6.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.3
+SV10501,6.8,6.3,6.2,4.2,5.6,6.4,6.3,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.8
+SV10502,6.9,7.0,7.3,6.9,6.9,8.0,7.4,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.15
+SV10503,6.5,6.0,5.8,6.7,6.9,7.1,9.1,ESFP,Kinh tế & Quản lý,Kinh tế,4.15
+SV10504,7.2,6.6,6.8,7.3,7.6,8.2,7.2,ESFP,Kinh tế & Quản lý,Marketing,3.5
+SV10505,8.7,8.4,7.2,7.8,8.6,9.2,9.4,ENTJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.6
+SV10506,5.9,6.1,7.8,6.7,7.0,6.3,6.8,ESFP,Kinh tế & Quản lý,Kế toán,3.55
+SV10507,7.7,6.4,5.0,5.7,6.5,7.1,6.7,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.4
+SV10508,9.7,8.9,7.1,9.1,9.3,8.3,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.85
+SV10509,8.5,6.9,8.1,6.6,8.1,8.0,7.7,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.45
+SV10510,7.7,7.1,7.2,8.5,9.3,8.2,7.3,INFP,Truyền thông & Báo chí,Báo chí,4.0
+SV10511,7.5,8.0,9.0,8.6,7.6,8.1,8.2,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.8
+SV10512,9.3,6.7,8.9,8.8,9.3,10.0,9.2,ENTP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.75
+SV10513,8.9,6.9,8.6,8.6,8.6,8.7,9.0,ENTJ,Kinh tế & Quản lý,Kinh tế,3.4
+SV10514,7.2,5.3,4.1,3.8,4.1,7.2,4.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.55
+SV10515,7.6,6.7,7.3,7.8,8.3,7.9,7.5,ESFP,Truyền thông & Báo chí,Báo chí,4.25
+SV10516,6.3,6.3,6.5,6.0,4.6,4.4,5.7,ENTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.1
+SV10517,8.0,7.4,6.6,7.5,7.7,5.0,6.5,ESFP,Kinh tế & Quản lý,Kinh tế,3.35
+SV10518,6.5,6.0,6.1,6.5,5.9,8.6,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.9
+SV10519,7.5,6.9,9.1,7.1,8.4,6.7,7.7,ESTP,Kinh tế & Quản lý,Kế toán,4.25
+SV10520,9.0,8.9,9.3,8.6,9.2,10.0,9.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.0
+SV10521,9.1,7.2,7.8,6.9,8.7,7.7,8.1,ESFP,Kinh tế & Quản lý,Kinh tế,4.1
+SV10522,7.2,7.5,8.1,7.7,8.5,7.1,9.0,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.5
+SV10523,7.5,6.1,6.5,5.6,5.2,8.7,7.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.15
+SV10524,9.6,7.6,8.6,9.8,9.3,8.6,7.9,INTJ,Kinh tế & Quản lý,Fintech,3.45
+SV10525,10.0,8.2,10.0,8.8,9.9,9.9,9.0,ENFJ,Y tế & Sức khỏe,Điều dưỡng,2.95
+SV10526,7.7,8.7,8.3,7.7,9.2,8.4,9.0,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.05
+SV10527,6.5,6.1,4.9,5.5,4.8,8.3,6.7,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.85
+SV10528,5.7,7.3,4.9,5.8,4.0,6.4,5.4,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.0
+SV10529,6.6,6.5,7.0,6.6,7.5,5.7,7.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.4
+SV10530,8.4,5.8,8.8,7.0,8.4,7.4,8.7,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.15
+SV10531,6.8,8.0,8.5,8.6,8.2,7.3,6.7,ESTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.0
+SV10532,7.4,7.4,7.2,8.8,7.8,7.8,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.8
+SV10533,7.8,6.1,7.1,6.4,7.2,5.9,7.0,ESFP,Y tế & Sức khỏe,Y khoa,3.25
+SV10534,9.2,7.8,7.9,9.0,8.8,8.6,9.0,ENTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.5
+SV10535,8.6,7.1,9.2,9.4,7.8,8.9,8.1,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.85
+SV10536,7.6,7.7,5.1,9.3,7.7,8.5,8.4,INFJ,Y tế & Sức khỏe,Dược học,3.4
+SV10537,8.8,8.2,7.2,6.9,8.3,7.7,7.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.65
+SV10538,9.2,6.8,7.2,9.4,8.4,8.2,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.35
+SV10539,8.0,6.6,5.8,9.1,7.3,8.1,8.6,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.55
+SV10540,8.2,6.3,6.7,7.3,9.8,8.7,6.2,ESFP,Kinh tế & Quản lý,Marketing,4.25
+SV10541,6.4,6.6,5.6,6.4,5.3,8.4,7.5,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.3
+SV10542,7.6,5.6,3.6,4.5,4.7,6.2,4.8,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.1
+SV10543,8.0,4.7,6.0,6.7,8.3,6.5,4.6,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,4.55
+SV10544,5.8,6.9,5.7,8.2,7.8,7.7,9.5,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,2.6
+SV10545,7.9,7.8,7.4,8.5,8.0,7.9,7.6,ESFP,Kinh tế & Quản lý,Kế toán,3.45
+SV10546,6.8,7.4,7.6,7.0,8.4,7.5,7.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.15
+SV10547,7.3,6.4,6.5,9.0,7.6,9.7,9.1,INFJ,Kinh tế & Quản lý,Fintech,3.75
+SV10548,6.9,7.6,7.1,4.6,5.5,7.0,6.0,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.05
+SV10549,7.3,6.1,6.8,7.5,7.7,6.5,7.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.55
+SV10550,7.9,5.1,6.7,8.8,5.6,5.8,7.2,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.9
+SV10551,7.9,7.6,8.2,7.5,6.3,8.4,9.1,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.75
+SV10552,9.3,7.8,9.2,9.9,9.6,9.0,9.3,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.45
+SV10553,6.4,7.2,6.3,7.9,6.7,8.5,7.6,ESFP,Kinh tế & Quản lý,Marketing,4.0
+SV10554,7.8,8.2,8.2,7.2,10.0,9.2,8.9,ISTJ,Kinh tế & Quản lý,Kế toán,4.0
+SV10555,8.5,8.0,7.5,7.7,8.3,7.1,7.7,ESFP,Kinh tế & Quản lý,Fintech,3.65
+SV10556,8.3,7.4,6.7,10.0,8.5,8.2,7.8,ENTJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.6
+SV10557,8.3,8.3,6.9,9.0,9.3,9.4,8.8,ENTJ,Kinh tế & Quản lý,Fintech,3.65
+SV10558,7.6,6.7,6.1,5.7,8.4,6.4,7.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.05
+SV10559,7.4,7.3,8.2,6.4,8.8,6.6,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.65
+SV10560,7.6,7.4,8.6,7.8,7.5,8.0,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.0
+SV10561,9.0,6.5,8.4,7.0,9.0,7.7,8.0,ENTJ,Y tế & Sức khỏe,Y khoa,4.9
+SV10562,9.0,8.6,7.5,9.8,9.5,9.9,7.5,ENFJ,Truyền thông & Báo chí,Báo chí,4.3
+SV10563,7.9,6.1,6.2,8.0,8.0,8.2,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.7
+SV10564,8.1,7.7,8.5,8.1,9.0,8.8,9.2,ESTP,Kinh tế & Quản lý,Quản trị kinh doanh,4.45
+SV10565,8.0,5.7,5.9,6.6,8.1,6.2,5.9,ESFP,Y tế & Sức khỏe,Y khoa,3.65
+SV10566,7.8,5.7,6.7,6.5,9.3,8.3,7.4,ESFP,Kinh tế & Quản lý,Thương mại điện tử,2.85
+SV10567,8.2,7.3,6.2,9.2,7.8,9.0,8.1,ESFP,Kinh tế & Quản lý,Kế toán,3.35
+SV10568,10.0,8.4,8.4,9.3,9.7,8.4,8.6,ENFJ,Y tế & Sức khỏe,Kỹ thuật y sinh,2.9
+SV10569,9.2,6.7,9.1,8.9,8.5,8.6,8.1,ESTP,Kinh tế & Quản lý,Kế toán,3.65
+SV10570,9.3,7.1,7.8,9.5,8.9,9.5,9.4,ESFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.85
+SV10571,8.8,7.9,8.2,9.6,9.0,8.5,8.5,ENTJ,Kinh tế & Quản lý,Kinh tế số,4.7
+SV10572,8.3,5.2,5.9,8.1,6.5,6.6,7.8,ESTP,Du lịch & Dịch vụ,Quản trị khách sạn,4.0
+SV10573,10.0,8.4,9.8,8.2,10.0,8.9,9.5,ENFJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.75
+SV10574,7.5,7.1,8.9,8.5,8.7,9.0,8.6,ISTP,Kinh tế & Quản lý,Quản trị kinh doanh,4.25
+SV10575,6.9,6.3,5.5,6.9,5.7,7.1,7.9,ESTP,Nghệ thuật & Thiết kế,Kiến trúc,2.75
+SV10576,5.7,5.5,6.0,5.0,4.5,5.5,8.3,ENTP,Du lịch & Dịch vụ,Du lịch,3.95
+SV10577,7.0,6.7,6.3,7.2,8.5,7.8,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.25
+SV10578,7.2,7.5,8.0,7.0,8.8,7.5,8.5,ESFP,Kinh tế & Quản lý,Marketing,3.1
+SV10579,10.0,7.8,9.9,9.6,10.0,7.9,9.1,ENTP,Y tế & Sức khỏe,Điều dưỡng,4.4
+SV10580,7.6,8.0,9.1,7.1,8.4,9.5,8.4,ISTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.0
+SV10581,7.8,8.0,6.4,6.5,8.9,7.8,9.0,ESFP,Kinh tế & Quản lý,Kinh tế số,3.65
+SV10582,6.9,5.5,6.0,5.8,4.7,5.9,4.7,ENTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.15
+SV10583,7.8,8.4,8.1,8.7,7.7,7.9,7.7,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,5.0
+SV10584,6.7,8.1,8.3,6.9,9.2,7.6,8.7,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.95
+SV10585,5.0,6.8,3.9,5.9,8.6,5.3,6.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.95
+SV10586,8.5,9.2,6.4,8.5,8.7,9.3,8.7,ENTJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.6
+SV10587,5.9,6.6,6.7,7.1,5.9,7.6,7.2,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.45
+SV10588,10.0,8.4,9.2,9.0,10.0,8.8,9.3,ENTP,Kinh tế & Quản lý,Thương mại điện tử,4.25
+SV10589,7.7,6.4,7.8,7.9,7.7,7.1,7.6,ESFP,Y tế & Sức khỏe,Y khoa,3.4
+SV10590,9.2,7.6,6.9,8.5,8.3,8.1,7.9,ENTJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.9
+SV10591,5.6,7.2,4.2,7.2,5.4,6.8,4.8,ESTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.6
+SV10592,10.0,7.9,10.0,9.5,9.9,8.7,8.4,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.1
+SV10593,9.0,8.4,7.2,7.7,8.3,9.1,9.1,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.0
+SV10594,7.7,8.4,6.5,8.1,7.3,7.8,10.0,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.35
+SV10595,7.8,7.2,8.8,7.4,8.9,7.4,8.1,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.6
+SV10596,6.9,6.1,7.0,6.4,6.4,6.8,6.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.7
+SV10597,7.0,7.2,8.2,8.8,7.3,8.2,7.7,ENTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.35
+SV10598,7.3,7.2,7.5,6.9,6.8,8.5,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.65
+SV10599,7.8,8.0,6.0,8.3,8.7,9.4,8.4,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.05
+SV10600,6.9,6.9,8.8,7.8,7.7,7.5,7.9,ESTP,Kinh tế & Quản lý,Thương mại điện tử,4.25
+SV10601,8.2,8.0,7.1,8.7,8.7,8.8,8.7,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.4
+SV10602,6.6,6.2,3.2,5.8,7.9,6.0,6.0,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.3
+SV10603,7.5,6.4,4.0,6.2,4.8,6.6,7.1,ENTP,Sư phạm & Giáo dục,Sư phạm Toán,4.55
+SV10604,6.3,7.9,8.4,6.8,10.0,8.9,8.8,ISTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,4.05
+SV10605,6.2,8.6,5.9,7.0,7.6,8.6,6.3,ESFP,Truyền thông & Báo chí,Báo chí,4.8
+SV10606,7.6,6.2,5.3,7.6,7.5,7.4,7.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.45
+SV10607,7.0,7.1,8.2,6.5,8.2,8.2,8.5,ESFP,Luật & Xã hội,Luật,3.25
+SV10608,6.3,6.9,5.3,7.2,8.0,9.3,7.9,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,2.95
+SV10609,7.7,6.5,7.8,6.9,8.3,6.4,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.6
+SV10610,7.7,4.9,5.9,6.5,8.1,6.9,5.1,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.2
+SV10611,9.2,8.6,7.9,8.9,8.6,9.4,8.3,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.8
+SV10612,9.8,7.5,7.1,8.9,9.7,7.6,8.2,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.0
+SV10613,9.2,8.2,9.0,9.0,7.6,8.0,8.2,ENTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.3
+SV10614,8.4,6.1,8.5,7.9,7.4,6.7,8.7,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,5.0
+SV10615,9.4,7.3,9.1,8.1,7.6,8.7,7.7,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.9
+SV10616,7.7,8.0,8.4,7.8,9.3,9.3,7.9,ISTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.9
+SV10617,7.5,8.5,8.3,8.4,9.3,9.1,8.4,ISTP,Y tế & Sức khỏe,Y khoa,4.2
+SV10618,10.0,6.4,9.7,9.4,8.2,8.4,8.5,ENTP,Kinh tế & Quản lý,Marketing,4.1
+SV10619,8.3,8.1,7.1,8.5,7.3,7.6,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.95
+SV10620,9.3,7.4,7.8,9.4,9.2,8.7,8.6,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.45
+SV10621,6.8,6.7,5.0,5.8,9.4,5.6,9.4,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.1
+SV10622,8.5,8.2,8.2,8.0,8.7,8.4,8.9,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.8
+SV10623,8.0,7.7,6.1,8.2,7.9,9.2,8.6,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.5
+SV10624,7.7,5.9,7.6,7.1,9.5,7.1,6.3,INFP,Kinh tế & Quản lý,Thương mại điện tử,4.65
+SV10625,8.2,7.5,6.7,8.6,8.6,9.3,9.1,ISTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.6
+SV10626,8.3,7.3,6.7,6.7,7.9,8.3,7.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.35
+SV10627,8.2,7.1,7.0,8.0,6.4,7.4,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.8
+SV10628,7.0,6.6,6.2,5.8,5.6,6.8,6.8,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.9
+SV10629,5.8,6.9,7.4,5.4,5.6,6.1,6.3,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.4
+SV10630,8.8,6.9,8.7,7.3,7.1,8.1,8.8,INTJ,Du lịch & Dịch vụ,Du lịch,3.0
+SV10631,8.9,8.2,7.8,9.5,9.1,7.7,8.5,ENTJ,Kinh tế & Quản lý,Fintech,4.6
+SV10632,7.7,7.1,8.4,8.1,8.9,9.0,9.5,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.75
+SV10633,9.0,7.8,9.3,9.1,9.8,9.4,8.6,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.65
+SV10634,9.7,8.6,8.5,9.2,9.3,9.3,9.0,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.35
+SV10635,6.0,7.0,7.9,7.1,6.0,7.0,6.5,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.0
+SV10636,7.1,7.5,7.0,6.8,8.3,7.7,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.25
+SV10637,7.6,6.7,7.4,7.4,8.1,7.6,7.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV10638,7.2,7.1,8.1,7.5,8.2,7.4,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.2
+SV10639,8.6,7.8,9.0,9.4,9.1,9.6,9.0,ENTJ,Truyền thông & Báo chí,Báo chí,3.2
+SV10640,9.7,8.3,8.2,7.9,8.6,7.2,9.1,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.7
+SV10641,7.6,7.1,5.9,7.3,7.5,6.8,5.7,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.7
+SV10642,8.3,7.3,6.0,7.4,8.3,7.4,7.7,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.7
+SV10643,8.1,5.4,6.8,7.3,8.2,6.2,9.1,ESFP,Kinh tế & Quản lý,Marketing,3.1
+SV10644,7.3,8.8,5.5,7.2,6.1,8.1,6.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.75
+SV10645,10.0,8.7,7.6,8.4,9.5,9.4,8.5,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,3.7
+SV10646,7.7,8.0,6.6,6.9,7.9,7.3,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,2.5
+SV10647,7.3,6.7,5.9,6.1,6.2,6.4,8.0,ENTP,Sư phạm & Giáo dục,Sư phạm Tin học,3.8
+SV10648,7.6,6.9,6.4,6.9,8.6,9.1,7.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.75
+SV10649,9.5,8.4,8.8,10.0,9.9,9.2,9.2,ENFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.2
+SV10650,8.0,7.2,7.7,7.5,8.9,7.1,8.2,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.75
+SV10651,8.3,7.7,6.3,7.0,7.7,8.5,8.4,ESFP,Luật & Xã hội,Luật,4.4
+SV10652,5.7,6.9,8.0,7.3,5.6,5.9,6.0,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.7
+SV10653,9.2,7.6,8.6,9.2,8.9,6.9,8.0,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.3
+SV10654,7.5,6.9,7.3,7.3,8.3,6.3,7.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,5.0
+SV10655,9.6,7.1,7.5,9.7,8.7,8.8,9.0,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.9
+SV10656,6.6,7.2,8.2,6.9,8.4,7.3,9.6,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.85
+SV10657,9.4,7.3,7.6,7.9,9.9,9.2,7.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.85
+SV10658,6.9,6.8,8.6,7.6,8.0,8.2,7.4,ESTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.95
+SV10659,9.2,7.4,8.2,8.2,10.0,8.7,8.2,ENTJ,Kinh tế & Quản lý,Kinh tế số,3.8
+SV10660,8.4,6.9,8.4,9.2,9.5,7.5,7.8,ENTJ,Nghệ thuật & Thiết kế,Kiến trúc,3.55
+SV10661,9.3,7.2,8.3,7.2,9.1,8.3,8.7,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.6
+SV10662,6.3,6.4,6.9,5.8,5.5,6.3,6.5,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.85
+SV10663,7.2,6.9,5.0,5.7,6.5,8.5,7.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.6
+SV10664,7.1,6.9,7.7,8.5,8.0,7.1,6.9,ESFP,Luật & Xã hội,Luật,3.5
+SV10665,7.5,6.8,6.5,6.3,6.8,7.0,6.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.9
+SV10666,8.1,7.5,8.2,8.1,7.6,6.7,8.0,ESTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.7
+SV10667,8.6,7.1,5.9,8.5,8.4,8.0,8.2,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.6
+SV10668,8.0,8.8,6.4,7.4,7.6,8.2,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,2.5
+SV10669,9.0,8.3,7.4,9.4,8.8,8.6,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.4
+SV10670,7.3,7.1,6.5,5.7,6.5,7.8,7.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.45
+SV10671,7.6,8.4,7.5,7.0,7.4,7.4,9.4,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,2.8
+SV10672,8.9,7.9,8.8,9.2,9.9,8.9,9.2,INTJ,Y tế & Sức khỏe,Điều dưỡng,3.7
+SV10673,9.8,7.7,7.4,9.0,9.4,7.2,7.1,ENTJ,Sư phạm & Giáo dục,Sư phạm Tin học,3.65
+SV10674,8.2,7.8,6.7,8.1,8.7,8.2,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.15
+SV10675,6.2,6.6,6.8,6.7,6.2,6.5,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.45
+SV10676,8.1,8.0,6.6,8.4,8.8,9.3,8.4,ISTP,Kinh tế & Quản lý,Fintech,3.3
+SV10677,7.6,6.6,6.0,8.9,8.0,9.4,9.3,INFJ,Y tế & Sức khỏe,Kỹ thuật y sinh,4.75
+SV10678,8.4,7.3,9.2,7.5,8.7,7.2,8.9,ESTP,Y tế & Sức khỏe,Y khoa,4.3
+SV10679,5.5,6.7,7.1,7.9,7.3,7.4,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.5
+SV10680,8.7,7.0,8.7,8.4,8.4,7.8,8.2,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.2
+SV10681,8.4,7.6,9.6,8.9,8.5,9.4,8.9,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.3
+SV10682,7.1,7.1,5.5,7.1,6.0,8.3,7.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.6
+SV10683,8.1,6.3,6.8,6.4,6.9,6.2,5.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.1
+SV10684,8.3,7.1,6.1,8.8,7.9,9.6,9.4,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.25
+SV10685,7.7,7.2,8.5,6.7,8.5,7.3,7.9,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.2
+SV10686,6.0,6.2,5.8,4.8,5.1,4.5,8.5,ENTP,Y tế & Sức khỏe,Y khoa,3.75
+SV10687,8.3,7.5,8.5,6.8,9.5,7.6,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.65
+SV10688,6.5,7.6,6.6,5.3,6.4,6.5,6.4,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.2
+SV10689,7.0,7.7,7.1,6.1,8.1,7.8,8.2,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.05
+SV10690,8.7,8.7,7.2,8.3,8.3,9.1,9.1,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.65
+SV10691,6.5,7.5,7.5,6.6,6.6,7.0,7.0,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.45
+SV10692,9.4,7.4,8.4,8.9,8.3,8.6,8.7,ENTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.3
+SV10693,7.6,7.5,6.3,9.5,7.3,8.4,8.3,ESFP,Du lịch & Dịch vụ,Du lịch,4.15
+SV10694,7.8,7.2,6.8,8.0,8.3,8.0,9.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.15
+SV10695,9.0,6.4,7.2,8.4,8.4,8.2,8.1,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.7
+SV10696,6.1,4.1,3.5,4.2,3.9,7.6,5.0,ENTP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.0
+SV10697,9.0,8.7,8.1,8.9,8.3,9.1,8.7,ENTP,Nghệ thuật & Thiết kế,Âm nhạc học,3.2
+SV10698,7.1,7.4,8.8,8.1,8.2,8.9,7.9,INFJ,Kinh tế & Quản lý,Fintech,4.3
+SV10699,9.1,7.7,9.2,8.0,8.7,8.2,9.0,INFJ,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.75
+SV10700,5.5,6.8,6.0,8.4,8.5,8.4,7.3,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.6
+SV10701,9.5,7.8,8.1,8.4,9.2,8.7,9.1,ENTJ,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.35
+SV10702,6.2,6.1,5.5,6.3,4.5,6.6,6.1,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.5
+SV10703,8.2,7.7,8.4,8.0,9.2,7.8,10.0,ENTJ,Truyền thông & Báo chí,Báo chí,3.15
+SV10704,8.8,7.0,7.9,8.2,9.3,8.2,8.8,ESFJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.05
+SV10705,8.6,7.4,5.9,7.3,8.8,6.9,6.1,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.15
+SV10706,9.3,7.7,8.4,9.1,9.2,9.4,8.3,ESTP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.2
+SV10707,9.4,7.7,7.3,8.6,8.4,8.0,8.0,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.75
+SV10708,8.7,8.3,7.6,8.8,8.4,9.3,9.0,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,2.8
+SV10709,5.9,5.9,5.2,6.8,7.2,6.1,7.5,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.7
+SV10710,8.5,7.3,8.1,9.1,8.6,8.3,10.0,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.95
+SV10711,5.7,8.0,8.5,7.0,8.7,8.1,9.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.8
+SV10712,7.0,5.8,8.3,6.6,5.9,5.3,7.6,INTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.6
+SV10713,8.6,8.7,6.8,9.2,9.0,9.4,8.8,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.05
+SV10714,7.9,7.6,7.9,6.7,9.8,6.6,7.9,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.85
+SV10715,9.1,8.3,7.4,9.3,8.5,8.8,8.3,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.4
+SV10716,7.6,6.1,4.2,5.4,5.2,7.9,7.2,ENTP,Sư phạm & Giáo dục,Sư phạm Tin học,3.9
+SV10717,9.1,7.8,9.0,8.4,8.9,8.9,9.1,ESFP,Truyền thông & Báo chí,Báo chí,3.95
+SV10718,8.0,7.0,7.7,7.9,8.5,7.8,7.8,ESFP,Kinh tế & Quản lý,Kế toán,3.65
+SV10719,7.3,8.1,8.5,8.8,8.1,7.7,6.8,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.8
+SV10720,9.4,7.7,8.6,10.0,10.0,8.8,8.7,INTJ,Truyền thông & Báo chí,Báo chí,4.0
+SV10721,6.1,5.9,8.4,6.3,6.7,6.2,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.0
+SV10722,7.2,6.9,4.8,6.8,6.5,8.0,7.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.2
+SV10723,7.4,5.4,5.9,5.1,7.2,8.4,7.0,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.2
+SV10724,7.8,7.6,7.7,7.2,8.0,7.2,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.95
+SV10725,6.2,6.2,5.5,5.0,4.3,5.7,7.4,ENTP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.75
+SV10726,7.3,6.2,7.0,7.0,9.0,6.6,7.8,ESFP,Kinh tế & Quản lý,Thương mại điện tử,3.85
+SV10727,7.4,5.7,6.5,4.3,5.5,6.0,6.2,ENTP,Kinh tế & Quản lý,Quan hệ quốc tế,4.0
+SV10728,8.7,8.7,8.0,9.0,9.7,9.0,7.9,ESTJ,Y tế & Sức khỏe,Y khoa,3.6
+SV10729,5.5,4.8,6.0,4.9,8.5,5.9,5.2,ESFP,Truyền thông & Báo chí,Báo chí,3.45
+SV10730,8.3,8.1,7.1,8.0,9.7,8.8,8.2,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.95
+SV10731,7.6,6.3,6.4,5.2,4.7,8.4,8.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.35
+SV10732,8.1,7.6,7.5,7.2,8.4,7.5,8.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.05
+SV10733,5.8,5.2,4.4,5.1,4.4,5.5,6.7,ENTP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.0
+SV10734,8.9,6.4,7.8,8.1,8.4,7.4,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.35
+SV10735,9.7,8.2,8.5,9.6,9.2,9.1,8.6,INTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,4.1
+SV10736,7.5,7.9,9.1,9.2,8.6,8.3,8.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.0
+SV10737,8.0,6.3,6.8,6.0,7.6,7.6,6.6,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.35
+SV10738,9.3,6.7,9.8,9.2,8.1,8.4,7.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.7
+SV10739,7.7,7.8,7.5,8.6,7.1,8.5,7.8,ESFP,Kinh tế & Quản lý,Thương mại điện tử,4.35
+SV10740,8.6,8.2,5.6,7.0,8.1,9.7,8.0,ESFP,Luật & Xã hội,Luật,2.95
+SV10741,5.9,7.3,8.5,6.2,8.1,8.2,8.4,ESFP,Du lịch & Dịch vụ,Du lịch,3.2
+SV10742,9.2,8.2,8.8,8.7,9.8,8.8,8.8,ISTP,Truyền thông & Báo chí,Báo chí,3.55
+SV10743,8.7,8.4,8.0,10.0,9.8,9.5,8.3,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.85
+SV10744,6.9,7.2,6.4,6.2,5.9,9.1,7.8,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.1
+SV10745,6.6,7.5,9.0,7.6,7.8,6.6,9.4,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.5
+SV10746,7.3,6.9,9.1,7.5,7.7,7.7,8.9,INTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.95
+SV10747,7.0,7.0,7.4,9.3,8.6,7.9,8.4,ESFP,Y tế & Sức khỏe,Dược học,3.45
+SV10748,6.6,6.6,5.7,5.7,9.0,5.7,7.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.55
+SV10749,9.0,8.7,6.9,8.8,6.9,7.3,8.8,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.15
+SV10750,9.3,8.4,9.0,10.0,8.9,8.0,8.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.4
+SV10751,7.9,8.9,7.0,7.9,7.5,8.8,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.15
+SV10752,7.3,7.0,6.6,9.0,8.7,7.9,7.6,ESFP,Luật & Xã hội,Luật,3.35
+SV10753,7.6,6.6,6.1,7.2,8.4,5.6,9.2,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.4
+SV10754,8.9,7.8,8.5,9.0,8.3,9.0,9.3,ENTJ,Luật & Xã hội,Luật,3.4
+SV10755,8.3,6.4,6.1,8.5,7.3,7.0,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,5.0
+SV10756,5.5,7.7,9.1,7.3,8.6,8.2,8.7,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.1
+SV10757,8.9,6.4,8.1,7.2,8.2,10.0,8.9,ISTJ,Luật & Xã hội,Luật,3.95
+SV10758,7.4,6.9,8.5,7.5,7.1,8.8,8.5,ENTJ,Kinh tế & Quản lý,Quản trị kinh doanh,3.4
+SV10759,5.8,6.5,6.7,5.8,7.5,6.8,6.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.2
+SV10760,9.0,6.4,8.1,7.5,9.5,7.7,8.5,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.55
+SV10761,4.9,7.3,4.6,7.7,4.9,6.8,6.8,ESFP,Kinh tế & Quản lý,Marketing,3.9
+SV10762,8.4,6.7,8.3,6.7,7.8,7.1,7.6,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,5.0
+SV10763,9.1,7.4,8.4,9.0,8.9,9.2,9.1,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.8
+SV10764,9.9,8.6,10.0,8.4,10.0,9.2,8.9,ENFJ,Y tế & Sức khỏe,Dược học,4.4
+SV10765,9.3,8.4,9.1,10.0,9.4,8.7,8.0,INTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,3.5
+SV10766,6.7,8.2,6.8,6.5,5.6,5.9,8.0,ENTP,Kinh tế & Quản lý,Kinh tế,3.85
+SV10767,8.8,5.8,8.6,9.3,8.2,9.0,8.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.75
+SV10768,8.0,7.2,7.8,8.0,7.7,7.2,7.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.55
+SV10769,9.1,8.6,8.5,8.1,8.8,8.6,8.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.75
+SV10770,6.6,8.3,7.2,7.8,8.9,8.3,8.3,ESFP,Luật & Xã hội,Luật,4.2
+SV10771,9.2,9.1,8.7,9.1,9.3,7.7,7.4,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.55
+SV10772,5.9,6.7,7.2,6.1,4.3,6.5,7.6,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.15
+SV10773,7.8,6.0,5.8,9.0,7.6,7.5,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.35
+SV10774,7.2,7.7,6.0,8.7,8.0,9.2,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.15
+SV10775,8.0,8.0,8.4,7.0,8.6,8.5,8.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.05
+SV10776,9.1,8.6,9.5,8.2,9.5,9.1,9.1,ISTP,Du lịch & Dịch vụ,Du lịch,3.5
+SV10777,9.3,8.0,7.6,8.1,10.0,9.0,8.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.75
+SV10778,5.3,6.1,5.3,5.6,5.4,6.0,8.2,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.8
+SV10779,7.7,5.8,7.1,6.4,8.2,8.1,8.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.15
+SV10780,6.6,7.1,6.9,8.5,7.6,8.5,7.8,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.95
+SV10781,6.4,8.1,5.4,7.0,8.0,8.1,7.6,ESFP,Du lịch & Dịch vụ,Du lịch,3.2
+SV10782,9.2,7.1,8.3,7.6,8.9,8.5,8.2,ENTJ,Kinh tế & Quản lý,Kế toán,4.05
+SV10783,6.5,8.0,6.1,8.1,6.4,8.4,7.5,ESTP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.15
+SV10784,9.6,8.3,7.4,9.3,9.4,9.7,9.2,ESFJ,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.15
+SV10785,6.2,6.2,6.4,6.9,7.5,5.7,6.1,ESFP,Kinh tế & Quản lý,Kinh tế,4.4
+SV10786,9.9,8.7,9.1,9.7,9.1,6.9,8.6,ENTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.25
+SV10787,8.4,6.5,7.6,8.6,8.4,8.3,7.5,ESFJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.1
+SV10788,8.7,6.8,6.8,6.7,8.8,6.9,6.7,ESFP,Du lịch & Dịch vụ,Du lịch,3.8
+SV10789,8.2,8.4,7.7,8.1,7.1,8.1,8.2,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.0
+SV10790,7.6,8.4,7.2,7.4,7.5,10.0,8.5,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.05
+SV10791,6.6,5.8,6.4,6.4,5.8,6.9,5.7,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.95
+SV10792,7.3,8.4,9.2,8.7,8.2,7.7,9.5,ESTP,Y tế & Sức khỏe,Y khoa,4.0
+SV10793,8.7,8.0,9.5,8.6,8.0,8.3,8.9,ENTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,3.2
+SV10794,6.4,6.4,5.5,5.9,5.2,7.0,6.9,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.3
+SV10795,9.0,9.0,10.0,9.2,10.0,8.7,9.0,ENTJ,Y tế & Sức khỏe,Y khoa,4.4
+SV10796,8.3,4.9,7.1,7.4,8.1,6.0,5.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.85
+SV10797,9.2,5.6,9.0,7.5,8.2,9.6,9.5,ISTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.2
+SV10798,9.0,8.4,7.3,9.0,8.4,9.6,9.5,ESFJ,Y tế & Sức khỏe,Dược học,3.85
+SV10799,6.5,6.0,5.4,6.9,6.5,6.8,5.6,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.85
+SV10800,8.3,8.2,9.4,8.9,9.4,9.2,9.4,ISTP,Truyền thông & Báo chí,Báo chí,4.3
+SV10801,7.3,6.4,8.9,7.3,8.0,8.7,8.7,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.6
+SV10802,7.2,7.8,7.6,8.1,7.1,7.8,7.6,ESFP,Kinh tế & Quản lý,Kinh tế số,3.9
+SV10803,5.7,5.3,5.2,5.2,5.6,6.6,9.8,ENTP,Kinh tế & Quản lý,Kế toán,3.6
+SV10804,6.9,7.9,8.3,6.2,9.6,7.5,8.9,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.65
+SV10805,8.3,7.7,7.4,7.8,8.7,8.8,8.7,ENTJ,Truyền thông & Báo chí,Báo chí,3.7
+SV10806,9.8,6.1,8.9,8.5,9.9,9.8,9.6,ENFJ,Luật & Xã hội,Luật,3.95
+SV10807,8.8,6.3,8.6,6.8,8.7,7.9,8.4,ESFP,Kinh tế & Quản lý,Fintech,3.6
+SV10808,9.4,8.2,8.2,6.6,8.6,8.2,8.7,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.5
+SV10809,9.3,6.9,8.1,9.1,8.6,7.9,8.1,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.4
+SV10810,7.3,7.0,8.1,7.6,7.6,8.9,8.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.75
+SV10811,8.4,6.4,8.5,6.9,7.6,6.8,7.8,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.65
+SV10812,6.6,7.0,7.7,7.7,7.6,7.7,7.1,ESFP,Truyền thông & Báo chí,Báo chí,4.55
+SV10813,9.0,7.4,8.3,6.5,9.8,8.3,8.7,ISTJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.95
+SV10814,7.1,7.5,5.3,6.5,7.0,7.6,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.35
+SV10815,8.5,4.7,6.6,8.5,7.8,6.9,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.1
+SV10816,6.5,6.7,7.0,5.1,6.2,7.5,8.1,ESFP,Du lịch & Dịch vụ,Du lịch,4.0
+SV10817,8.1,7.3,6.8,8.4,7.7,6.9,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.3
+SV10818,8.9,8.2,7.7,8.7,9.3,9.0,7.6,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.9
+SV10819,8.2,8.1,8.2,6.4,8.0,7.4,7.7,ESFP,Y tế & Sức khỏe,Y khoa,4.4
+SV10820,6.2,6.8,5.5,6.7,7.6,7.3,9.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.6
+SV10821,9.3,6.9,8.3,8.2,9.3,8.8,8.1,ENTJ,Y tế & Sức khỏe,Y khoa,4.55
+SV10822,7.7,6.9,8.6,7.6,7.6,7.9,8.4,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,5.0
+SV10823,8.2,8.0,7.7,7.6,7.8,8.1,7.8,ESFP,Kinh tế & Quản lý,Kế toán,3.65
+SV10824,7.8,6.6,8.2,6.6,6.8,6.6,7.5,INTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.65
+SV10825,9.5,7.8,8.5,8.9,8.6,8.2,9.1,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.6
+SV10826,7.5,6.0,4.2,5.2,6.1,7.0,7.2,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.65
+SV10827,7.8,7.0,8.6,8.0,7.3,6.9,7.3,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.6
+SV10828,7.5,6.8,8.6,7.2,8.6,7.5,8.8,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.65
+SV10829,7.1,5.9,6.8,6.9,8.3,6.8,6.3,ESFP,Luật & Xã hội,Luật,3.7
+SV10830,9.5,7.1,6.2,7.9,7.1,7.8,7.4,ESFP,Y tế & Sức khỏe,Dược học,3.2
+SV10831,7.1,6.2,8.1,7.7,8.5,7.7,6.6,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.4
+SV10832,6.3,6.2,7.1,5.5,8.6,4.6,5.8,ENTP,Kinh tế & Quản lý,Kinh tế số,3.35
+SV10833,6.7,7.8,8.5,6.9,8.1,8.0,8.4,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.45
+SV10834,7.4,8.5,7.6,8.6,8.1,8.0,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.85
+SV10835,9.3,7.3,9.2,10.0,9.7,8.6,7.9,INTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.95
+SV10836,7.9,7.3,7.2,6.7,7.4,6.4,7.5,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.65
+SV10837,7.3,6.5,8.0,7.1,7.9,7.2,7.8,ESFP,Du lịch & Dịch vụ,Du lịch,3.35
+SV10838,8.7,8.0,9.2,8.4,8.8,8.2,8.3,INFJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.35
+SV10839,9.2,8.1,7.2,8.6,8.1,8.1,9.2,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.75
+SV10840,9.1,7.2,8.2,9.5,7.8,8.6,8.6,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.85
+SV10841,7.5,6.8,6.2,6.0,7.1,8.1,7.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.2
+SV10842,8.5,7.1,5.7,6.6,8.3,8.3,6.6,ESFP,Kinh tế & Quản lý,Kinh tế,3.3
+SV10843,6.4,7.9,7.5,6.8,4.8,6.8,7.7,INTJ,Truyền thông & Báo chí,Báo chí,4.05
+SV10844,8.7,8.2,7.3,9.1,8.9,8.6,9.4,ENTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.95
+SV10845,4.5,6.9,5.3,5.0,9.1,7.1,4.6,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,4.1
+SV10846,7.2,7.7,8.0,8.0,7.6,7.8,8.1,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.0
+SV10847,8.6,8.6,9.2,9.8,8.4,8.7,9.1,ENTJ,Nghệ thuật & Thiết kế,Kiến trúc,5.0
+SV10848,8.1,8.1,9.4,9.0,9.0,7.6,9.0,ENTJ,Truyền thông & Báo chí,Báo chí,3.55
+SV10849,6.6,6.4,5.2,6.3,6.2,7.1,7.2,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.6
+SV10850,6.2,6.2,5.9,6.3,4.7,6.0,6.8,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.55
+SV10851,9.2,7.1,7.9,7.7,9.5,8.7,7.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.55
+SV10852,7.1,5.6,7.0,6.7,8.0,6.6,6.6,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.55
+SV10853,7.8,8.6,6.7,8.0,7.4,7.8,8.9,ESTP,Du lịch & Dịch vụ,Du lịch,4.45
+SV10854,8.5,7.1,8.9,8.3,8.9,7.5,9.0,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.55
+SV10855,7.7,7.3,5.1,8.7,7.0,7.8,7.4,INFP,Kinh tế & Quản lý,Marketing,3.55
+SV10856,6.8,7.6,6.6,5.1,5.7,6.9,6.0,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.45
+SV10857,8.0,8.5,8.5,8.6,9.2,9.0,7.9,ISTP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.1
+SV10858,5.5,6.4,5.6,5.5,7.1,5.0,6.2,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.55
+SV10859,6.0,6.8,4.6,5.8,6.9,7.4,7.1,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.15
+SV10860,6.0,7.4,6.6,7.3,7.6,7.7,8.8,ESFP,Kinh tế & Quản lý,Marketing,3.95
+SV10861,6.8,5.3,5.3,5.5,4.5,7.3,7.8,ENTP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.1
+SV10862,7.3,7.3,7.6,7.9,8.5,6.4,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.6
+SV10863,9.0,8.5,7.3,7.3,8.7,7.5,7.4,ESFP,Kinh tế & Quản lý,Kế toán,4.75
+SV10864,6.0,6.3,5.0,7.3,9.1,7.9,7.9,ESFP,Kinh tế & Quản lý,Fintech,3.55
+SV10865,8.6,8.2,8.7,8.3,9.1,9.4,8.6,ESTP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.65
+SV10866,6.2,8.2,6.9,6.3,6.3,7.9,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.0
+SV10867,7.4,5.2,7.0,6.3,8.5,6.1,6.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.0
+SV10868,9.0,7.0,8.1,8.1,9.6,8.6,8.4,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.2
+SV10869,9.7,7.6,8.1,8.1,10.0,7.7,8.2,ENTJ,Kinh tế & Quản lý,Kinh tế số,4.85
+SV10870,8.9,6.4,8.8,7.2,8.1,9.1,9.4,ISTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.75
+SV10871,7.6,6.8,5.8,9.0,7.8,7.4,9.1,ESFP,Luật & Xã hội,Luật,3.45
+SV10872,8.6,7.3,8.6,9.6,8.7,8.6,8.0,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.15
+SV10873,5.9,6.9,5.3,5.7,7.8,5.8,6.5,ESFP,Kinh tế & Quản lý,Kế toán,3.5
+SV10874,7.7,7.4,4.8,7.8,7.9,7.9,8.9,ESFP,Luật & Xã hội,Luật,3.85
+SV10875,6.3,6.5,4.8,6.9,5.6,6.3,6.1,ENTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.75
+SV10876,9.7,7.0,6.6,9.0,9.4,6.3,8.0,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.6
+SV10877,10.0,8.4,7.8,8.9,9.7,9.2,8.8,ENFJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.95
+SV10878,7.7,7.3,7.2,6.3,4.8,7.4,6.1,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.85
+SV10879,10.0,7.8,9.2,10.0,9.0,10.0,9.2,ESTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.45
+SV10880,6.9,7.6,6.2,7.4,5.5,8.7,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,5.0
+SV10881,6.8,5.8,4.5,5.1,4.9,6.8,5.2,ENTP,Kinh tế & Quản lý,Kinh tế số,3.6
+SV10882,9.7,7.2,8.6,8.8,9.1,8.7,8.3,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.6
+SV10883,6.2,5.2,4.6,7.1,6.5,6.0,7.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.35
+SV10884,8.4,6.9,8.8,9.0,7.0,8.4,8.3,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.2
+SV10885,6.8,4.7,6.7,6.5,8.2,6.4,7.9,ESFP,Truyền thông & Báo chí,Báo chí,4.75
+SV10886,8.9,7.9,9.1,9.5,8.7,8.3,8.0,ENTJ,Y tế & Sức khỏe,Y khoa,4.15
+SV10887,8.4,7.3,5.9,9.3,8.1,9.1,8.4,ESFJ,Kinh tế & Quản lý,Quản trị kinh doanh,3.65
+SV10888,8.1,6.7,6.7,6.7,8.3,7.4,7.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.15
+SV10889,10.0,6.6,9.9,9.9,8.4,7.9,9.1,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.4
+SV10890,8.6,8.2,6.1,7.3,8.2,10.0,8.2,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.25
+SV10891,6.4,6.3,5.8,4.7,6.0,5.5,7.1,ENTP,Sư phạm & Giáo dục,Sư phạm Toán,4.1
+SV10892,7.9,5.9,6.8,7.2,8.8,6.9,8.8,ESFP,Y tế & Sức khỏe,Dược học,4.4
+SV10893,7.5,4.7,7.3,6.6,8.8,6.9,8.6,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,4.45
+SV10894,7.3,6.4,7.7,6.7,9.0,7.1,9.2,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.55
+SV10895,7.4,7.7,6.4,7.8,7.6,6.4,7.6,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.15
+SV10896,9.3,7.0,8.5,10.0,8.1,8.1,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.75
+SV10897,8.3,8.6,8.0,6.5,6.7,7.9,7.3,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.9
+SV10898,8.0,7.7,7.1,7.2,9.3,7.7,6.9,INFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.45
+SV10899,9.2,7.6,7.4,8.7,9.1,8.4,8.9,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.45
+SV10900,7.9,6.4,8.0,7.8,8.2,6.8,7.3,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.05
+SV10901,6.1,5.4,5.4,4.9,5.0,5.1,5.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.65
+SV10902,7.0,6.8,4.4,5.9,7.7,7.1,6.4,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.85
+SV10903,9.7,7.5,8.2,8.8,9.3,9.5,7.7,INTP,Kinh tế & Quản lý,Quan hệ quốc tế,4.5
+SV10904,6.9,6.6,6.1,7.6,8.3,8.2,5.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.95
+SV10905,7.9,7.0,5.7,7.5,8.9,6.9,7.3,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.85
+SV10906,8.7,8.1,6.3,7.0,8.4,8.6,7.7,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.15
+SV10907,3.4,5.7,2.8,3.8,5.2,5.5,5.8,ENTP,Kinh tế & Quản lý,Kinh tế số,4.2
+SV10908,7.8,7.4,7.5,8.5,8.4,8.2,9.5,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.15
+SV10909,6.4,7.0,6.0,6.2,6.1,7.1,9.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.95
+SV10910,7.0,6.8,8.6,7.4,7.5,7.4,7.2,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.7
+SV10911,7.5,8.0,9.0,8.3,7.6,7.7,7.6,ESTP,Kinh tế & Quản lý,Marketing,3.95
+SV10912,7.5,7.2,6.0,8.9,8.8,9.0,9.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.95
+SV10913,7.7,8.3,6.6,9.1,7.3,7.8,6.9,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.65
+SV10914,6.8,7.5,7.0,7.9,7.6,6.2,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.8
+SV10915,9.2,7.4,9.0,9.9,8.7,9.0,8.0,ESTP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.0
+SV10916,7.8,7.2,8.6,7.1,6.8,6.3,8.4,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.15
+SV10917,6.9,7.4,7.4,8.6,8.2,8.2,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.95
+SV10918,8.4,7.7,8.4,9.2,9.1,7.8,7.1,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.65
+SV10919,7.0,5.9,4.0,5.2,3.9,7.5,4.5,ENTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.95
+SV10920,9.9,9.5,9.2,8.6,8.9,9.7,9.0,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.4
+SV10921,7.8,8.1,8.4,7.8,8.0,6.5,9.1,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.35
+SV10922,6.6,7.1,7.0,6.5,5.0,5.6,7.3,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV10923,8.2,7.5,7.0,7.5,7.4,7.6,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.5
+SV10924,9.8,9.2,7.2,9.2,10.0,9.1,9.4,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.45
+SV10925,8.3,8.4,7.4,8.5,8.0,8.5,8.3,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.1
+SV10926,9.4,7.9,8.4,8.8,9.9,9.5,9.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.55
+SV10927,5.8,6.7,8.4,7.0,7.9,7.4,9.2,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.05
+SV10928,8.1,6.4,9.9,9.5,7.5,8.8,7.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.65
+SV10929,9.4,8.3,9.5,8.0,9.1,8.7,8.6,ISTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.8
+SV10930,9.0,6.8,6.9,8.4,9.6,7.3,8.0,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.55
+SV10931,8.1,7.1,8.2,8.3,8.5,7.0,8.1,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.8
+SV10932,7.4,6.5,8.7,7.3,7.4,8.1,6.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.15
+SV10933,7.5,7.4,7.7,7.5,7.8,6.8,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,2.75
+SV10934,8.8,8.2,8.4,9.7,10.0,9.4,8.5,ENTP,Y tế & Sức khỏe,Dược học,4.05
+SV10935,9.6,8.0,8.6,9.5,8.4,7.3,9.0,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.6
+SV10936,8.5,7.7,7.6,7.4,9.7,8.8,9.5,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.35
+SV10937,7.1,7.8,7.3,8.4,6.9,8.5,8.8,INFJ,Nghệ thuật & Thiết kế,Kiến trúc,4.2
+SV10938,8.2,7.7,7.2,7.7,8.0,8.3,7.9,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.95
+SV10939,8.6,7.3,8.0,8.5,8.2,9.1,9.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.55
+SV10940,10.0,9.0,8.8,8.3,8.8,9.7,9.0,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.2
+SV10941,8.2,8.9,7.0,8.7,8.9,8.0,9.4,ESTJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.3
+SV10942,8.3,7.7,9.0,8.9,8.4,9.8,9.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.2
+SV10943,6.3,4.4,4.3,6.1,5.5,6.6,6.6,ENTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.8
+SV10944,8.1,7.0,7.1,7.6,8.4,8.1,7.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.75
+SV10945,7.7,7.3,7.7,7.8,8.5,6.6,9.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.3
+SV10946,9.3,7.9,8.4,9.5,9.4,10.0,8.4,ESTP,Kinh tế & Quản lý,Marketing,3.1
+SV10947,7.9,7.8,8.5,9.0,9.4,9.7,8.4,ESTJ,Kinh tế & Quản lý,Kế toán,3.5
+SV10948,6.5,8.2,7.0,4.5,6.0,6.2,6.4,ENTP,Nghệ thuật & Thiết kế,Âm nhạc học,3.85
+SV10949,7.6,7.3,8.7,7.9,8.3,7.5,8.3,ESTJ,Kinh tế & Quản lý,Fintech,3.95
+SV10950,8.8,8.0,7.1,7.0,8.4,8.2,8.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.75
+SV10951,10.0,8.2,8.3,10.0,9.2,9.2,9.5,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.05
+SV10952,8.5,6.7,7.3,6.9,8.4,7.4,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.2
+SV10953,8.8,7.9,9.0,10.0,8.9,9.4,8.9,ENTJ,Y tế & Sức khỏe,Dược học,4.55
+SV10954,7.1,5.9,8.4,7.7,7.2,7.3,7.1,INTJ,Y tế & Sức khỏe,Y khoa,3.8
+SV10955,7.6,6.8,7.4,9.0,7.9,7.5,7.4,ESFP,Kinh tế & Quản lý,Kế toán,4.4
+SV10956,9.2,8.1,8.3,7.1,9.2,9.2,9.9,ENTJ,Kinh tế & Quản lý,Quản trị kinh doanh,4.0
+SV10957,7.6,7.1,6.3,6.7,6.9,6.9,6.7,ESFP,Kinh tế & Quản lý,Fintech,4.1
+SV10958,6.6,5.9,7.9,6.5,7.4,7.7,8.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.15
+SV10959,6.8,6.9,8.5,7.7,6.9,9.2,7.6,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.05
+SV10960,9.5,8.1,8.9,7.8,8.5,8.9,8.8,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.15
+SV10961,8.8,7.0,9.5,8.4,8.4,8.9,8.5,ESTP,Kinh tế & Quản lý,Thương mại điện tử,4.5
+SV10962,8.7,7.8,8.0,6.7,9.0,6.7,8.0,ESFP,Y tế & Sức khỏe,Y khoa,3.95
+SV10963,8.9,6.3,8.8,7.5,8.9,9.2,8.4,ISTJ,Kinh tế & Quản lý,Kế toán,4.2
+SV10964,7.9,8.0,7.6,9.1,8.0,8.6,8.7,ENTP,Kinh tế & Quản lý,Marketing,3.8
+SV10965,7.5,7.8,7.7,8.6,8.8,9.0,8.5,INFJ,Nông nghiệp & Môi trường,Công nghệ sinh học,4.55
+SV10966,8.8,7.2,8.6,9.3,9.0,7.7,8.7,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.5
+SV10967,7.3,7.7,7.2,6.2,5.4,6.0,7.2,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.75
+SV10968,7.1,6.0,6.3,6.9,7.0,5.7,6.5,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.85
+SV10969,6.5,7.6,6.5,7.3,7.2,8.2,7.4,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.15
+SV10970,7.5,7.9,8.7,6.2,7.7,8.1,9.4,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.9
+SV10971,7.7,8.4,7.9,7.8,9.6,7.4,8.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.5
+SV10972,6.2,6.6,5.7,6.7,7.8,7.4,8.8,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.25
+SV10973,7.8,6.7,6.9,6.7,8.7,7.8,6.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.5
+SV10974,8.8,5.4,8.4,7.0,8.0,9.8,8.7,ISTJ,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.65
+SV10975,8.1,7.1,7.4,7.3,7.8,7.7,7.4,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,2.9
+SV10976,8.1,8.1,7.8,8.5,8.0,7.4,7.7,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,3.6
+SV10977,6.2,6.4,5.8,7.0,8.1,7.1,9.3,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,2.65
+SV10978,9.5,6.7,6.3,9.4,8.2,6.2,7.3,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.05
+SV10979,6.3,6.0,6.0,5.6,5.3,5.5,7.7,ENTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.25
+SV10980,7.4,6.6,7.8,7.6,6.9,6.6,7.6,ESTJ,Kinh tế & Quản lý,Kinh tế,4.25
+SV10981,9.4,7.9,7.2,8.0,8.5,8.7,8.3,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.05
+SV10982,7.7,6.2,6.3,8.0,7.2,6.8,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.35
+SV10983,8.5,7.2,7.8,9.0,8.8,9.3,7.9,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.85
+SV10984,8.0,7.6,8.4,9.0,8.8,7.9,8.6,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.85
+SV10985,8.4,7.0,7.5,8.7,7.7,6.3,6.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.25
+SV10986,5.6,6.9,4.6,5.1,4.6,6.0,8.3,ENTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.6
+SV10987,8.3,7.5,5.1,8.7,7.6,9.3,7.9,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,4.3
+SV10988,7.9,6.6,5.9,6.1,9.1,8.6,6.0,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.75
+SV10989,9.9,7.9,7.3,8.0,8.3,8.8,8.8,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.85
+SV10990,8.3,8.7,7.6,9.4,7.0,6.5,8.2,ENTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.95
+SV10991,9.7,8.2,7.4,9.7,9.0,9.6,9.5,ESFJ,Luật & Xã hội,Luật,2.85
+SV10992,6.9,6.6,5.2,6.9,6.4,8.5,8.7,ESFP,Truyền thông & Báo chí,Báo chí,3.75
+SV10993,9.1,9.6,6.5,9.4,9.2,9.9,8.4,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.5
+SV10994,8.1,7.5,7.7,8.1,8.8,8.0,7.1,INFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.35
+SV10995,8.0,7.9,8.9,9.9,9.5,8.1,8.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.7
+SV10996,8.6,8.4,9.0,7.3,6.9,8.6,8.4,INTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.75
+SV10997,5.3,6.8,5.6,4.0,7.7,4.6,6.8,ESFP,Kinh tế & Quản lý,Marketing,4.15
+SV10998,8.0,8.3,9.1,7.7,8.5,8.3,9.6,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.55
+SV10999,9.1,9.0,9.1,8.9,9.6,9.7,9.6,ENTP,Du lịch & Dịch vụ,Du lịch,4.15
+SV11000,7.3,6.0,7.2,6.5,8.6,5.9,8.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.55
+SV11001,7.7,7.8,6.1,8.0,9.6,9.1,7.7,ESFP,Kinh tế & Quản lý,Marketing,4.3
+SV11002,7.6,7.2,8.5,9.1,6.8,8.5,7.3,ENTP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.9
+SV11003,9.1,7.6,8.7,9.5,9.0,8.5,8.0,ENTJ,Y tế & Sức khỏe,Y khoa,3.55
+SV11004,7.1,8.1,7.3,8.5,9.3,7.1,8.2,ESTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.2
+SV11005,7.0,6.9,6.5,8.1,7.0,7.8,8.1,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.05
+SV11006,6.5,5.6,4.7,5.3,5.8,6.6,9.8,ENTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.3
+SV11007,8.8,7.3,8.0,8.1,8.5,9.1,8.0,ENTP,Kinh tế & Quản lý,Thương mại điện tử,4.15
+SV11008,5.7,5.5,6.3,6.9,5.5,6.2,5.7,ENTP,Sư phạm & Giáo dục,Sư phạm Toán,4.35
+SV11009,6.2,5.8,6.0,9.1,8.0,8.1,8.1,ESFP,Y tế & Sức khỏe,Y khoa,3.6
+SV11010,8.3,8.9,7.7,8.9,9.9,8.6,8.8,ESTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.5
+SV11011,5.2,6.2,7.4,7.0,7.5,7.9,8.7,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.95
+SV11012,7.5,6.9,8.1,8.4,7.8,9.2,9.7,INFJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.9
+SV11013,8.2,5.9,7.0,5.5,5.7,8.0,6.7,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.5
+SV11014,7.6,7.7,6.0,8.0,6.9,8.4,7.8,ESFP,Du lịch & Dịch vụ,Du lịch,4.7
+SV11015,9.2,7.8,6.6,8.4,7.9,8.6,8.5,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.95
+SV11016,9.2,8.5,7.5,9.4,9.2,8.4,8.4,ENTJ,Y tế & Sức khỏe,Điều dưỡng,3.5
+SV11017,8.1,6.6,6.0,8.7,7.8,7.8,8.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.6
+SV11018,8.0,8.1,7.9,8.7,8.4,7.8,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.7
+SV11019,6.9,7.0,8.2,7.5,7.4,6.9,8.9,INTJ,Nghệ thuật & Thiết kế,Âm nhạc học,4.05
+SV11020,8.9,6.4,6.6,6.6,9.9,8.7,8.3,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.1
+SV11021,7.5,7.0,7.6,9.2,7.9,7.8,7.9,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.55
+SV11022,8.4,7.9,7.5,7.5,7.8,8.3,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.85
+SV11023,9.4,7.8,9.5,8.8,9.2,8.7,8.8,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,4.9
+SV11024,6.8,6.7,6.6,6.5,9.7,8.4,9.3,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.7
+SV11025,7.2,7.2,7.9,8.1,9.1,6.6,8.7,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.05
+SV11026,7.6,7.4,7.0,7.7,7.6,8.3,8.0,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.85
+SV11027,9.7,8.9,9.4,9.0,9.7,9.8,9.5,ENFJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.9
+SV11028,10.0,8.4,6.9,9.9,10.0,10.0,8.1,ESTP,Nghệ thuật & Thiết kế,Kiến trúc,4.15
+SV11029,8.3,8.1,6.7,7.3,8.5,8.4,9.0,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.35
+SV11030,9.1,7.3,7.7,6.6,8.5,8.1,8.3,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.7
+SV11031,4.9,7.0,7.1,5.5,7.6,5.8,5.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.0
+SV11032,6.4,3.3,3.9,6.7,6.6,5.0,6.5,ENTP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.05
+SV11033,5.7,6.4,7.6,5.1,6.3,7.0,9.8,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.15
+SV11034,9.2,7.4,9.0,8.3,9.6,9.1,8.0,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.6
+SV11035,7.6,6.8,8.2,7.0,8.1,7.2,8.1,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,4.65
+SV11036,7.5,7.7,8.5,7.6,8.2,6.7,9.4,ESTP,Kinh tế & Quản lý,Kế toán,3.25
+SV11037,7.2,6.4,7.2,6.5,9.6,8.8,9.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.1
+SV11038,9.3,8.4,7.5,8.0,8.9,8.6,7.7,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.95
+SV11039,8.4,9.1,8.7,9.5,8.7,8.0,8.8,ENTJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.35
+SV11040,8.2,6.8,7.4,8.0,8.6,8.4,7.9,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.7
+SV11041,6.6,8.9,7.8,6.6,5.6,5.4,7.5,INTJ,Kinh tế & Quản lý,Quản trị kinh doanh,3.6
+SV11042,6.6,7.2,5.9,8.4,8.6,8.7,8.5,ESFP,Kinh tế & Quản lý,Marketing,4.4
+SV11043,9.8,7.5,7.3,8.3,8.1,8.3,9.2,ENTJ,Y tế & Sức khỏe,Điều dưỡng,3.85
+SV11044,5.8,5.2,3.7,7.1,6.8,5.3,5.9,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.75
+SV11045,9.0,7.1,8.2,8.7,9.3,8.7,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.3
+SV11046,8.8,5.7,7.8,7.9,8.0,7.8,9.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.2
+SV11047,7.8,7.2,8.2,7.7,7.9,7.4,8.5,ESFP,Du lịch & Dịch vụ,Du lịch,3.05
+SV11048,7.3,6.8,8.4,7.8,8.0,7.1,8.3,ESFP,Du lịch & Dịch vụ,Du lịch,4.6
+SV11049,9.1,8.8,6.1,6.9,8.4,9.3,9.1,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.55
+SV11050,8.7,6.9,6.8,7.0,8.8,4.8,7.0,ESFP,Kinh tế & Quản lý,Kinh tế số,3.55
+SV11051,8.5,6.0,8.3,7.1,8.4,8.0,7.6,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.05
+SV11052,5.5,7.3,5.4,5.7,7.7,5.0,8.0,ENTP,Truyền thông & Báo chí,Báo chí,4.1
+SV11053,8.2,8.6,7.9,7.6,9.1,8.1,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.0
+SV11054,7.1,7.7,9.1,8.2,8.7,6.6,8.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.55
+SV11055,9.1,7.5,9.5,9.1,7.3,8.2,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.5
+SV11056,7.6,7.7,8.4,7.4,7.9,9.1,8.9,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.85
+SV11057,5.9,5.0,4.4,4.4,3.7,6.5,4.6,ENTP,Kinh tế & Quản lý,Kinh tế số,4.45
+SV11058,8.0,7.9,7.0,8.0,7.4,8.1,7.9,ESTP,Du lịch & Dịch vụ,Quản trị khách sạn,4.1
+SV11059,7.6,7.4,7.9,9.7,8.2,7.5,7.7,ENFJ,Kinh tế & Quản lý,Kế toán,3.65
+SV11060,8.5,6.2,8.7,8.7,8.0,7.6,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.25
+SV11061,6.6,7.1,7.5,5.2,7.1,7.8,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,2.45
+SV11062,8.9,7.0,6.3,8.0,9.9,7.2,8.4,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.4
+SV11063,8.8,6.8,7.5,9.0,9.7,7.3,6.8,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.0
+SV11064,5.8,6.4,5.3,7.3,6.6,6.0,9.6,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.65
+SV11065,9.4,8.3,9.4,10.0,9.1,8.5,8.6,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.3
+SV11066,8.5,9.0,7.2,7.4,6.6,7.4,9.1,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.2
+SV11067,9.1,9.1,8.0,8.4,9.1,9.6,9.6,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.45
+SV11068,6.5,7.6,5.9,6.4,7.6,7.5,8.4,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.6
+SV11069,8.4,7.0,8.5,9.4,9.2,7.6,8.5,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.0
+SV11070,7.6,7.3,4.7,7.3,5.8,8.2,6.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.85
+SV11071,8.1,8.6,6.2,6.9,8.5,8.6,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.1
+SV11072,4.5,7.5,5.7,4.2,7.0,5.9,7.0,ESFP,Kinh tế & Quản lý,Fintech,3.9
+SV11073,7.8,6.1,6.3,6.3,6.7,8.0,7.1,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.2
+SV11074,6.7,7.4,8.6,7.4,7.5,7.8,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.35
+SV11075,8.8,7.5,8.3,8.7,8.8,7.9,8.4,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.6
+SV11076,7.6,6.8,5.3,7.4,6.8,8.8,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.05
+SV11077,8.0,8.0,7.8,8.7,8.0,7.3,8.1,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.65
+SV11078,6.2,7.1,7.7,7.1,6.7,7.2,5.3,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.6
+SV11079,6.1,7.2,3.5,8.8,5.7,7.8,6.6,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.3
+SV11080,9.9,7.1,8.0,7.7,9.3,7.8,8.2,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.7
+SV11081,7.5,7.2,7.0,8.3,8.1,8.6,8.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.7
+SV11082,7.4,5.6,6.9,4.9,5.6,7.9,8.8,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.7
+SV11083,7.7,6.0,7.2,8.3,8.5,7.5,8.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.9
+SV11084,9.4,6.9,8.7,8.2,9.1,8.2,9.1,ENTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.05
+SV11085,7.9,7.9,8.0,7.5,7.7,8.6,7.9,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.05
+SV11086,7.9,6.9,7.6,8.2,8.5,7.9,7.7,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.35
+SV11087,9.7,8.4,8.8,9.9,8.5,9.9,8.5,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.95
+SV11088,5.0,7.3,7.3,6.4,6.8,6.6,5.6,ESFP,Luật & Xã hội,Luật,3.7
+SV11089,9.0,8.6,8.7,9.0,8.7,9.0,8.2,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.75
+SV11090,6.5,6.3,6.0,8.0,7.9,6.7,8.6,ESFP,Kinh tế & Quản lý,Kinh tế,3.8
+SV11091,8.7,6.9,8.5,8.9,8.6,8.9,8.8,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.85
+SV11092,7.0,7.3,6.4,7.3,7.5,8.0,8.2,ESFP,Truyền thông & Báo chí,Báo chí,4.2
+SV11093,8.1,7.4,8.3,6.3,6.9,8.5,8.7,ESFP,Kinh tế & Quản lý,Thương mại điện tử,3.9
+SV11094,9.3,7.8,8.8,9.1,8.9,8.6,9.1,ESFP,Kinh tế & Quản lý,Marketing,4.2
+SV11095,8.1,7.2,8.5,7.2,8.8,6.4,6.1,ESTP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.8
+SV11096,8.2,7.5,7.7,7.2,7.4,8.1,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV11097,7.0,8.1,7.7,8.3,8.1,7.1,9.3,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,2.85
+SV11098,9.5,7.6,8.5,8.7,9.9,9.7,8.7,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.3
+SV11099,7.7,7.3,7.9,8.6,7.0,7.8,7.7,ESFP,Du lịch & Dịch vụ,Du lịch,4.0
+SV11100,8.0,6.7,5.4,5.4,7.4,6.0,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.35
+SV11101,9.1,7.1,6.5,7.7,7.2,7.5,7.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,2.4
+SV11102,7.3,6.3,6.4,6.2,6.5,8.2,7.4,ESFP,Du lịch & Dịch vụ,Du lịch,4.9
+SV11103,9.7,6.2,7.9,8.3,8.4,8.0,9.1,ENTJ,Kinh tế & Quản lý,Kinh tế,3.8
+SV11104,7.0,6.1,7.1,5.9,9.1,7.0,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.4
+SV11105,8.2,6.1,5.9,5.6,6.3,7.9,8.2,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.35
+SV11106,8.6,5.9,7.2,6.2,7.4,7.0,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.15
+SV11107,6.8,7.0,6.5,6.1,6.3,8.2,7.5,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.3
+SV11108,6.3,6.9,5.7,5.5,5.4,3.1,7.3,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.55
+SV11109,6.3,8.0,7.0,7.5,6.6,8.7,8.1,ESFP,Kinh tế & Quản lý,Fintech,4.8
+SV11110,6.5,8.4,7.3,8.1,7.9,8.8,8.7,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.75
+SV11111,9.4,8.4,8.0,7.1,8.3,8.0,9.3,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.95
+SV11112,5.5,7.4,5.1,8.3,6.8,8.2,6.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.3
+SV11113,9.0,8.3,8.3,8.8,9.6,8.8,9.3,ENFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.1
+SV11114,8.2,7.6,7.0,7.6,8.6,8.1,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.95
+SV11115,6.8,7.5,7.1,7.8,8.6,9.7,8.1,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.05
+SV11116,6.9,7.2,6.1,7.1,6.9,8.5,7.8,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,5.0
+SV11117,9.3,7.2,8.3,9.4,8.8,8.8,7.9,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.8
+SV11118,7.0,6.6,4.4,5.3,6.7,6.1,5.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.95
+SV11119,8.5,7.6,8.3,8.7,8.7,7.0,8.2,ESFJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.4
+SV11120,7.6,6.1,6.0,4.4,5.0,7.4,7.5,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.4
+SV11121,8.6,8.1,8.9,9.6,8.8,8.7,7.4,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.45
+SV11122,7.7,6.6,7.3,7.8,8.3,8.4,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.15
+SV11123,7.0,8.2,6.9,8.5,7.6,7.4,7.7,ESFP,Kinh tế & Quản lý,Kế toán,3.3
+SV11124,6.6,7.2,6.7,7.2,8.2,6.9,9.4,ESFP,Du lịch & Dịch vụ,Du lịch,4.65
+SV11125,9.3,8.3,8.5,9.3,9.1,8.6,8.0,ENTJ,Kinh tế & Quản lý,Quản trị kinh doanh,3.3
+SV11126,10.0,7.9,9.2,8.6,9.2,8.5,8.4,ENTP,Kinh tế & Quản lý,Quản trị kinh doanh,4.0
+SV11127,7.0,6.5,7.4,7.3,7.0,8.0,7.1,ESFP,Kinh tế & Quản lý,Kế toán,3.45
+SV11128,6.7,7.4,9.2,8.5,7.0,8.8,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.8
+SV11129,6.7,6.3,7.1,6.4,7.3,6.8,6.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.0
+SV11130,6.5,6.5,5.5,8.1,8.5,8.4,6.8,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.0
+SV11131,8.2,6.9,7.1,8.0,8.4,8.1,7.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.05
+SV11132,9.7,9.0,8.0,9.5,10.0,9.6,8.1,ENFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.65
+SV11133,7.7,7.1,8.4,7.5,7.5,7.8,8.8,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.1
+SV11134,7.9,6.1,8.4,6.5,8.6,6.6,6.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.75
+SV11135,7.8,6.8,6.0,7.1,8.1,7.4,7.7,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.35
+SV11136,8.6,6.3,8.5,9.1,9.0,8.1,7.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,4.45
+SV11137,7.7,7.2,7.1,8.5,8.2,7.7,7.1,ESFP,Kinh tế & Quản lý,Marketing,3.25
+SV11138,5.7,6.4,5.8,5.7,10.0,6.7,6.5,ESFP,Kinh tế & Quản lý,Thương mại điện tử,4.15
+SV11139,9.2,7.9,9.3,8.4,7.6,8.5,8.5,INFJ,Kinh tế & Quản lý,Fintech,4.2
+SV11140,8.1,8.4,8.3,10.0,8.4,8.3,8.4,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.7
+SV11141,7.3,5.8,4.1,5.7,5.0,6.4,6.5,ENTP,Truyền thông & Báo chí,Báo chí,4.55
+SV11142,7.9,7.3,8.8,8.3,8.0,7.8,7.5,ENTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.75
+SV11143,8.0,7.4,8.4,7.3,6.7,8.8,8.9,ENTJ,Nghệ thuật & Thiết kế,Âm nhạc học,3.9
+SV11144,8.1,6.5,7.5,8.7,8.2,7.5,8.3,ESFP,Y tế & Sức khỏe,Dược học,3.75
+SV11145,8.2,7.2,9.0,6.5,7.2,8.2,8.7,INTJ,Kinh tế & Quản lý,Kế toán,3.85
+SV11146,7.6,6.6,5.6,9.7,8.8,8.8,7.3,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.3
+SV11147,6.0,7.5,6.7,7.7,8.2,8.2,7.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.15
+SV11148,8.5,7.1,8.1,8.7,9.4,8.0,6.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.65
+SV11149,8.8,7.2,8.7,9.5,9.0,8.7,8.5,ESFP,Kinh tế & Quản lý,Kế toán,3.45
+SV11150,7.8,7.3,7.3,9.1,8.3,8.0,8.2,ESFP,Kinh tế & Quản lý,Marketing,3.35
+SV11151,7.5,8.1,7.4,8.2,8.1,7.9,7.6,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,2.75
+SV11152,7.1,6.3,5.2,7.3,6.7,7.7,7.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.55
+SV11153,9.0,8.6,7.7,9.2,9.4,9.1,8.4,ENFJ,Kinh tế & Quản lý,Thương mại điện tử,3.2
+SV11154,8.3,7.3,6.7,7.1,9.0,7.5,7.4,ESFP,Y tế & Sức khỏe,Điều dưỡng,4.65
+SV11155,9.0,7.5,7.8,8.2,8.3,8.5,9.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.35
+SV11156,8.4,6.9,8.4,8.3,8.8,7.9,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.5
+SV11157,7.6,5.4,7.4,5.7,6.7,7.5,8.1,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,5.0
+SV11158,6.7,6.6,5.2,7.2,7.4,7.6,9.0,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.35
+SV11159,7.7,6.5,6.8,7.4,6.6,7.4,8.3,ESTP,Sư phạm & Giáo dục,Sư phạm Tin học,3.7
+SV11160,7.8,8.9,7.5,8.0,8.2,8.4,8.8,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,2.6
+SV11161,9.6,7.6,9.0,7.7,8.4,8.9,9.1,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,5.0
+SV11162,9.0,7.5,8.1,8.3,9.7,8.0,9.2,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.15
+SV11163,6.0,7.4,6.0,6.0,8.6,8.0,10.0,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.05
+SV11164,8.6,7.0,8.4,9.5,9.4,9.1,8.7,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.35
+SV11165,6.9,6.7,7.7,6.6,8.8,7.9,7.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,5.0
+SV11166,8.5,6.0,8.7,6.6,8.2,7.4,9.1,ESFP,Y tế & Sức khỏe,Dược học,4.55
+SV11167,7.1,6.9,6.3,8.1,6.6,7.5,7.6,ESTP,Y tế & Sức khỏe,Y khoa,4.15
+SV11168,7.6,7.4,8.0,7.2,8.4,8.1,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.15
+SV11169,8.8,7.4,9.3,9.3,10.0,9.0,8.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.3
+SV11170,7.1,4.4,3.5,2.6,4.7,8.2,5.7,ENTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.25
+SV11171,8.8,8.1,7.4,7.6,9.2,8.8,8.7,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,4.0
+SV11172,6.1,7.6,8.0,7.7,9.1,8.5,9.2,ESFP,Y tế & Sức khỏe,Y khoa,3.9
+SV11173,9.7,7.5,8.4,9.5,9.4,9.7,8.9,ESTP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.8
+SV11174,8.7,8.4,7.5,8.8,9.6,8.8,8.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.45
+SV11175,6.9,6.7,5.3,6.3,6.8,6.4,8.5,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.7
+SV11176,6.9,7.3,6.3,6.7,7.3,7.0,6.2,ESFP,Truyền thông & Báo chí,Báo chí,3.0
+SV11177,7.1,7.2,6.4,7.0,9.0,8.3,8.7,ESFP,Kinh tế & Quản lý,Kế toán,3.8
+SV11178,9.7,7.9,8.4,9.5,8.1,8.4,9.9,ENTJ,Sư phạm & Giáo dục,Sư phạm Toán,3.35
+SV11179,7.9,5.8,8.2,7.6,7.1,6.9,7.1,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.3
+SV11180,7.6,6.7,8.0,8.1,7.9,8.3,8.5,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.95
+SV11181,6.6,5.5,5.7,8.8,8.3,7.8,8.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.55
+SV11182,8.8,6.8,6.9,9.1,7.0,7.0,8.0,ENTP,Du lịch & Dịch vụ,Du lịch,4.3
+SV11183,10.0,6.3,8.7,8.4,9.6,9.5,9.3,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.05
+SV11184,6.1,7.8,6.5,6.4,8.7,5.3,5.6,ESFP,Kinh tế & Quản lý,Kinh tế,3.35
+SV11185,8.9,8.7,7.6,8.8,8.6,9.2,8.6,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.3
+SV11186,10.0,6.7,7.2,9.1,8.3,6.0,6.8,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.35
+SV11187,7.3,6.2,6.2,8.0,5.7,9.2,6.3,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.75
+SV11188,8.8,7.7,8.4,8.9,9.5,8.8,7.8,ENFJ,Kinh tế & Quản lý,Kinh tế số,4.15
+SV11189,8.2,9.7,8.0,10.0,8.7,7.8,8.9,ENTJ,Du lịch & Dịch vụ,Du lịch,3.35
+SV11190,6.8,7.1,8.2,8.7,6.8,8.4,7.3,INFJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.9
+SV11191,7.5,8.0,8.1,7.2,8.4,7.7,8.1,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.2
+SV11192,7.5,6.4,7.5,8.2,6.8,7.0,7.0,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.55
+SV11193,8.1,7.6,8.2,8.6,7.6,8.9,8.3,INFJ,Y tế & Sức khỏe,Kỹ thuật y sinh,4.0
+SV11194,6.3,8.5,9.0,6.6,8.5,7.3,8.8,ESTP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.05
+SV11195,7.9,6.2,6.1,5.8,6.2,8.3,7.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.05
+SV11196,7.1,7.3,7.1,8.0,7.4,7.2,8.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.85
+SV11197,6.9,6.1,6.6,5.7,8.7,6.9,6.4,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.15
+SV11198,6.1,6.6,6.4,5.2,8.7,6.4,6.9,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.95
+SV11199,7.1,8.0,8.5,6.5,8.8,7.4,9.0,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.55
+SV11200,8.4,6.2,7.8,8.1,7.2,6.8,6.4,ESTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV11201,6.4,7.3,9.5,7.0,7.7,7.0,8.3,ESTP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.65
+SV11202,9.3,6.6,9.0,8.6,9.8,8.2,7.8,ISTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.9
+SV11203,9.4,7.8,8.0,9.5,9.6,9.5,9.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.1
+SV11204,6.4,7.6,6.0,6.8,8.7,8.3,8.1,ESFP,Y tế & Sức khỏe,Dược học,3.85
+SV11205,7.4,7.1,5.3,6.4,7.1,8.7,8.7,ESFP,Y tế & Sức khỏe,Dược học,3.85
+SV11206,6.6,5.2,6.9,6.2,6.6,5.9,6.3,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.5
+SV11207,7.3,7.8,6.7,6.9,5.3,6.2,7.2,ENTP,Du lịch & Dịch vụ,Du lịch,3.5
+SV11208,8.0,7.8,6.9,8.1,8.4,9.0,7.2,ESFP,Kinh tế & Quản lý,Kinh tế,3.15
+SV11209,10.0,7.4,9.8,10.0,8.8,8.9,8.7,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.7
+SV11210,7.3,7.6,8.0,8.7,7.9,8.0,7.8,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.25
+SV11211,9.3,7.3,7.7,9.8,8.6,8.7,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.5
+SV11212,7.8,5.8,7.3,6.2,8.9,7.5,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.5
+SV11213,7.0,6.4,4.2,7.1,6.3,8.1,7.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.3
+SV11214,9.5,8.2,8.5,9.6,9.5,9.2,9.2,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.7
+SV11215,8.3,6.7,8.6,8.2,8.7,6.7,8.8,ESTJ,Du lịch & Dịch vụ,Du lịch,4.45
+SV11216,8.9,6.4,8.0,8.6,7.5,8.2,7.7,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.5
+SV11217,9.3,7.4,7.5,8.2,9.0,8.7,8.9,ENTJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.0
+SV11218,6.8,6.8,9.0,7.7,7.7,8.7,8.5,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.45
+SV11219,6.1,7.4,6.0,6.1,5.5,6.2,8.3,ENTP,Y tế & Sức khỏe,Y khoa,4.9
+SV11220,8.7,7.0,5.5,9.6,8.3,9.5,8.7,ESFJ,Kinh tế & Quản lý,Fintech,3.25
+SV11221,7.9,7.6,7.9,8.4,7.4,8.1,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.0
+SV11222,6.8,7.2,8.2,7.3,8.2,8.0,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.15
+SV11223,8.5,7.7,8.5,6.4,8.9,8.6,8.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.05
+SV11224,6.7,5.8,5.8,6.5,5.1,8.1,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.75
+SV11225,5.5,6.8,5.4,4.2,6.0,5.2,6.6,ENTP,Nghệ thuật & Thiết kế,Âm nhạc học,3.8
+SV11226,7.7,7.3,7.4,8.9,7.6,9.3,9.5,INFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.85
+SV11227,7.7,7.3,8.6,7.7,8.6,9.2,8.9,ISTJ,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.8
+SV11228,8.0,5.3,6.4,7.3,8.7,7.3,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.35
+SV11229,9.1,7.4,8.2,8.7,9.2,9.1,8.0,ENTJ,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.95
+SV11230,7.0,6.9,6.7,6.3,7.9,7.0,6.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.55
+SV11231,9.3,6.7,9.0,7.6,7.7,7.1,7.9,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.15
+SV11232,8.0,8.5,8.9,7.5,8.3,7.3,8.9,ESTP,Sư phạm & Giáo dục,Sư phạm Toán,3.8
+SV11233,9.3,7.2,8.3,9.7,8.8,8.7,8.4,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,5.0
+SV11234,7.1,6.0,7.8,6.1,9.0,7.8,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.45
+SV11235,6.6,7.1,8.3,7.4,7.3,8.0,8.6,ESFP,Kinh tế & Quản lý,Thương mại điện tử,4.65
+SV11236,7.8,5.8,8.0,7.6,8.7,6.6,7.9,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.7
+SV11237,7.9,8.0,7.0,7.8,9.0,9.0,7.9,ESFP,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.55
+SV11238,9.4,8.8,6.5,9.5,8.4,9.2,8.6,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.15
+SV11239,9.6,7.3,8.7,9.5,8.9,7.6,8.3,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.65
+SV11240,7.2,7.4,6.1,5.6,7.3,6.9,9.8,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.65
+SV11241,8.2,7.2,6.0,8.2,8.7,9.3,8.5,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.75
+SV11242,7.2,7.1,6.9,6.6,5.3,8.1,7.2,ESFP,Kinh tế & Quản lý,Marketing,3.55
+SV11243,8.0,6.7,5.7,8.9,7.6,7.5,9.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.35
+SV11244,8.2,6.2,8.0,7.1,8.2,8.4,7.8,ESFP,Du lịch & Dịch vụ,Du lịch,3.55
+SV11245,7.6,5.3,5.7,6.9,8.0,6.2,5.1,ESFP,Y tế & Sức khỏe,Y khoa,3.25
+SV11246,9.6,6.0,8.0,9.2,7.9,8.6,8.4,ENTJ,Sư phạm & Giáo dục,Sư phạm Tin học,3.85
+SV11247,7.4,7.8,5.0,6.4,9.4,6.3,7.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.45
+SV11248,8.9,8.2,8.6,9.4,9.9,9.5,9.4,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.95
+SV11249,6.8,5.2,7.4,7.0,9.1,6.7,6.1,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.05
+SV11250,7.2,5.3,7.8,6.5,8.6,7.3,6.4,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.0
+SV11251,9.2,6.4,7.9,8.6,8.7,8.8,8.7,ENTJ,Kinh tế & Quản lý,Fintech,4.25
+SV11252,6.9,6.6,4.8,7.1,5.8,8.2,8.3,ESFP,Kinh tế & Quản lý,Kinh tế,2.85
+SV11253,9.1,6.0,6.9,9.1,8.9,5.7,7.1,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.05
+SV11254,6.4,6.2,6.7,8.4,8.2,8.0,7.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.45
+SV11255,7.0,7.3,6.1,6.0,5.1,8.6,7.6,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.25
+SV11256,6.1,7.1,5.6,7.3,5.5,8.4,8.1,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.7
+SV11257,7.8,7.0,8.7,8.1,8.4,7.9,9.5,ESTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.05
+SV11258,4.9,7.3,7.1,6.3,5.3,5.4,5.7,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.5
+SV11259,6.6,5.0,5.9,6.1,6.7,9.2,7.7,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.8
+SV11260,5.5,6.9,6.6,6.6,5.3,6.1,8.0,ENTP,Nông nghiệp & Môi trường,Công nghệ sinh học,4.15
+SV11261,6.4,4.7,7.1,6.8,7.8,6.4,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.9
+SV11262,8.2,7.8,6.3,8.6,8.6,9.2,8.4,ISTP,Sư phạm & Giáo dục,Sư phạm Tin học,4.1
+SV11263,10.0,7.8,8.7,9.8,9.6,8.6,9.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.4
+SV11264,9.5,7.7,8.3,9.8,8.5,8.5,9.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.95
+SV11265,7.8,7.4,9.8,8.3,8.4,7.2,9.2,INFJ,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.15
+SV11266,9.4,7.7,8.3,8.8,9.7,9.3,8.7,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.8
+SV11267,7.6,7.0,6.7,7.3,7.4,7.6,7.4,ESFP,Kinh tế & Quản lý,Kinh tế số,3.4
+SV11268,7.2,8.5,8.4,6.7,8.4,9.6,9.6,ISTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.5
+SV11269,8.9,8.5,9.4,8.2,9.4,9.3,8.5,ISTP,Y tế & Sức khỏe,Y khoa,4.45
+SV11270,8.0,7.8,8.1,8.0,7.9,7.7,8.2,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.4
+SV11271,7.7,8.0,7.1,7.7,7.2,8.5,7.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.15
+SV11272,8.9,7.7,8.4,9.5,8.5,9.9,8.1,ENTJ,Y tế & Sức khỏe,Dược học,3.3
+SV11273,8.3,7.4,8.8,7.9,9.7,6.9,7.2,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.7
+SV11274,7.0,5.6,6.8,5.4,5.0,5.8,5.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,4.45
+SV11275,6.2,7.5,7.9,6.9,8.2,7.6,7.4,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.9
+SV11276,8.2,7.1,8.2,9.2,8.0,7.5,8.2,ENTJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,5.0
+SV11277,7.0,6.0,5.4,7.6,7.6,6.1,4.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.05
+SV11278,9.7,7.1,6.9,9.4,8.8,8.0,7.6,ENTJ,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.95
+SV11279,8.5,8.2,7.3,7.8,8.1,8.9,9.0,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.7
+SV11280,6.9,5.6,5.6,6.2,5.2,5.3,4.7,ENTP,Y tế & Sức khỏe,Kỹ thuật y sinh,3.9
+SV11281,6.4,7.0,6.7,6.6,8.3,7.5,8.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.75
+SV11282,7.5,6.5,8.3,8.7,7.7,7.1,8.5,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.2
+SV11283,5.4,7.0,6.1,7.4,6.4,6.4,8.5,ESTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.35
+SV11284,8.0,7.6,8.5,8.3,9.3,9.5,8.0,ESTP,Luật & Xã hội,Luật,3.45
+SV11285,4.9,5.7,4.2,5.2,8.5,5.7,7.3,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.2
+SV11286,8.3,6.5,6.8,5.7,5.9,7.7,6.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,2.95
+SV11287,9.5,7.9,6.8,8.9,9.2,8.7,8.3,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.1
+SV11288,8.1,6.9,6.4,7.4,8.2,8.6,7.6,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.3
+SV11289,7.4,6.9,8.1,7.9,8.3,8.0,8.5,ESTP,Nghệ thuật & Thiết kế,Âm nhạc học,2.75
+SV11290,9.0,7.9,7.5,9.1,9.6,9.0,9.7,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.05
+SV11291,7.2,6.4,4.3,7.3,6.1,8.1,5.6,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,5.0
+SV11292,7.1,6.2,6.6,5.3,6.3,7.9,8.2,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.85
+SV11293,6.1,5.4,3.5,5.1,7.2,6.5,6.2,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.25
+SV11294,5.3,5.2,4.3,2.7,4.8,4.7,6.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.9
+SV11295,7.8,8.3,8.0,9.4,6.0,8.0,7.4,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.8
+SV11296,8.9,6.9,8.1,8.2,8.3,8.8,7.5,ENTP,Kinh tế & Quản lý,Kinh tế số,4.3
+SV11297,7.3,7.7,8.5,6.6,7.8,8.5,8.1,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,3.7
+SV11298,8.2,8.1,6.1,8.0,8.9,8.9,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.0
+SV11299,7.6,5.4,6.6,6.2,5.3,6.1,6.0,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.0
+SV11300,8.9,8.1,9.0,9.3,9.4,10.0,9.0,ENTP,Y tế & Sức khỏe,Điều dưỡng,3.5
+SV11301,6.3,6.3,6.2,7.5,7.0,7.8,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,4.35
+SV11302,7.7,7.9,8.6,8.4,9.1,7.6,7.6,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.75
+SV11303,10.0,7.7,7.9,9.5,10.0,9.0,8.8,ENFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.45
+SV11304,6.9,7.6,6.1,6.9,8.6,8.1,7.6,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.1
+SV11305,8.7,7.5,7.9,8.2,10.0,8.5,8.1,ENTJ,Nghệ thuật & Thiết kế,Thiết kế thời trang,3.4
+SV11306,7.7,6.3,5.9,6.7,8.8,7.7,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.85
+SV11307,9.6,7.8,8.5,7.5,8.9,9.1,7.3,ISTP,Kinh tế & Quản lý,Marketing,3.85
+SV11308,8.7,9.0,9.1,9.0,9.6,8.5,8.6,ISTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.4
+SV11309,8.6,5.6,7.3,7.0,8.0,6.2,6.1,ESFP,Kinh tế & Quản lý,Kế toán,4.1
+SV11310,7.8,7.1,7.1,7.5,8.2,8.4,6.6,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.85
+SV11311,7.2,6.3,8.7,8.6,8.1,6.9,8.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.25
+SV11312,8.8,8.7,7.8,9.3,8.2,9.4,8.8,ESFJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.55
+SV11313,7.4,8.3,8.0,8.0,8.9,8.6,8.7,ESFP,Kinh tế & Quản lý,Kế toán,4.15
+SV11314,7.7,7.6,8.7,6.9,8.4,8.3,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.85
+SV11315,7.0,6.7,8.2,7.8,7.6,7.8,7.3,ESTP,Kinh tế & Quản lý,Kinh tế,3.2
+SV11316,8.0,7.8,7.0,7.8,9.0,8.2,8.5,INFP,Y tế & Sức khỏe,Y khoa,3.3
+SV11317,7.5,6.6,5.0,5.8,4.7,8.5,6.9,ESFP,Kinh tế & Quản lý,Marketing,3.7
+SV11318,9.5,7.5,7.3,9.1,8.8,8.3,7.7,ENTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.55
+SV11319,8.0,7.4,7.7,8.7,8.7,7.9,6.9,ESTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.75
+SV11320,8.8,8.0,8.1,8.7,8.9,8.3,9.3,ENTJ,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.9
+SV11321,8.8,8.2,9.7,8.1,8.6,9.4,8.0,ISTP,Kinh tế & Quản lý,Kinh tế,4.1
+SV11322,7.5,7.4,6.1,8.8,7.9,8.9,7.6,ESFP,Luật & Xã hội,Luật,3.8
+SV11323,7.7,7.4,6.2,9.6,8.6,10.0,8.9,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.1
+SV11324,6.2,6.4,4.5,5.9,7.5,6.6,6.7,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.9
+SV11325,9.5,7.8,9.0,9.8,8.6,8.7,7.7,INTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,2.85
+SV11326,8.6,5.4,7.7,7.2,8.7,7.6,7.7,INFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.4
+SV11327,6.7,7.4,7.2,6.9,6.4,5.9,7.3,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.8
+SV11328,8.2,8.4,6.5,8.3,9.1,10.0,9.1,ESFJ,Y tế & Sức khỏe,Điều dưỡng,3.25
+SV11329,7.0,5.6,6.7,7.2,8.1,5.1,7.2,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.15
+SV11330,6.8,6.8,6.1,8.8,6.0,6.9,7.0,ESFP,Kinh tế & Quản lý,Kế toán,4.6
+SV11331,7.4,5.6,7.3,7.7,8.7,6.2,6.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.45
+SV11332,10.0,9.0,7.7,9.9,10.0,9.2,8.7,ENFJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.75
+SV11333,8.1,8.6,8.8,6.7,9.7,7.8,8.8,ESTP,Truyền thông & Báo chí,Báo chí,4.6
+SV11334,8.6,7.3,7.4,9.3,8.6,7.5,8.2,ENTP,Kinh tế & Quản lý,Thương mại điện tử,3.9
+SV11335,9.3,7.8,7.7,8.5,8.4,9.3,8.1,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,3.7
+SV11336,7.6,6.9,4.9,5.3,8.0,8.1,7.1,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.55
+SV11337,7.1,6.3,5.4,5.4,6.2,8.1,6.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.7
+SV11338,8.0,7.3,7.9,8.5,8.5,8.1,7.5,ESTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,3.65
+SV11339,7.7,6.2,5.2,7.8,6.2,9.0,6.7,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,3.95
+SV11340,8.3,7.1,7.9,6.6,8.1,7.3,7.9,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,3.95
+SV11341,8.5,7.6,7.0,7.9,8.2,8.6,8.7,ESFP,Kinh tế & Quản lý,Quản trị kinh doanh,3.85
+SV11342,6.0,3.8,4.1,7.6,7.2,6.1,4.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.05
+SV11343,9.5,9.2,7.8,7.7,8.8,9.7,8.7,ENTJ,Sư phạm & Giáo dục,Sư phạm Toán,4.45
+SV11344,9.1,7.8,7.8,7.3,10.0,7.1,8.3,ENTJ,Luật & Xã hội,Luật,4.3
+SV11345,6.5,7.2,6.4,7.7,6.3,8.5,8.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.1
+SV11346,7.5,7.0,5.4,5.1,6.9,8.0,6.9,ESFP,Y tế & Sức khỏe,Y khoa,2.55
+SV11347,9.2,6.6,9.3,7.7,8.9,8.6,8.0,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.3
+SV11348,8.7,8.0,7.0,7.5,8.0,7.9,7.7,ESFP,Kinh tế & Quản lý,Fintech,3.15
+SV11349,7.6,8.1,8.6,8.1,9.1,8.8,9.5,ISTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.75
+SV11350,9.5,8.5,9.5,9.9,9.6,8.6,9.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.25
+SV11351,8.5,7.9,8.0,6.3,7.9,6.5,8.3,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,2.95
+SV11352,8.0,6.5,8.5,6.4,7.1,7.1,6.7,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.1
+SV11353,6.9,6.7,7.2,7.0,4.4,7.2,8.0,INTJ,Y tế & Sức khỏe,Y khoa,4.25
+SV11354,8.0,7.6,8.9,6.8,7.6,8.8,8.4,INTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,3.55
+SV11355,10.0,8.5,8.7,8.6,9.0,9.3,9.1,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,2.55
+SV11356,9.0,8.6,6.8,8.4,9.1,9.4,8.6,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.6
+SV11357,8.7,8.0,6.7,7.8,9.5,7.6,8.8,INFP,Du lịch & Dịch vụ,Du lịch,4.05
+SV11358,8.7,7.1,7.5,6.9,9.3,8.1,8.4,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.1
+SV11359,10.0,8.5,8.9,8.9,9.4,9.1,8.9,INTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.95
+SV11360,9.1,9.7,8.5,8.4,8.9,9.6,9.3,INTP,Kinh tế & Quản lý,Marketing,3.85
+SV11361,8.1,5.3,6.3,7.2,8.5,6.8,7.6,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.15
+SV11362,8.0,7.3,8.5,8.2,8.5,9.4,8.2,ENTP,Kinh tế & Quản lý,Kinh tế,3.9
+SV11363,8.1,7.1,6.2,7.8,8.4,8.4,6.8,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.35
+SV11364,5.7,7.6,5.6,6.4,7.0,7.1,8.9,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,4.45
+SV11365,7.5,6.3,6.9,6.4,8.4,6.3,7.8,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.75
+SV11366,6.9,7.6,8.5,6.0,9.4,7.7,8.8,ESFP,Luật & Xã hội,Luật,3.85
+SV11367,8.1,8.4,6.5,9.6,6.9,9.3,9.2,ESFJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.4
+SV11368,7.9,7.4,7.9,7.4,8.4,6.9,7.4,ESFP,Nghệ thuật & Thiết kế,Âm nhạc học,3.65
+SV11369,7.3,7.1,8.1,7.4,7.9,8.1,9.4,ESFP,Luật & Xã hội,Luật,3.4
+SV11370,6.4,6.4,6.6,6.2,5.9,7.9,8.8,ESFP,Luật & Xã hội,Luật,3.75
+SV11371,8.9,7.0,6.1,7.0,8.1,8.4,6.8,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.7
+SV11372,9.1,7.8,8.2,9.7,8.9,9.5,9.7,INTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.15
+SV11373,8.4,7.0,7.8,8.7,7.8,9.8,8.7,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,3.05
+SV11374,8.6,6.8,6.4,9.3,8.0,8.7,8.0,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.6
+SV11375,8.2,6.1,7.7,6.9,8.4,7.0,8.0,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.75
+SV11376,7.1,6.7,6.7,4.5,5.9,5.5,6.5,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học máy tính,3.5
+SV11377,8.5,6.8,7.1,7.6,7.2,7.7,8.7,ESTJ,Kinh tế & Quản lý,Quan hệ quốc tế,4.35
+SV11378,9.1,6.5,9.3,7.5,8.2,9.7,8.2,ISTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.55
+SV11379,7.4,5.3,7.1,7.1,9.0,6.1,6.3,ESFP,Y tế & Sức khỏe,Y khoa,4.75
+SV11380,8.4,7.9,7.8,8.1,6.1,9.1,8.8,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.2
+SV11381,8.2,7.2,7.0,9.0,8.2,9.8,9.0,ESFJ,Kinh tế & Quản lý,Kế toán,3.6
+SV11382,7.6,8.7,5.8,8.1,7.4,7.8,9.5,ESFP,Kinh tế & Quản lý,Kế toán,4.95
+SV11383,9.3,8.2,8.1,8.5,8.7,9.0,8.8,ENTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.55
+SV11384,6.7,6.1,3.9,4.8,7.1,6.7,6.2,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.2
+SV11385,5.4,6.4,5.4,6.6,4.6,6.2,7.6,ENTP,Kinh tế & Quản lý,Kinh tế,4.0
+SV11386,6.9,7.5,6.5,7.0,8.4,8.3,7.7,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,4.5
+SV11387,7.1,7.4,8.0,7.0,8.3,7.9,8.8,ESFP,Truyền thông & Báo chí,Báo chí,4.65
+SV11388,8.6,7.8,6.9,9.7,8.4,9.3,9.0,ESFJ,Du lịch & Dịch vụ,Du lịch,3.85
+SV11389,8.3,8.2,7.0,6.9,8.0,8.1,8.6,ESFP,Kinh tế & Quản lý,Kinh tế,3.45
+SV11390,8.9,8.1,8.8,9.7,9.5,8.7,9.3,ENTP,Kinh tế & Quản lý,Quản trị kinh doanh,4.1
+SV11391,8.5,6.9,8.2,8.0,8.4,7.7,8.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,3.5
+SV11392,6.1,7.3,6.5,6.1,8.2,7.3,9.8,ESFP,Kinh tế & Quản lý,Marketing,4.85
+SV11393,7.6,5.5,6.0,4.7,7.1,5.7,6.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.9
+SV11394,8.6,7.6,9.2,8.7,8.1,9.4,9.9,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.65
+SV11395,8.2,7.4,8.4,7.0,7.4,8.0,8.8,ESFP,Nông nghiệp & Môi trường,Công nghệ sinh học,3.95
+SV11396,6.5,6.7,6.9,6.4,6.2,7.7,6.8,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.2
+SV11397,7.4,6.5,5.4,6.2,5.3,7.3,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,3.35
+SV11398,8.6,6.5,8.2,8.1,8.9,6.8,8.4,ESFP,Y tế & Sức khỏe,Răng - Hàm - Mặt,4.45
+SV11399,7.6,6.4,5.4,6.0,6.4,8.6,7.4,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,3.5
+SV11400,6.9,7.0,5.8,5.9,9.6,6.0,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.35
+SV11401,10.0,7.3,8.7,10.0,9.7,7.8,8.2,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.1
+SV11402,7.5,7.5,8.3,7.3,8.7,7.9,8.8,ESFP,Y tế & Sức khỏe,Kỹ thuật y sinh,4.45
+SV11403,7.4,8.4,5.8,6.9,7.9,8.9,8.1,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,4.2
+SV11404,8.5,8.5,8.8,7.9,9.2,8.0,9.1,ESTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.35
+SV11405,9.3,8.7,8.7,9.7,9.9,9.1,9.6,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.45
+SV11406,9.7,7.6,7.0,9.3,9.3,9.2,8.7,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,3.15
+SV11407,5.8,5.8,5.0,6.7,5.9,6.5,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ thông tin,4.6
+SV11408,8.2,5.8,5.9,7.0,9.1,7.0,7.2,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.7
+SV11409,8.3,7.3,9.0,8.0,8.7,7.5,8.4,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.7
+SV11410,6.1,6.1,6.2,4.6,5.9,5.4,7.7,ENTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.5
+SV11411,8.3,8.4,6.7,8.1,7.9,8.8,7.7,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.15
+SV11412,8.8,6.1,5.8,6.6,6.7,6.0,6.3,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,4.1
+SV11413,8.5,8.7,5.1,7.4,8.4,9.8,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Toán,4.95
+SV11414,7.7,8.0,5.3,8.0,8.0,7.5,9.6,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,3.55
+SV11415,9.3,8.1,9.0,9.7,9.8,9.1,9.3,ENTP,Y tế & Sức khỏe,Y khoa,4.3
+SV11416,8.2,5.8,6.0,7.5,7.2,7.2,8.7,ESFP,Kinh tế & Quản lý,Kinh tế số,3.9
+SV11417,7.0,7.4,8.2,7.8,8.0,7.9,8.2,ESTP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.0
+SV11418,8.8,7.0,7.4,8.2,10.0,7.4,8.5,ENTJ,Luật & Xã hội,Luật,4.6
+SV11419,8.7,7.6,7.7,9.8,8.7,8.7,9.1,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.1
+SV11420,7.0,7.4,8.0,8.9,7.3,8.0,7.7,ENTP,Luật & Xã hội,Luật,4.1
+SV11421,8.0,6.6,7.7,8.8,8.3,7.6,8.3,ESFP,Sư phạm & Giáo dục,Sư phạm Tin học,4.4
+SV11422,7.8,7.6,8.2,8.9,9.3,8.8,8.8,ESTJ,Y tế & Sức khỏe,Kỹ thuật y sinh,3.65
+SV11423,8.2,8.1,8.1,9.5,8.1,8.7,8.6,ENFJ,Luật & Xã hội,Luật,3.45
+SV11424,9.4,7.9,8.9,8.8,8.8,7.6,9.7,ENTJ,Kinh tế & Quản lý,Fintech,3.35
+SV11425,8.3,7.1,9.4,6.1,5.8,7.3,7.8,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,2.85
+SV11426,8.3,5.7,8.1,8.3,7.2,8.7,9.1,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,4.9
+SV11427,7.8,7.9,5.8,5.6,6.2,6.6,7.4,ENTP,Luật & Xã hội,Luật,3.3
+SV11428,6.5,8.6,8.2,7.1,8.9,8.3,8.9,ESTP,Truyền thông & Báo chí,Báo chí,3.75
+SV11429,7.4,4.2,6.6,6.8,8.4,5.5,5.9,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Hệ thống thông tin,3.7
+SV11430,8.7,7.1,6.5,8.4,9.6,7.5,8.7,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.0
+SV11431,8.9,6.6,8.6,8.8,8.0,8.4,7.1,ENTP,Du lịch & Dịch vụ,Quản trị khách sạn,4.25
+SV11432,9.4,7.9,8.1,9.1,7.7,9.7,9.2,ENTJ,Nghệ thuật & Thiết kế,Kiến trúc,4.3
+SV11433,6.0,6.7,5.5,4.9,6.7,5.4,6.4,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.55
+SV11434,7.0,6.7,8.1,7.9,7.3,8.2,9.4,ESTP,Kinh tế & Quản lý,Quản trị kinh doanh,3.75
+SV11435,7.7,6.5,8.2,7.5,7.3,7.9,7.1,INTJ,Kinh tế & Quản lý,Thương mại điện tử,4.0
+SV11436,5.6,6.0,4.6,7.8,7.0,7.9,6.4,ESFP,Y tế & Sức khỏe,Dược học,3.75
+SV11437,10.0,9.4,7.1,10.0,9.8,10.0,8.2,ESTP,Luật & Xã hội,Luật,4.65
+SV11438,8.8,9.3,8.2,9.0,7.7,8.1,8.0,ENTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.1
+SV11439,9.3,6.5,8.5,9.2,10.0,9.6,9.3,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.2
+SV11440,8.9,9.0,8.4,9.3,9.1,7.8,7.5,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện,4.2
+SV11441,8.0,7.3,6.6,7.7,9.0,8.0,6.3,ESFP,Truyền thông & Báo chí,Truyền thông đa phương tiện,4.45
+SV11442,9.7,7.6,9.0,10.0,9.1,8.8,8.7,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.95
+SV11443,7.4,6.2,8.0,8.9,8.2,8.5,8.1,INFJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.2
+SV11444,7.7,8.2,7.0,7.9,6.8,8.0,8.4,ESFP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.05
+SV11445,8.0,7.5,6.7,7.9,6.9,8.3,7.9,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.5
+SV11446,8.7,6.8,7.5,8.2,8.6,8.5,8.6,ESFP,Kinh tế & Quản lý,Fintech,3.6
+SV11447,8.8,8.5,9.2,8.9,8.6,9.7,9.1,ENTJ,Nông nghiệp & Môi trường,Kỹ thuật môi trường,4.15
+SV11448,7.7,8.4,8.5,8.0,9.1,9.2,7.8,ISTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,4.45
+SV11449,7.5,6.2,7.2,7.2,5.4,5.3,6.7,ENTP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.85
+SV11450,9.5,9.0,9.6,9.7,9.3,8.9,9.0,ENTP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,4.0
+SV11451,8.8,5.9,6.7,7.2,8.8,7.2,7.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.7
+SV11452,8.7,7.5,9.1,8.3,9.1,8.2,9.8,ESTP,Kinh tế & Quản lý,Kinh tế,3.95
+SV11453,8.5,7.3,6.1,6.9,8.3,5.4,7.9,ESFP,Kinh tế & Quản lý,Kinh tế số,5.0
+SV11454,7.4,5.5,7.5,6.1,6.2,6.4,7.3,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.15
+SV11455,7.2,6.0,7.9,7.8,6.6,7.7,7.6,INTJ,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,2.95
+SV11456,7.3,5.9,7.8,8.0,8.5,7.5,7.5,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.25
+SV11457,8.8,7.3,8.2,8.9,8.2,7.3,7.0,ENTJ,Kinh tế & Quản lý,Fintech,4.05
+SV11458,7.2,7.3,7.1,6.7,6.0,5.5,6.8,ENTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.5
+SV11459,7.8,6.3,5.9,7.9,6.3,8.1,7.1,ESTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,4.2
+SV11460,9.5,7.7,5.7,9.7,8.7,9.3,9.0,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,3.8
+SV11461,6.5,8.1,7.9,6.9,8.4,6.9,8.6,ESFP,Y tế & Sức khỏe,Dược học,3.25
+SV11462,7.2,7.0,6.6,6.3,8.2,7.3,8.0,ESFP,Kinh tế & Quản lý,Kế toán,3.75
+SV11463,8.4,8.4,8.3,7.2,6.7,8.4,9.1,ENTJ,Sư phạm & Giáo dục,Sư phạm Toán,3.4
+SV11464,8.7,7.9,8.0,7.5,8.5,8.4,8.7,ESFP,Kinh tế & Quản lý,Kế toán,3.55
+SV11465,7.0,8.4,8.3,9.1,8.2,7.4,7.9,ENTP,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,4.15
+SV11466,6.3,6.8,6.6,5.2,7.3,6.3,7.6,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Khoa học dữ liệu,4.7
+SV11467,7.7,6.4,7.7,6.9,9.1,7.0,6.6,ESFP,Nghệ thuật & Thiết kế,Kiến trúc,4.05
+SV11468,7.2,7.0,5.4,7.8,8.1,7.9,8.4,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,3.25
+SV11469,7.6,5.8,7.8,8.3,9.3,7.7,8.0,ESFP,Kinh tế & Quản lý,Marketing,4.05
+SV11470,7.9,8.0,8.6,8.3,9.8,9.5,8.2,ESTP,Luật & Xã hội,Luật,4.45
+SV11471,7.9,6.6,7.9,6.7,7.5,7.1,7.0,ESFP,Y tế & Sức khỏe,Y khoa,3.55
+SV11472,8.4,8.2,8.1,9.2,6.5,6.3,8.5,ENTP,Y tế & Sức khỏe,Điều dưỡng,3.8
+SV11473,8.6,6.6,8.2,9.1,9.3,7.8,8.2,ENTJ,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.85
+SV11474,9.9,8.2,8.4,8.7,9.7,8.6,9.3,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật điện tử - Viễn thông,3.45
+SV11475,6.5,6.6,5.9,5.1,9.4,7.3,5.5,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,4.15
+SV11476,8.2,7.0,7.9,8.7,9.2,8.9,7.1,ISTP,Nông nghiệp & Môi trường,Kỹ thuật môi trường,3.8
+SV11477,6.7,7.0,7.9,7.4,7.1,7.6,8.0,ESFP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,4.05
+SV11478,10.0,8.5,9.2,7.4,8.2,8.8,8.1,ISTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật máy tính,3.4
+SV11479,8.6,7.5,7.4,7.1,8.2,6.9,8.1,ESFP,Kinh tế & Quản lý,Tài chính - Ngân hàng,3.65
+SV11480,10.0,7.5,8.8,9.2,8.3,8.2,8.6,ENTP,Kinh tế & Quản lý,Thương mại điện tử,4.2
+SV11481,7.8,7.7,7.4,9.3,8.9,6.9,7.6,ESFP,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật hóa học,3.65
+SV11482,8.7,7.8,8.9,9.6,8.9,8.3,8.3,ENTJ,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,4.7
+SV11483,7.3,5.3,6.0,7.6,5.9,5.6,7.2,ESFP,Kinh tế & Quản lý,Logistics và Quản lý chuỗi cung ứng,3.65
+SV11484,6.3,8.2,7.5,6.9,7.1,9.0,8.3,ESFP,Y tế & Sức khỏe,Điều dưỡng,3.95
+SV11485,8.5,6.3,7.6,9.2,6.9,8.3,7.0,ENTP,Kinh tế & Quản lý,Marketing,4.3
+SV11486,8.9,5.7,8.3,8.7,7.4,7.4,8.4,ENTJ,Kinh tế & Quản lý,Quan hệ quốc tế,3.15
+SV11487,8.1,7.5,7.2,8.1,8.5,7.4,8.0,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,2.95
+SV11488,9.4,9.4,8.8,8.1,8.4,10.0,9.3,ISTP,Sư phạm & Giáo dục,Sư phạm Ngữ văn,3.1
+SV11489,7.9,7.8,7.8,7.9,8.0,7.2,8.6,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.5
+SV11490,6.7,4.9,7.5,6.5,7.1,7.0,7.7,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,3.55
+SV11491,8.1,6.0,6.6,7.5,7.7,9.1,7.6,ESFP,Du lịch & Dịch vụ,Quản trị khách sạn,5.0
+SV11492,7.9,5.7,8.8,6.8,7.2,7.2,7.2,INTJ,Truyền thông & Báo chí,Truyền thông đa phương tiện,3.55
+SV11493,9.0,6.6,7.7,7.6,8.7,9.6,8.0,ENTP,Kinh tế & Quản lý,Quan hệ quốc tế,3.95
+SV11494,6.9,8.0,8.8,7.0,8.6,7.8,7.5,ESTP,Kinh tế & Quản lý,Thương mại điện tử,4.6
+SV11495,5.0,6.1,5.0,5.1,8.5,7.4,4.5,ESFP,Nghệ thuật & Thiết kế,Thiết kế đồ họa,4.85
+SV11496,6.4,8.1,5.2,6.1,9.7,6.5,8.8,ESFP,Sư phạm & Giáo dục,Sư phạm Lịch sử,4.9
+SV11497,9.3,8.7,8.1,7.6,8.8,8.6,8.7,ENTJ,Nghệ thuật & Thiết kế,Kiến trúc,4.45
+SV11498,8.1,7.8,9.5,9.6,8.4,9.6,8.6,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.35
+SV11499,7.0,6.7,6.0,6.8,6.7,7.3,7.0,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Công nghệ đa phương tiện,4.15
+SV11500,9.7,8.0,8.7,9.3,8.3,8.5,7.9,ENTJ,Kinh tế & Quản lý,Thương mại điện tử,4.25
+SV11501,10.0,8.0,10.0,9.4,9.4,9.0,9.0,ENTP,Sư phạm & Giáo dục,Sư phạm Tin học,3.55
+SV11502,7.6,7.2,6.8,7.9,5.5,5.5,7.0,ENTP,Xây dựng & Quy hoạch,Kỹ thuật xây dựng,3.45
+SV11503,7.0,7.7,7.8,8.1,7.6,8.0,8.3,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Anh,3.85
+SV11504,7.8,7.2,6.3,8.7,8.4,6.6,8.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,An ninh mạng,3.75
+SV11505,6.5,6.3,5.0,6.4,6.7,7.1,6.2,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Blockchain và Tiền mã hóa,3.6
+SV11506,7.5,7.7,8.1,8.3,7.1,7.3,7.0,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Hàn Quốc,4.2
+SV11507,7.1,7.9,6.6,7.7,8.6,9.6,8.5,INFJ,Kinh tế & Quản lý,Thương mại điện tử,4.35
+SV11508,8.4,8.3,7.9,7.1,9.9,8.1,8.8,ENTJ,Ngôn ngữ & Văn hóa,Ngôn ngữ Trung Quốc,3.9
+SV11509,9.3,8.1,8.9,9.2,9.1,9.1,9.1,ESTP,Công nghệ Thông tin & Kỹ thuật Máy tính,Trí tuệ nhân tạo và Học máy,4.6
+SV11510,10.0,8.4,7.3,8.2,7.9,8.7,9.1,ENTP,Kinh tế & Quản lý,Kinh tế,3.3
+SV11511,9.1,8.5,8.1,9.1,8.4,8.7,9.4,ENTJ,"Kỹ thuật, Cơ khí & Ô tô",Kỹ thuật cơ khí,3.75
+SV11512,8.0,7.7,7.3,8.1,8.1,7.1,8.4,ESFP,Truyền thông & Báo chí,Báo chí,3.5
+SV11513,5.5,7.0,7.5,7.2,7.2,7.6,7.5,ESFP,Công nghệ Thông tin & Kỹ thuật Máy tính,Kỹ thuật phần mềm,2.9
+SV11514,8.8,6.7,7.6,9.1,7.7,8.3,7.2,ESFP,Luật & Xã hội,Luật,3.8
+SV11515,5.4,6.2,6.7,6.9,7.3,5.6,5.8,ESFP,Kinh tế & Quản lý,Quan hệ quốc tế,3.8
+SV11516,8.7,8.3,8.9,9.6,9.7,9.0,9.6,ISTP,Du lịch & Dịch vụ,Quản trị khách sạn,4.6
+SV11517,8.2,7.2,8.4,9.5,9.0,8.0,8.1,ENTJ,Nông nghiệp & Môi trường,Công nghệ sinh học,4.15
+SV11518,8.5,6.8,8.2,8.5,7.3,7.8,7.7,ENTP,Y tế & Sức khỏe,Y khoa,3.35
+SV11519,8.0,7.1,8.0,7.3,7.8,8.1,7.8,ESFP,Truyền thông & Báo chí,Báo chí,4.8
+SV11520,8.0,7.7,8.3,6.6,8.8,7.0,7.7,ESFP,Ngôn ngữ & Văn hóa,Ngôn ngữ Nhật,4.45
+SV11521,6.3,6.4,6.6,3.2,5.2,6.0,6.0,ENTP,Nghệ thuật & Thiết kế,Thiết kế thời trang,4.15

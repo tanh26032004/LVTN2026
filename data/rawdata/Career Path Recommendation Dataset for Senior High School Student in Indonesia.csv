@@ -1,0 +1,141 @@
+No,Gender,Grade,Senior High School Location,Personality Type,Faculty Recommendation Based on Subject Grade,Faculty Recommendation Based on MBTI score,Subject Grade,,,,,,MBTI Score,,,,,,,
+,,,,,,,Math,English,Physics,Chemistry,Biology,Information Technology,Skor SE,Skor SI,Skor NE,Skor NI,Skor TE,Skor TI,Skor FE,Skor FI
+1,Male,XI,Tangerang,ENTP,"Industrial Engineering, Architecture Engineering, Electrical Engineering",N/A,85,70,50,45,34,54,73,61,69,68,67,75,67,57
+2,Male,XI,Tangerang,ESFP,"Industrial Engineering, Informatics, Civil Engineering","Informatics, Mechanical Engineering, Industrial Engineering",3,3,3,1,2,3,101,87,88,85,88,89,96,84
+3,Male,XI,Tangerang,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,96,95,95,95,96,94,95,88,78,68,76,94,54,75
+4,Male,XI,Tangerang,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,94,92,94,91,90,93,75,84,75,66,61,63,69,62
+5,Male,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Mechanical Engineering",95,95,95,96,96,95,103,91,106,80,91,105,91,72
+6,Male,XI,Tangerang,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,90,93,90,91,95,92,85,72,83,81,76,85,73,65
+7,Male,XI,Tangerang,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Industrial Engineering",85,91,85,85,92,86,101,73,90,76,72,103,108,88
+8,Male,XI,Tangerang,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,98,94,94,96,95,95,56,75,98,64,75,65,84,81
+9,Male,XI,Tangerang,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,97,96,97,96,96,96,64,50,86,80,61,96,76,73
+10,Female,XI,Tangerang,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Mechanical Engineering, Architecture Engineering",97,96,97,97,98,96,77,82,100,93,114,101,73,62
+11,Female,XI,Tangerang,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Industrial Engineering",97,97,97,97,94,95,116,101,112,100,96,102,111,96
+12,Male,XI,Tangerang,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,86,92,84,89,90,86,90,71,70,58,60,67,88,65
+13,Female,XI,Tangerang,INTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,97,97,97,97,97,96,81,82,89,78,81,88,74,85
+14,Female,XI,Tangerang,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,87,90,87,87,86,80,103,93,96,80,80,74,77,97
+15,Female,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Industrial Engineering, Mechanical Engineering",98,97,97,98,98,97,107,102,77,69,94,98,65,65
+16,Female,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",97,92,98,96,97,92,116,83,82,86,96,106,46,46
+17,Male,XI,Tangerang,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,87,91,85,87,91,84,84,105,82,70,71,81,64,75
+18,Female,XI,Tangerang,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,86,92,86,89,90,88,84,92,79,74,80,77,71,84
+19,Male,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",98,97,98,97,97,98,100,82,86,82,94,97,56,65
+20,Male,XI,Tangerang,ISTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Mechanical Engineering",87,89,82,84,87,86,68,93,48,58,93,103,32,67
+21,Female,XI,Tangerang,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",97,97,95,96,94,96,79,85,87,86,90,89,87,70
+22,Female,XI,Tangerang,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,98,97,97,98,98,97,56,84,70,55,90,65,107,64
+23,Female,XI,Tangerang,ISTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Mechanical Engineering, Informatics",83,91,81,86,87,88,78,94,81,82,77,96,79,85
+24,Male,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Civil Engineering",85,91,83,86,86,86,105,63,88,65,83,95,41,33
+25,Male,XI,Tangerang,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Electrical Engineering,88,89,82,84,88,87,59,99,71,54,69,99,31,62
+26,Female,XI,Tangerang,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,88,92,87,94,91,87,97,70,61,70,83,90,38,74
+27,Female,XI,Tangerang,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",98,97,98,98,98,97,83,86,85,81,103,89,72,71
+28,Male,XI,Tangerang,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,98,98,97,98,98,97,83,67,62,68,81,90,77,67
+29,Female,XI,Tangerang,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,98,97,97,98,98,97,54,66,104,73,73,81,95,110
+30,Male,XI,Tangerang,ISTJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,80,90,80,85,95,90,85,76,72,58,66,91,75,75
+31,Female,XI,Tangerang,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",83,91,83,82,85,83,97,108,114,113,118,119,112,113
+32,Female,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,86,92,86,88,89,87,87,75,73,76,67,73,67,62
+33,Male,XI,Tangerang,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",84,91,80,85,86,86,90,78,91,84,84,101,95,100
+34,Female,XI,Tangerang,INTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,95.6,94.8,94.5,94.25,95.8,92,84,81,89,80,53,98,55,63
+35,Male,XI,Tangerang,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Mechanical Engineering, Architecture Engineering",97,93,95,92,92,92,109,94,108,102,113,99,89,74
+36,Female,XI,Tangerang,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,98,97,97,98,97,97,55,66,80,57,75,68,92,80
+37,Female,XI,Tangerang,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,97,94,97,93,95,93,77,78,83,66,75,72,82,74
+38,Female,XI,Tangerang,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",85,90,84,84,85,85,85,93,100,83,87,96,92,92
+39,Female,XI,Tangerang,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",98,97,97,98,97,97,65,95,103,92,99,97,99,75
+40,Female,XI,Tangerang,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Informatics, Industrial Engineering",96,97,96,97,97,96,80,90,96,80,93,92,109,82
+41,Female,XI,Tangerang,ISFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,89,92,88,92,90,86,103,91,57,55,24,75,31,95
+42,Female,XI,Tangerang,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",98,97,97,98,97,97,106,91,103,85,92,89,92,80
+43,Female,XI,Tangerang,INTP,"Industrial Engineering, Electrical Engineering, Medical Science","Civil Engineering, Mechanical Engineering, Architecture Engineering",92,92,86,90,92,87,75,92,94,93,82,100,46,74
+44,Female,XI,Jakarta,ISTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",90,95,94,91,91,92,76,106,98,74,107,110,82,73
+45,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Industrial Engineering, Architecture Engineering",84,93,93,86,92,88,81,68,107,102,102,96,110,75
+46,Female,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",85,85,85,84,88,85,77,92,114,83,92,92,89,51
+47,Female,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Architecture Engineering",83,92,95,89,91,85,77,99,101,94,102,99,77,93
+48,Female,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,84,85,95,90,89,78,85,64,66,49,61,66,74,58
+49,Female,XI,Jakarta,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Informatics",92,92,96,96,94,92,62,107,90,85,90,91,116,82
+50,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Industrial Engineering, Architecture Engineering",92,96,92,96,96,96,101,83,107,105,107,107,104,101
+51,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Civil Engineering",86,82,85,88,85,82,71,67,108,53,94,87,94,80
+52,Male,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,81,78,82,85,78,78,94,73,73,66,80,52,73,80
+53,Female,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Mechanical Engineering, Informatics",81,83,88,86,88,85,75,111,84,75,66,102,84,66
+54,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",90,96,95,95,93,91,83,109,117,117,119,117,111,82
+55,Male,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Mechanical Engineering",87,94,96,96,91,89,95,106,89,110,103,112,62,80
+56,Female,XI,Jakarta,INTJ,"Industrial Engineering, Medical Science, Electrical Engineering","Mechanical Engineering, Informatics, Architecture Engineering",82,80,85,79,79,78,61,107,108,82,91,96,85,86
+57,Female,XI,Jakarta,ISFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,85,84,93,89,88,88,65,85,60,31,38,56,54,59
+58,Female,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",86,90,94,92,93,90,101,99,115,82,90,96,100,76
+59,Male,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",82,78,85,84,78,78,116,94,92,92,93,115,67,87
+60,Female,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,86,86,95,92,89,90,80,80,87,38,59,37,73,52
+61,Female,XI,Jakarta,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Civil Engineering, Architecture Engineering, Mechanical Engineering",83,84,90,90,89,90,74,99,99,52,90,104,69,76
+62,Female,XI,Jakarta,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",84,85,93,81,93,82,118,111,112,96,118,110,119,119
+63,Female,XI,Jakarta,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Mechanical Engineering",86,85,87,89,87,82,104,85,83,35,92,73,110,75
+64,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",83,88,85,90,89,85,115,83,85,92,83,99,85,74
+65,Female,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,88,90,95,95,93,90,91,64,91,69,64,76,75,58
+66,Female,XI,Jakarta,INFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,82,82,82,85,83,82,42,56,57,72,44,50,63,59
+67,Female,XI,Jakarta,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Civil Engineering",83,82,93,89,90,85,74,88,98,52,74,96,101,89
+68,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Civil Engineering, Industrial Engineering, Architecture Engineering",86,90,94,93,93,84,57,65,115,76,107,97,90,68
+69,Female,XI,Jakarta,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,84,85,93,92,90,88,39,75,111,57,84,48,84,75
+70,Male,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",90,95,95,94,95,90,59,104,102,106,99,110,84,111
+71,Female,XI,Jakarta,INFP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",84,85,90,88,89,82,115,115,115,115,112,113,112,115
+72,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",84,90,90,90,89,88,107,97,112,88,108,109,109,75
+73,Female,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Industrial Engineering, Mechanical Engineering",86,89,96,94,90,85,110,115,115,98,105,104,113,92
+74,Female,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Architecture Engineering, Informatics",92,96,96,96,94,93,75,113,113,105,106,114,112,89
+75,Male,XI,Jakarta,ISFP,"Industrial Engineering, Electrical Engineering, Medical Science","Medical Science, Mechanical Engineering, Informatics",84,89,86,82,85,85,90,102,81,89,59,90,93,102
+76,Female,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,83,82,85,82,85,82,88,70,85,52,65,68,82,76
+77,Female,XI,Jakarta,INTJ,"Industrial Engineering, Medical Science, Electrical Engineering","Informatics, Architecture Engineering, Industrial Engineering",80,85,78,78,84,80,84,85,101,83,100,117,101,101
+78,Male,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",81,86,84,80,87,84,101,99,113,105,101,114,109,100
+79,Female,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",85,92,93,92,95,96,77,103,103,95,110,84,101,77
+80,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",86,89,90,87,93,90,109,92,101,90,87,103,80,81
+81,Female,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,82,85,93,82,89,84,104,83,85,64,89,74,52,107
+82,Female,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Mechanical Engineering",90,90,95,92,93,92,106,91,103,82,116,107,83,61
+83,Female,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Mechanical Engineering, Civil Engineering",90,91,90,90,89,94,81,89,88,67,77,105,53,67
+84,Male,XI,Jakarta,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,81,83,88,83,84,78,74,66,87,66,66,45,102,81
+85,Male,XI,Jakarta,INFP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",79,78,82,83,79,80,104,103,109,111,101,110,101,113
+86,Female,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Architecture Engineering, Industrial Engineering",90,96,96,96,94,93,116,99,110,106,109,111,105,105
+87,Female,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Civil Engineering, Architecture Engineering, Mechanical Engineering",90,95,96,94,94,95,87,84,91,78,89,88,59,82
+88,Male,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",81,83,88,89,89,90,104,93,83,85,97,118,30,66
+89,Male,XI,Jakarta,INTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Architecture Engineering",84,88,91,93,93,94,101,103,102,102,102,102,75,111
+90,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Industrial Engineering, Mechanical Engineering",78,82,85,83,83,78,99,97,91,77,90,81,77,71
+91,Male,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Architecture Engineering, Industrial Engineering",85,85,89,83,83,82,74,77,84,75,105,90,95,70
+92,Female,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Mechanical Engineering,84,88,96,93,91,90,94,86,70,73,72,94,61,62
+93,Male,XI,Jakarta,INTP,"Industrial Engineering, Medical Science, Electrical Engineering","Informatics, Mechanical Engineering, Architecture Engineering",78,79,83,75,85,82,102,105,105,103,92,113,67,103
+94,Male,XI,Jakarta,INTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",87,95,93,91,93,88,111,119,120,120,110,120,109,94
+95,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",82,85,93,89,83,85,68,97,112,69,104,115,115,82
+96,Female,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",84,82,85,87,87,85,57,93,111,93,84,111,84,84
+97,Female,XI,Jakarta,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Industrial Engineering",82,85,94,92,91,84,101,103,102,80,94,109,110,83
+98,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Architecture Engineering",84,90,90,86,88,78,62,100,105,77,101,96,73,53
+99,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",90,95,93,95,93,90,108,96,104,95,103,112,87,82
+100,Female,XI,Jakarta,INTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Architecture Engineering",84,86,96,89,91,82,73,99,99,89,81,111,69,94
+101,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Industrial Engineering, Architecture Engineering",85,89,90,88,92,84,68,77,109,76,102,101,102,67
+102,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Electrical Engineering, Mechanical Engineering",80,88,85,89,78,85,90,90,85,67,82,89,59,67
+103,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Industrial Engineering, Architecture Engineering",84,88,96,90,93,88,72,75,99,73,103,114,90,68
+104,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Mechanical Engineering",80,80,80,80,80,80,110,111,111,109,101,87,87,94
+105,Male,XI,Jakarta,ESFJ,"Industrial Engineering, Electrical Engineering, Medical Science",Industrial Engineering,84,83,86,84,82,82,103,74,73,51,59,93,87,72
+106,Male,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",80,80,78,81,85,84,106,90,106,89,89,84,102,93
+107,Female,XI,Jakarta,INTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Mechanical Engineering, Architecture Engineering",87,86,93,89,94,86,112,101,115,115,107,117,89,91
+108,Male,XI,Jakarta,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Mechanical Engineering, Industrial Engineering",80,82,85,85,81,80,116,66,98,65,98,101,83,65
+109,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Informatics",80,87,90,86,89,85,67,113,109,89,100,101,114,74
+110,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Mechanical Engineering",84,90,89,92,91,82,113,99,100,83,99,116,95,74
+111,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science",Civil Engineering,84,86,87,86,85,84,52,85,95,60,93,76,94,70
+112,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Industrial Engineering, Architecture Engineering",87,96,94,93,94,80,118,106,118,108,117,117,108,85
+113,Female,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Industrial Engineering, Informatics",85,85,93,85,89,85,103,112,100,102,98,105,117,92
+114,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",86,88,95,85,92,80,67,94,110,84,98,107,101,85
+115,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",85,84,89,88,89,88,80,84,98,82,107,99,115,77
+116,Female,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Informatics",90,92,94,95,95,96,110,112,113,110,110,109,116,99
+117,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",80,92,85,80,83,95,105,85,116,99,105,106,118,85
+118,Female,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Informatics, Architecture Engineering",89,89,94,93,93,88,84,115,120,110,120,120,119,109
+119,Female,XI,Jakarta,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,84,88,94,90,90,82,77,62,102,81,44,83,101,101
+120,Female,XI,Jakarta,ISTP,"Industrial Engineering, Electrical Engineering, Medical Science",Electrical Engineering,82,95,90,90,92,84,61,109,81,83,52,113,22,84
+121,Female,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Industrial Engineering, Architecture Engineering",84,91,91,89,91,80,62,65,110,82,110,105,113,70
+122,Male,XI,Jakarta,ENFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",82,84,85,84,85,78,110,92,109,102,95,102,111,115
+123,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Industrial Engineering, Architecture Engineering",82,83,91,80,81,81,116,106,119,116,116,99,110,103
+124,Male,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,90,92,95,92,92,90,52,58,85,81,88,79,66,81
+125,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Architecture Engineering, Civil Engineering",79,84,88,81,85,85,85,83,100,75,82,90,75,60
+126,Male,XI,Jakarta,ESTP,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Mechanical Engineering",90,91,92,90,90,88,112,107,98,90,93,90,64,61
+127,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Architecture Engineering, Industrial Engineering",84,83,86,84,87,82,106,82,107,90,106,96,106,48
+128,Male,XI,Jakarta,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,80,79,86,81,87,78,77,68,76,75,77,76,77,88
+129,Male,XI,Jakarta,ISFP,"Industrial Engineering, Electrical Engineering, Medical Science","Mechanical Engineering, Informatics, Industrial Engineering",79,78,82,81,85,80,97,81,102,73,60,102,88,96
+130,Male,XI,Jakarta,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science",Industrial Engineering,82,92,93,94,92,89,109,51,81,68,96,74,73,73
+131,Male,XI,Jakarta,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Architecture Engineering, Industrial Engineering, Informatics",78,84,84,80,85,82,86,100,94,94,108,101,108,109
+132,Male,XI,Jakarta,ESTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Industrial Engineering",81,80,83,82,80,84,93,101,93,83,106,106,105,82
+133,Male,XI,Jakarta,ENTP,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Architecture Engineering, Industrial Engineering",84,85,86,83,86,85,110,60,110,93,83,119,102,57
+134,Male,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Informatics",86,85,92,87,86,79,73,95,110,87,94,109,110,89
+135,Male,XI,Jakarta,INFJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Informatics",78,82,85,83,84,82,101,99,101,110,101,111,109,110
+136,Female,XI,Jakarta,INTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Informatics, Mechanical Engineering, Architecture Engineering",90,90,95,92,87,85,73,119,110,86,119,101,75,98
+137,Female,XI,Jakarta,ESFP,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,80,80,86,80,81,85,110,83,73,86,54,73,94,81
+138,Male,XI,Jakarta,ENTJ,"Industrial Engineering, Electrical Engineering, Medical Science","Industrial Engineering, Architecture Engineering, Informatics",82,86,89,85,84,78,101,109,108,109,110,110,113,95
+139,Female,XI,Jakarta,ISTJ,"Industrial Engineering, Electrical Engineering, Medical Science",N/A,84,94,96,95,93,90,54,80,62,54,83,90,39,39
