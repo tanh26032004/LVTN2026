@@ -1,6 +1,6 @@
 import streamlit as st
 import random
-from mbti_assets import MBTI_DETAILS, MBTI_QUESTIONS, MBTI_COMPREHENSIVE
+from assets.mbti_assets import MBTI_DETAILS, MBTI_QUESTIONS, MBTI_COMPREHENSIVE
 
 def render_tab():
     if 'mbti_step' not in st.session_state:
