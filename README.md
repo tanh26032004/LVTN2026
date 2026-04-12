@@ -37,13 +37,15 @@ LVTN2026/
 ├── app.py                         # FIle chạy chính của Web App Streamlit
 ├── README.md                      # Tài liệu dự án (bạn đang đọc)
 ├── requirements.txt               # Danh sách thư viện Python cần thiết
-├── data/                          # Chứa kho dữ liệu
-│   └── student_data.csv           # File Mock Data (Sinh ngẫu nhiên với luật ruleset chuyên ngành)
+├── data/                          # Chứa kho dữ liệu tổng hợp
+│   ├── rawdata/                   # Các file dữ liệu thô gốc (Excel/CSV Việt Nam và Indonesia)
+│   └── student_data.csv           # File Dữ liệu chuẩn đã được Augment với 7.610 bản ghi
 ├── docs/                          # Thư mục lưu trữ báo cáo, slide báo cáo KLTN
 ├── assets/                        # Các icon, hình ảnh dùng trong dự án
 ├── model/                         # Lưu trữ các file Model Machine Learning (.joblib) đã được Train
 ├── scripts/                       # Chứa mã nguồn tính toán Logic, ML, Data
-│   ├── generate_mock_data.py      # Sinh dữ liệu giả lập cho 12 nhóm ngành
+│   ├── merge_raw_data.py          # Ghép nối logic MBTI và Điểm số từ 3 luồng dữ liệu gốc
+│   ├── data_augmentation.py       # Tăng cường dữ liệu (Data Augmentation) bám sát phổ điểm thực tế Bộ GD ĐT
 │   ├── hybrid_recommender.py      # Thuật toán tính toán lai (Hybrid) cho web
 │   └── train_model.py             # Script nạp dữ liệu, tiền xử lý, huấn luyện 3 thuật toán và lưu file
 └── views/                         # Kiến trúc Modules (Tái cấu trúc từ Monolithic) cho Frontend
@@ -75,11 +77,12 @@ pip install -r requirements.txt
 ### 2. Tiền khởi tạo Máy Học (Khâu Backend)
 Hệ thống AI không tự sinh ra, bạn cần tạo dữ liệu và dạy cho nó học trước khi lên Web. Thực thi hai lệnh sau theo thứ tự:
 
-Cú pháp để **sinh dữ liệu giả lập**:
+Cú pháp để **Chế biến và Tăng cường Dữ liệu (Data Engineering / Augmentation)**:
 ```bash
-python scripts/generate_mock_data.py
+python scripts/merge_raw_data.py
+python scripts/data_augmentation.py
 ```
-*(Kết quả: Sẽ tạo ra file `data/student_data.csv` mô phỏng 2500 học sinh).*
+*(Kết quả: Sẽ tạo ra file `data/student_data.csv` mô phỏng 7.610 hồ sơ học sinh chân thực khớp với chuẩn Phổ điểm Bộ GD ĐT).*
 
 Cú pháp để **Huấn luyện Mô hình AI**:
 ```bash
@@ -98,23 +101,33 @@ Trình duyệt của bạn sẽ tự bật lên ở cổng `http://localhost:850
 ---
 
 ## 📊 Dữ Liệu Huấn Luyện (Datasets)
-Bộ Dữ liệu (Mock Data) được xây dựng theo hình thức Data Synthesizing (Tự động sinh thực thể ảo), mô phỏng ma trận điểm số và tính cách dựa trên các hệ luật thực tiễn của quy chế tuyển sinh Đại học và tâm lý học hành vi:
-- **Kích thước mẫu (Samples Size)**: `2500` học sinh (chia test_size=0.2 để huấn luyện độc lập).
+Bộ Dữ liệu được xây dựng theo hình thức Data Synthesizing & Augmentation. Thu thập kho hồ sơ gốc từ 3 tệp dữ liệu (Indonesia MBTI Dataset, Vietnam Student Performance Scores, Vietnam AI Sinh Viên GPA Data) sau đó kết hợp bằng thuật toán KNN và tịnh tiến điểm Gauss về chung một phổ điểm thi THPT Quốc Gia năm 2023.
+- **Kích thước mẫu (Samples Size)**: `7.610` bộ hồ sơ học sinh (chia test_size=0.2 để huấn luyện độc lập).
 - **Phân loại đầu ra (Target Classes)**: Tổng cộng 12 nhóm chuyên ngành phổ biến như `CNTT & Kỹ thuật Máy tính`, `Kinh tế & Quản lý`, `Nghệ thuật & Thiết kế`, `Y tế & Sức khỏe`, v.v...
 - **Không gian Đặc trưng (Feature Space)**:
   - 07 Điểm số thành phần khối phổ thông: Toán, Ngữ Văn, Tiếng Anh, Vật lý, Hóa học, Sinh học, Lịch sử.
   - 01 Đặc trưng MBTI sinh trắc tâm lý.
 - **Dữ liệu phái sinh tự động (Derived Features)**: Trung bình cộng `avg_score`, KHTN Tổ hợp `natural_science_score`, KHXH Tổ hợp `social_science_score`.
 
+### Nguồn Dữ Liệu Tham Khảo (Raw Data Sources)
+Quá trình tổng hợp và sinh dữ liệu (Data Augmentation) sử dụng 3 nguồn tham chiếu gốc:
+1. **Dữ liệu điểm thi THPT Việt Nam**: *VN Student Performance Dataset*   
+   Nguồn: [Kaggle Dataset](https://www.kaggle.com/datasets/hongngctin/vn-student-performance-dataset)
+2. **Dữ liệu Phân tích tính cách MBTI và Điểm số**: *Career Path Recommendation Dataset for Senior High School Student in Indonesia*   
+   Nguồn: [Mendeley Data](https://data.mendeley.com/datasets/yzbpwk2wnf/1?utm_source=chatgpt.com)
+3. **Tài liệu Khoa học Chứng minh**: *Ấn bản Data in Brief (Elsevier)*   
+   Nguồn: [https://doi.org/10.1016/j.dib.2025.111438](https://doi.org/10.1016/j.dib.2025.111438)
+
 ---
 
 ## 🔬 Thông Số Đo Lường Mô Hình Đã Huấn Luyện (Metrics)
-Trong quá trình đào tạo với cơ sở dữ liệu trên, dự án đã sử dụng *GridSearchCV* để tối ưu siêu tham số. Kết quả trả về trên File phân tích tập Test độc lập đạt báo cáo đo lường cực kỳ khả quan:
+Tập dữ liệu đã gia tăng tính biến thiên chéo (Variance cross-overlapping) do được thêm nhiễu phân phối thật dựa trên điểm Bộ Giáo Dục, giúp bài toán trở nên hóc búa, giống thực tế ngoài đời hơn và chống được hiện tượng Machine Limit Overfitting.
+Kết quả đo lường khách quan thông qua **GridSearchCV** (với tập Test):
 
-| Thuật Toán (Algorithm)            | Vai trò           | Accuracy | Precision | F1-Score | Mục Đích Sử Dụng |
-| ---------------------------------- | ----------------- | -------- | --------- | -------- | ---------------- |
-| **Random Forest Classifier**       | **Mô Hình Chính** | `91.80%` | 92.06%    | 91.81%   | Là cỗ máy phân loại chính, không bị Overfitting do dùng tập hợp nhiều cây quyết định, có Explainable AI để trích xuất Feature Importances. |
-| **Decision Tree**                  | Đối trọng / XAI   | `90.20%` | 90.42%    | 90.21%   | Dễ vẽ cây nội suy, giải thích rõ các node if-else bị rẽ nhánh bởi Môn học hay MBTI. |
-| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `89.80%` | 90.53%    | 89.84%   | Ứng dụng chiếu Nonlinear (RBF Kernel). Đã lược bớt siêu tham số (C=0.05) để điều chỉnh biên học nhằm giảm overfitting trong tập mẫu nhỏ. |
+| Thuật Toán (Algorithm)            | Vai trò           | Accuracy (Thực tế) | Nhận Xét Mục Đích Sử Dụng |
+| ---------------------------------- | ----------------- | -------- | ---------------- |
+| **Random Forest Classifier**       | **Mô Hình Chính** | `~31.00%` | Là máy phân loại chính xác định và tính Feature Importances đa chiều. Mức 31% đối với bài toán 12 nhãn chồng lấp trong Data thực tế là chấp nhận được. |
+| **Decision Tree**                  | Đối trọng / XAI   | `~28.00%` | Dùng để vẽ đồ thị diễn giải If-Else tường minh sự rẽ nhánh từ Cây quyết định. |
+| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `~30.00%` | Ứng dụng chiếu phân cách siêu phẳng Nonlinear (RBF Kernel). Thiết lập C chặn nhiễu tốt. |
 
 *(Bản quyền mã nguồn mở LVTN2026. Sinh viên có thể tùy biến source code với hàm lượng Dataset mở rộng để ứng dụng cho Đăng ký Tuyển Sinh thực tế)*.
