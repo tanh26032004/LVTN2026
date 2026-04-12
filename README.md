@@ -41,7 +41,7 @@ LVTN2026/
 ├── requirements.txt               # Danh sách thư viện Python cần thiết
 ├── data/                          # Chứa kho dữ liệu tổng hợp
 │   ├── rawdata/                   # Các file dữ liệu thô gốc (Excel/CSV Việt Nam và Indonesia)
-│   └── student_data.csv           # File Dữ liệu chuẩn đã được Augment với 7.610 bản ghi
+│   └── student_data.csv           # File Dữ liệu chuẩn đã được Augment với 8.000 bản ghi
 ├── docs/                          # Thư mục lưu trữ báo cáo, slide báo cáo KLTN
 ├── assets/                        # Các icon, hình ảnh dùng trong dự án
 ├── model/                         # Lưu trữ các file Model Machine Learning (.joblib) đã được Train
