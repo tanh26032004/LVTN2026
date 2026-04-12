@@ -77,17 +77,23 @@ elif st.session_state['active_panel'] == tab_options[2]:
     )
 
 # --- 4.2. RENDER MENU TABS (DƯỚI BANNER) ---
-# Dùng CSS để biến các nút này trông như Tab
 st.write("") # Khoảng đệm nhỏ
-cols = st.columns((1, 2, 2, 2, 1))
 
-for i, tab_name in enumerate(tab_options):
-    # Nút đang bấm sẽ hiển thị màu Primary (Xanh biển)
-    btn_type = "primary" if st.session_state['active_panel'] == tab_name else "secondary"
-    if cols[i+1].button(tab_name, type=btn_type, use_container_width=True):
-        st.session_state['active_panel'] = tab_name
-        st.rerun()
-st.markdown("<hr style='margin-top: 10px; margin-bottom: 25px;'>", unsafe_allow_html=True)
+# Dùng st.pills (Streamlit >= 1.40) để tạo menu ngang mượt mà trên Mobile
+selected_tab = st.pills(
+    "Tabs", 
+    options=tab_options, 
+    default=st.session_state['active_panel'], 
+    label_visibility="collapsed",
+    selection_mode="single"
+)
+
+# Cập nhật trạng thái nếu người dùng đổi tab (và tránh load lại vô ích nếu như click tab hiện tại hoặc hủy chọn)
+if selected_tab and selected_tab != st.session_state['active_panel']:
+    st.session_state['active_panel'] = selected_tab
+    st.rerun()
+
+st.markdown("<hr style='margin-top: 5px; margin-bottom: 25px;'>", unsafe_allow_html=True)
 
 # --- 4.3. RENDER NỘI DUNG TƯƠNG ỨNG MỖI TAB ---
 if st.session_state['active_panel'] == tab_options[0]:

@@ -1,6 +1,8 @@
 # Nghiên cứu và Xây dựng hệ thống hỗ trợ tư vấn chọn ngành đại học dựa trên kỹ thuật Phân lớp dữ liệu đa yếu tố: Tính cách và Năng lực học tập
 **Dự án Khóa luận Tốt nghiệp (LVTN 2026)**
 
+
+
 > **Tên đề tài tiếng Anh**: "Development of a University Major Recommendation System using Multi-factor Classification: Personality Traits (MBTI) and Academic Performance"
 
 Đây là một dự án ứng dụng trí tuệ nhân tạo (Học máy lai - Hybrid Machine Learning) nhằm mục đích giải quyết bài toán định hướng nghề nghiệp cho học sinh Trung học Phổ thông. Thay vì chỉ dựa trên điểm số tĩnh hoặc một bài trắc nghiệm đơn điệu, ứng dụng này kết hợp hiệu quả Giới tuyến Sinh trắc học (Trắc nghiệm tính cách MBTI) và Năng lực cốt lõi (Điểm thi THPT 7 môn học) để tạo ra các đề xuất phân ngành phù hợp nhất cho người học.
