@@ -43,19 +43,22 @@ LVTN2026/
 │   ├── rawdata/                   # Các file dữ liệu thô gốc (Excel/CSV Việt Nam và Indonesia)
 │   └── student_data.csv           # File Dữ liệu chuẩn đã được Augment với 8.000 bản ghi
 ├── docs/                          # Thư mục lưu trữ báo cáo, slide báo cáo KLTN
-├── assets/                        # Các icon, hình ảnh dùng trong dự án
+├── assets/                        # Các icon, hình ảnh, tài nguyên tĩnh
+│   └── mbti_assets.py             # Bộ dữ liệu từ vựng, câu hỏi của MBTI
 ├── model/                         # Lưu trữ các file Model Machine Learning (.joblib) đã được Train
 ├── scripts/                       # Chứa mã nguồn tính toán Logic, ML, Data
 │   ├── merge_raw_data.py          # Ghép nối logic MBTI và Điểm số từ 3 luồng dữ liệu gốc
 │   ├── data_augmentation.py       # Tăng cường dữ liệu (Data Augmentation) bám sát phổ điểm thực tế Bộ GD ĐT
 │   ├── hybrid_recommender.py      # Thuật toán tính toán lai (Hybrid) cho web
 │   └── train_model.py             # Script nạp dữ liệu, tiền xử lý, huấn luyện 3 thuật toán và lưu file
-└── views/                         # Kiến trúc Modules (Tái cấu trúc từ Monolithic) cho Frontend
-    ├── components.py              # Xử lý CSS, thiết kế Banner, HTML dùng chung
-    ├── sidebar.py                 # Render sidebar tùy chỉnh ML Models
-    ├── tab1_survey.py             # View phân tích điểm số
-    ├── tab2_mbti.py               # View làm trắc nghiệm MBTI
-    └── tab3_xai.py                # View Explainable AI Interactive Charts
+├── views/                         # Kiến trúc Modules (Tái cấu trúc từ Monolithic) cho Frontend
+│   ├── components.py              # Xử lý CSS, thiết kế Banner, HTML dùng chung
+│   ├── sidebar.py                 # Render sidebar tùy chỉnh ML Models
+│   ├── tab1_survey.py             # View phân tích điểm số
+│   ├── tab2_mbti.py               # View làm trắc nghiệm MBTI
+│   └── tab3_xai.py                # View Explainable AI Interactive Charts
+└── .streamlit/                    # Cấu hình cài đặt giao diện cấp hệ thống
+    └── config.toml                # File quy định bảng màu Theme (Sky Blue) cho Web
 ```
 
 ---
