@@ -36,29 +36,32 @@
 
 ```text
 LVTN2026/
-├── app.py                         # FIle chạy chính của Web App Streamlit
+├── app.py                         # File chạy chính của Web App Streamlit
 ├── README.md                      # Tài liệu dự án (bạn đang đọc)
 ├── requirements.txt               # Danh sách thư viện Python cần thiết
-├── data/                          # Chứa kho dữ liệu tổng hợp
+├── data/                          # Chứa dữ liệu tổng hợp và script khai báo tĩnh
 │   ├── rawdata/                   # Các file dữ liệu thô gốc (Excel/CSV Việt Nam và Indonesia)
-│   └── student_data.csv           # File Dữ liệu chuẩn đã được Augment với 8.000 bản ghi
-├── docs/                          # Thư mục lưu trữ báo cáo, slide báo cáo KLTN
-├── assets/                        # Các icon, hình ảnh, tài nguyên tĩnh
-│   └── mbti_assets.py             # Bộ dữ liệu từ vựng, câu hỏi của MBTI
-├── model/                         # Lưu trữ các file Model Machine Learning (.joblib) đã được Train
-├── scripts/                       # Chứa mã nguồn tính toán Logic, ML, Data
-│   ├── merge_raw_data.py          # Ghép nối logic MBTI và Điểm số từ 3 luồng dữ liệu gốc
-│   ├── data_augmentation.py       # Tăng cường dữ liệu (Data Augmentation) bám sát phổ điểm thực tế Bộ GD ĐT
-│   ├── hybrid_recommender.py      # Thuật toán tính toán lai (Hybrid) cho web
-│   └── train_model.py             # Script nạp dữ liệu, tiền xử lý, huấn luyện 3 thuật toán và lưu file
-├── views/                         # Kiến trúc Modules (Tái cấu trúc từ Monolithic) cho Frontend
-│   ├── components.py              # Xử lý CSS, thiết kế Banner, HTML dùng chung
-│   ├── sidebar.py                 # Render sidebar tùy chỉnh ML Models
-│   ├── tab1_survey.py             # View phân tích điểm số
-│   ├── tab2_mbti.py               # View làm trắc nghiệm MBTI
-│   └── tab3_xai.py                # View Explainable AI Interactive Charts
-└── .streamlit/                    # Cấu hình cài đặt giao diện cấp hệ thống
-    └── config.toml                # File quy định bảng màu Theme (Sky Blue) cho Web
+│   ├── questions/                 # Chứa các tệp văn bản câu hỏi dạng JSON
+│   ├── major_db.py                # Khai báo dữ liệu đặc tả mã nhóm ngành
+│   └── student_data.csv           # Dữ liệu chuẩn đã Augment với 8.000 hồ sơ
+├── docs/                          # Lưu trữ file tài liệu Word, Slide trình bày báo cáo
+├── assets/                        # Các tài nguyên tĩnh đồ họa và module bổ trợ
+│   ├── images/                    # Thư mục chứa hình họa chuẩn đoán MBTI và banner ngành
+│   └── mbti_assets.py             # Bộ code xử lý dữ liệu logic từ vựng của MBTI
+├── model/                         # Nơi lưu trữ Pipeline của thuật toán AI (files .joblib)
+├── scripts/                       # Chứa mã nguồn tính toán, xây dựng và huấn luyện độc lập
+│   ├── data_augmentation.py       # Script tăng cường dữ liệu khớp với phổ Bộ GD ĐT
+│   ├── hybrid_recommender.py      # Module thuật toán máy học lai cho Website
+│   ├── merge_raw_data.py          # Ghép nối logic MBTI và Điểm số từ 3 luồng
+│   └── train_model.py             # Script xử lý trích lập tập huấn luyện, chấm điểm 3 Models
+├── views/                         # Kiến trúc Modules Frontend tách mảnh
+│   ├── components.py              # Xử lý CSS, thiết kế Banner, Button, HTML chung
+│   ├── sidebar.py                 # Render sidebar cài đặt thông số độ nhạy Mô Hình
+│   ├── tab1_survey.py             # View phân tích điểm và biểu đồ dự phóng gợi ý tự động
+│   ├── tab2_mbti.py               # View giao diện ứng dụng trắc nghiệm MBTI tương tác
+│   └── tab3_xai.py                # View Trí tuệ Giải Thích AI (Explainable AI Charts)
+└── .streamlit/                    # Thư mục hệ thống ẩn của Streamlit
+    └── config.toml                # Quy định bảng màu Theme (Sky Blue) & thuộc tính CSS Web
 ```
 
 ---
