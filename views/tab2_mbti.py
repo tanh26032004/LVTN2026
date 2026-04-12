@@ -56,7 +56,7 @@ def render_tab():
 
         st.divider()
 
-        st.markdown("<h3 style='text-align:center; color: #10b981; font-weight: 800; margin-bottom: 25px;'>Các Nhóm Tính Cách MBTI Điển Hình</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align:center; color: #0ea5e9; font-weight: 800; margin-bottom: 25px;'>Các Nhóm Tính Cách MBTI Điển Hình</h3>", unsafe_allow_html=True)
         
         # CSS CAO CẤP: Thiết kế Card & Expander theo phong cách 16Personalities
         st.markdown("""
@@ -207,10 +207,10 @@ def render_tab():
             # FIX LỖI MARKDOWN: Đưa toàn bộ HTML sát lề trái để không bị biến thành Code Block
             st.markdown("""
 <div style="padding: 5px 10px;">
-<h4 style="color: #10b981; margin-top: 0; font-weight: 800; font-size: 1.15rem;">1. Lịch sử và Nguồn gốc</h4>
+<h4 style="color: #0ea5e9; margin-top: 0; font-weight: 800; font-size: 1.15rem;">1. Lịch sử và Nguồn gốc</h4>
 <p style="color: #334155; font-size: 0.95rem; line-height: 1.6;"><b>MBTI (Myers-Briggs Type Indicator)</b> được phát triển bởi Katharine Cook Briggs và con gái bà, Isabel Briggs Myers, dựa trên các lý thuyết phân tích tâm lý học nền tảng của bác sĩ tâm thần học lỗi lạc người Thụy Sĩ <b>Carl Jung</b>. Kể từ khi ra mắt, MBTI đã trở thành một trong những công cụ đánh giá tính cách và định hướng nghề nghiệp phổ biến nhất trên toàn cầu.</p>
 
-<h4 style="color: #10b981; margin-top: 25px; font-weight: 800; font-size: 1.15rem;">2. Bốn Khía Cạnh Cốt Lõi (4 Dichotomies)</h4>
+<h4 style="color: #0ea5e9; margin-top: 25px; font-weight: 800; font-size: 1.15rem;">2. Bốn Khía Cạnh Cốt Lõi (4 Dichotomies)</h4>
 <p style="color: #334155; font-size: 0.95rem; line-height: 1.6;">Hệ thống phân loại 16 tính cách được xây dựng dựa trên sự kết hợp của 4 cặp phạm trù đối lập nhau. Mỗi cá nhân sẽ thiên về một cực trong mỗi cặp:</p>
 
 <div style="background-color: #faf5ff; padding: 18px; border-radius: 12px; border-left: 5px solid #a855f7; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
@@ -249,7 +249,7 @@ def render_tab():
 </ul>
 </div>
 
-<h4 style="color: #10b981; margin-top: 25px; font-weight: 800; font-size: 1.15rem;">3. Tầm Quan Trọng Trong Hướng Nghiệp</h4>
+<h4 style="color: #0ea5e9; margin-top: 25px; font-weight: 800; font-size: 1.15rem;">3. Tầm Quan Trọng Trong Hướng Nghiệp</h4>
 <p style="color: #334155; font-size: 0.95rem; line-height: 1.6;">Không có nhóm tính cách nào là ưu việt hay yếu kém tuyệt đối. Hệ thống MBTI là tấm bản đồ sinh trắc học tâm lý giúp bạn:</p>
 <ul style="color: #334155; font-size: 0.95rem; line-height: 1.6; padding-left: 20px;">
 <li><b>Nhận diện cốt lõi:</b> Thấu hiểu điểm mạnh thiên bẩm và những điểm mù cần khắc phục.</li>
@@ -269,9 +269,9 @@ def render_tab():
             background-color: #ffffff; padding: 20px; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 16px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease-in-out;
         }
-        div[data-testid="stRadio"]:hover { border-color: #10b981; box-shadow: 0 6px 12px -2px rgba(0,0,0,0.05); }
+        div[data-testid="stRadio"]:hover { border-color: #0ea5e9; box-shadow: 0 6px 12px -2px rgba(0,0,0,0.05); }
         div[data-testid="stRadio"] > label { font-weight: 700; color: #0f172a; font-size: 1.1rem; margin-bottom: 12px; }
-        .stProgress > div > div > div > div { background-color: #10b981; border-radius: 10px;}
+        .stProgress > div > div > div > div { background-color: #0ea5e9; border-radius: 10px;}
         </style>
         """, unsafe_allow_html=True)
         
@@ -354,7 +354,7 @@ def render_tab():
         # Phần Header hiển thị Kết quả MBTI dạng Card hiện đại
         st.markdown(f"""
         <div style='text-align:center; padding: 40px 20px; border-radius: 20px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); margin-bottom: 30px; border: 1px solid rgba(0,0,0,0.05);'>
-            <h2 style='color:#10b981; margin-bottom:5px; font-size: 2.8rem; font-weight: 900; letter-spacing: -1px;'>{mbti_res}</h2>
+            <h2 style='color:#0ea5e9; margin-bottom:5px; font-size: 2.8rem; font-weight: 900; letter-spacing: -1px;'>{mbti_res}</h2>
             <p style='font-size:1.3rem; font-weight:700; color: #475569; margin:0;'>{mbti_info['title']}</p>
         </div>
         """, unsafe_allow_html=True)
@@ -377,9 +377,9 @@ def render_tab():
                 scol1, scol2 = st.columns(2)
                 
                 with scol1:
-                    st.markdown("<h4 style='color: #10b981; font-weight: 700; font-size: 1.15rem;'>Điểm mạnh</h4>", unsafe_allow_html=True)
+                    st.markdown("<h4 style='color: #0ea5e9; font-weight: 700; font-size: 1.15rem;'>Điểm mạnh</h4>", unsafe_allow_html=True)
                     for s in mbti_info['strengths']:
-                        st.markdown(f"<span style='color: #10b981; margin-right: 5px;'>•</span> {s}", unsafe_allow_html=True)
+                        st.markdown(f"<span style='color: #0ea5e9; margin-right: 5px;'>•</span> {s}", unsafe_allow_html=True)
                         
                 with scol2:
                     st.markdown("<h4 style='color: #f43f5e; font-weight: 700; font-size: 1.15rem;'>Điểm yếu</h4>", unsafe_allow_html=True)
@@ -401,8 +401,8 @@ def render_tab():
         
         # Khối CTA (Call To Action) điều hướng
         st.markdown(f"""
-        <div style='background-color: #ecfdf5; border-left: 5px solid #10b981; padding: 25px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);'>
-            <h3 style='color: #059669; margin-top: 0; margin-bottom: 10px; font-weight: 800;'>🚀 Bước tiếp theo: Dự đoán Chuyên ngành</h3>
+        <div style='background-color: #f0f9ff; border-left: 5px solid #0ea5e9; padding: 25px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);'>
+            <h3 style='color: #0284c7; margin-top: 0; margin-bottom: 10px; font-weight: 800;'>🚀 Bước tiếp theo: Dự đoán Chuyên ngành</h3>
             <p style='color: #1e293b; margin-bottom: 10px;'>Hệ thống đã ghi nhận tính cách <b>{mbti_res}</b> của bạn.</p>
             <p style='color: #475569; font-size: 0.95rem; margin-bottom: 0; line-height: 1.5;'>Vui lòng chuyển sang tab <b>Khảo sát Phân tích</b> để nhập điểm số học tập. AI sẽ kết hợp phân tích đa chiều và đưa ra gợi ý ngành học chuẩn xác nhất.</p>
         </div>

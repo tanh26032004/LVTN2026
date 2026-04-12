@@ -54,28 +54,45 @@ model_choice, active_model = sidebar.render_sidebar(rf_model, dt_model, svm_mode
 # 4. RENDER CÁC TAB CHÍNH
 # ==========================================
 # Khai báo các tab
-tab1, tab2, tab3 = st.tabs(["Khảo sát Phân tích", "Trắc nghiệm MBTI", "Giải thích Mô hình (XAI)"])
+tab_options = ["Khảo sát Phân tích", "Trắc nghiệm MBTI", "Giải thích Mô hình (XAI)"]
 
-# Nội dung Tab 1
-with tab1:
+if 'active_panel' not in st.session_state:
+    st.session_state['active_panel'] = tab_options[0]
+
+# --- 4.1. RENDER HERO BANNER (TRÊN CÙNG) ---
+if st.session_state['active_panel'] == tab_options[0]:
     components.render_hero(
         title="Hệ Thống Gợi Ý Chuyên Ngành Đại Học", 
         subtitle=f"Nhận diện năng lực cốt lõi dựa trên <b>{model_choice}</b> kết hợp không gian vector <b>KNN</b>"
     )
-    tab1_survey.render_tab(active_model, model_choice, preprocessor, target_encoder, major_dict)
-
-# Nội dung Tab 2
-with tab2:
+elif st.session_state['active_panel'] == tab_options[1]:
     components.render_hero(
         title="TRẮC NGHIỆM TÍNH CÁCH MBTI", 
         subtitle="Khám phá bản thân - Định vị năng lực cốt lõi"
     )
-    tab2_mbti.render_tab()
-
-# Nội dung Tab 3
-with tab3:
+elif st.session_state['active_panel'] == tab_options[2]:
     components.render_hero(
         title="GIẢI THÍCH HOẠT ĐỘNG CỦA MÔ HÌNH", 
         subtitle="Hiểu rõ cách thuật toán phân tích và đưa ra gợi ý chuyên ngành"
     )
+
+# --- 4.2. RENDER MENU TABS (DƯỚI BANNER) ---
+# Dùng CSS để biến các nút này trông như Tab
+st.write("") # Khoảng đệm nhỏ
+cols = st.columns((1, 2, 2, 2, 1))
+
+for i, tab_name in enumerate(tab_options):
+    # Nút đang bấm sẽ hiển thị màu Primary (Xanh biển)
+    btn_type = "primary" if st.session_state['active_panel'] == tab_name else "secondary"
+    if cols[i+1].button(tab_name, type=btn_type, use_container_width=True):
+        st.session_state['active_panel'] = tab_name
+        st.rerun()
+st.markdown("<hr style='margin-top: 10px; margin-bottom: 25px;'>", unsafe_allow_html=True)
+
+# --- 4.3. RENDER NỘI DUNG TƯƠNG ỨNG MỖI TAB ---
+if st.session_state['active_panel'] == tab_options[0]:
+    tab1_survey.render_tab(active_model, model_choice, preprocessor, target_encoder, major_dict)
+elif st.session_state['active_panel'] == tab_options[1]:
+    tab2_mbti.render_tab()
+elif st.session_state['active_panel'] == tab_options[2]:
     tab3_xai.render_tab(active_model, model_choice)

@@ -3,10 +3,10 @@ import numpy as np
 import random
 import os
 
-def generate_heuristic_mock_data(num_samples=2500, filename="data/student_data.csv"):
+def generate_heuristic_mock_data(num_samples=8000, filename="data/student_data.csv"):
     """
     Tạo dữ liệu giả lập sử dụng Heuristic + Noise cho 12 Nhóm Ngành học,
-    ĐÃ ĐƯỢC TỐI ƯU ĐỂ KHỚP VỚI CÁC KHỐI THI THỰC TẾ (ÉP ĐIỂM MÔN PHỤ VỀ 5.0 - 7.0).
+    Dữ liệu đã được tăng cường số lượng (8000 dòng) và thêm độ lệch phân phối Gauss thực tế.
     """
     np.random.seed(42)
     random.seed(42)
@@ -72,8 +72,13 @@ def generate_heuristic_mock_data(num_samples=2500, filename="data/student_data.c
     data = []
     student_id_counter = 1
     
-    def random_score(min_val, max_val):
-        return round(random.uniform(min_val, max_val), 1)
+    def random_score(min_val, max_val, noise_std=0.5):
+        # Lấy base ngẫu nhiên đều
+        base = random.uniform(min_val, max_val)
+        # Ép thêm độ lệch phân phối chuẩn (Gaussian noise) để dữ liệu có overlap giống thực tế ngoài đời
+        noise = np.random.normal(0, noise_std)
+        # Chặn biên 0-10
+        return round(max(0.0, min(10.0, base + noise)), 1)
         
     for group_name, specific_majors in major_groups.items():
         for _ in range(samples_per_group):
@@ -197,7 +202,7 @@ def generate_heuristic_mock_data(num_samples=2500, filename="data/student_data.c
             
             # Xuất đúng 7 môn học
             data.append({
-                "student_id":        f"STU{student_id_counter:04d}",
+                "student_id":        f"SV{student_id_counter:04d}",
                 "math_score":         clip(math_score),
                 "literature_score":   clip(literature_score),
                 "english_score":      clip(english_score),

@@ -107,7 +107,7 @@ def render_tab(active_model, model_choice):
                         <span style="font-size: 0.85rem; color: gray;">Đánh giá:</span> 
                         <b style="font-size: 0.9rem; color: #f59e0b;">{student['major_rating']:.1f} ★</b>
                     </div>
-                    <div style="background-color: rgba(16, 185, 129, 0.1); color: #10b981; padding: 6px 4px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; text-align: center; border: 1px solid rgba(16, 185, 129, 0.2);">
+                    <div style="background-color: rgba(14, 165, 233, 0.1); color: #0ea5e9; padding: 6px 4px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; text-align: center; border: 1px solid rgba(14, 165, 233, 0.2);">
                         {student['major_group']}
                     </div>
                     """, unsafe_allow_html=True)

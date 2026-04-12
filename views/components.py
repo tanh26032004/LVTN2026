@@ -57,17 +57,17 @@ def inject_custom_css():
 
         /* Hiệu ứng khi di chuột qua tab */
         button[data-baseweb="tab"]:hover {
-            border-color: #10b981 !important;
-            color: #10b981 !important;
-            background-color: #f8fafc !important;
+            border-color: #0ea5e9 !important; /* Xanh biển lam nhạt (sky-500) */
+            color: #0284c7 !important;        /* Xanh dương (sky-600) */
+            background-color: #f0f9ff !important;
         }
 
         /* Tab khi được chọn (Active) */
         button[data-baseweb="tab"][aria-selected="true"] {
-            background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+            background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%) !important; /* Xanh biển gradient */
             color: white !important;
             border: none !important;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3) !important;
         }
 
         /* 3. CÁC THÀNH PHẦN CONTAINER & FORM */
@@ -83,18 +83,18 @@ def inject_custom_css():
             font-weight: 600 !important;
         }
         .stButton > button[kind="primary"] {
-            background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+            background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%) !important;
             border: none !important;
             color: white !important;
         }
         .stButton > button[kind="primary"]:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 15px -3px rgba(16, 185, 129, 0.4) !important;
+            box-shadow: 0 8px 15px -3px rgba(14, 165, 233, 0.4) !important;
         }
     
         /* 4. GIAO DIỆN BANNER CHÍNH (HERO) */
         .main-hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%); /* Nền xanh biển sâu cực đẹp */
             padding: 40px 25px;
             border-radius: 20px;
             text-align: center;

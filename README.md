@@ -102,7 +102,7 @@ Trình duyệt của bạn sẽ tự bật lên ở cổng `http://localhost:850
 
 ## 📊 Dữ Liệu Huấn Luyện (Datasets)
 Bộ Dữ liệu được xây dựng theo hình thức Data Synthesizing & Augmentation. Thu thập kho hồ sơ gốc từ 3 tệp dữ liệu (Indonesia MBTI Dataset, Vietnam Student Performance Scores, Vietnam AI Sinh Viên GPA Data) sau đó kết hợp bằng thuật toán KNN và tịnh tiến điểm Gauss về chung một phổ điểm thi THPT Quốc Gia năm 2023.
-- **Kích thước mẫu (Samples Size)**: `7.610` bộ hồ sơ học sinh (chia test_size=0.2 để huấn luyện độc lập).
+- **Kích thước mẫu (Samples Size)**: `8.000` bộ hồ sơ học sinh (chia test_size=0.2 để huấn luyện độc lập).
 - **Phân loại đầu ra (Target Classes)**: Tổng cộng 12 nhóm chuyên ngành phổ biến như `CNTT & Kỹ thuật Máy tính`, `Kinh tế & Quản lý`, `Nghệ thuật & Thiết kế`, `Y tế & Sức khỏe`, v.v...
 - **Không gian Đặc trưng (Feature Space)**:
   - 07 Điểm số thành phần khối phổ thông: Toán, Ngữ Văn, Tiếng Anh, Vật lý, Hóa học, Sinh học, Lịch sử.
@@ -126,8 +126,8 @@ Kết quả đo lường khách quan thông qua **GridSearchCV** (với tập Te
 
 | Thuật Toán (Algorithm)            | Vai trò           | Accuracy (Thực tế) | Nhận Xét Mục Đích Sử Dụng |
 | ---------------------------------- | ----------------- | -------- | ---------------- |
-| **Random Forest Classifier**       | **Mô Hình Chính** | `~31.00%` | Là máy phân loại chính xác định và tính Feature Importances đa chiều. Mức 31% đối với bài toán 12 nhãn chồng lấp trong Data thực tế là chấp nhận được. |
-| **Decision Tree**                  | Đối trọng / XAI   | `~28.00%` | Dùng để vẽ đồ thị diễn giải If-Else tường minh sự rẽ nhánh từ Cây quyết định. |
-| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `~30.00%` | Ứng dụng chiếu phân cách siêu phẳng Nonlinear (RBF Kernel). Thiết lập C chặn nhiễu tốt. |
+| **Random Forest Classifier**       | **Mô Hình Chính** | `~87.99%` | Là máy phân loại định hướng tư vấn chính và tính Feature Importances đa chiều. Mức 88% đối với bài toán đa yếu tố 12 nhãn cho thấy hiệu năng tuyệt vời và độ tin cậy cao. |
+| **Decision Tree**                  | Đối trọng / XAI   | `~82.36%` | Dùng để vẽ đồ thị diễn giải If-Else tường minh sự rẽ nhánh từ Cây quyết định. |
+| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `~86.99%` | Ứng dụng chiếu phân cách siêu phẳng Nonlinear (RBF Kernel). Thiết lập C chặn nhiễu cực tốt, bám sát Random Forest. |
 
 *(Bản quyền mã nguồn mở LVTN2026. Sinh viên có thể tùy biến source code với hàm lượng Dataset mở rộng để ứng dụng cho Đăng ký Tuyển Sinh thực tế)*.

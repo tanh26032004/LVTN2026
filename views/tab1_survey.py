@@ -56,9 +56,9 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
                         <p style="margin: 0; font-size: 0.8rem; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Tổng điểm khối</p>
                         <h2 style="margin: 5px 0 0 0; color: #0f172a; font-size: 1.8rem; font-weight: 800;">{block_total:.2f}<span style="font-size: 1rem; color: #94a3b8; font-weight: 600;">/30</span></h2>
                     </div>
-                    <div style="flex: 1; background: linear-gradient(135deg, #f0fdf4 0%, #dcfce3 100%); padding: 15px; border-radius: 12px; border: 1px solid #bbf7d0; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <p style="margin: 0; font-size: 0.8rem; color: #22c55e; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Điểm trung bình</p>
-                        <h2 style="margin: 5px 0 0 0; color: #14532d; font-size: 1.8rem; font-weight: 800;">{block_avg:.2f}<span style="font-size: 1rem; color: #86efac; font-weight: 600;">/10</span></h2>
+                    <div style="flex: 1; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 15px; border-radius: 12px; border: 1px solid #bae6fd; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                        <p style="margin: 0; font-size: 0.8rem; color: #0ea5e9; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Điểm trung bình</p>
+                        <h2 style="margin: 5px 0 0 0; color: #082f49; font-size: 1.8rem; font-weight: 800;">{block_avg:.2f}<span style="font-size: 1rem; color: #7dd3fc; font-weight: 600;">/10</span></h2>
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
@@ -95,14 +95,14 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
                     
                     # QUAN TRỌNG: Căn lề trái tuyệt đối để tránh Markdown lỗi Code Block
                     st.markdown(f"""
-<div style='background: #ecfdf5; border: 1px solid #a7f3d0; padding: 24px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 16px;'>
-<p style='color: #059669; font-weight: 800; margin: 0 0 8px 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;'>Đề xuất Phù hợp nhất</p>
-<h2 style='color: #15803d; margin: 0 0 16px 0; font-weight: 900; font-size: 2rem; letter-spacing: -0.5px;'>{top1_group}</h2>
+<div style='background: #f0f9ff; border: 1px solid #bae6fd; padding: 24px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 16px;'>
+<p style='color: #0284c7; font-weight: 800; margin: 0 0 8px 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;'>Đề xuất Phù hợp nhất</p>
+<h2 style='color: #0369a1; margin: 0 0 16px 0; font-weight: 900; font-size: 2rem; letter-spacing: -0.5px;'>{top1_group}</h2>
 <div style='display: flex; align-items: center;'>
-<div style='flex-grow: 1; background-color: #d1fae5; height: 10px; border-radius: 5px; overflow: hidden;'>
-<div style='width: {top1_prob:.2f}%; background-color: #10b981; height: 100%; border-radius: 5px;'></div>
+<div style='flex-grow: 1; background-color: #e0f2fe; height: 10px; border-radius: 5px; overflow: hidden;'>
+<div style='width: {top1_prob:.2f}%; background-color: #0ea5e9; height: 100%; border-radius: 5px;'></div>
 </div>
-<span style='margin-left: 15px; font-weight: 800; color: #059669; font-size: 1.1rem;'>{top1_prob:.2f}%</span>
+<span style='margin-left: 15px; font-weight: 800; color: #0284c7; font-size: 1.1rem;'>{top1_prob:.2f}%</span>
 </div>
 </div>
 """, unsafe_allow_html=True)
@@ -147,7 +147,7 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
 <h1 style='font-size: 3.5rem; margin: 0; color: #94a3b8; margin-bottom: 15px;'></h1>
 <h4 style='color: #475569; font-weight: 700; margin-bottom: 10px;'>Hệ thống đang chờ dữ liệu</h4>
 <p style='color: #64748b; font-size: 0.95rem; max-width: 80%; margin: 0 auto; line-height: 1.6;'>
-Vui lòng thiết lập các tham số đầu vào ở bảng bên trái và nhấn nút <b style="color: #10b981;">Xử lý Dữ liệu & Gợi ý</b> để AI bắt đầu phân tích.
+Vui lòng thiết lập các tham số đầu vào ở bảng bên trái và nhấn nút <b style="color: #0ea5e9;">Xử lý Dữ liệu & Gợi ý</b> để AI bắt đầu phân tích.
 </p>
 </div>
 """, unsafe_allow_html=True)
