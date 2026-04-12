@@ -90,7 +90,7 @@ Cú pháp để **Chế biến và Tăng cường Dữ liệu (Data Engineering 
 python scripts/merge_raw_data.py
 python scripts/data_augmentation.py
 ```
-*(Kết quả: Sẽ tạo ra file `data/student_data.csv` mô phỏng 7.610 hồ sơ học sinh chân thực khớp với chuẩn Phổ điểm Bộ GD ĐT).*
+*(Kết quả: Sẽ tạo ra file `data/student_data.csv` mô phỏng 8.000 hồ sơ học sinh chân thực khớp với chuẩn Phổ điểm Bộ GD ĐT).*
 
 Cú pháp để **Huấn luyện Mô hình AI**:
 ```bash
