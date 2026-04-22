@@ -1,0 +1,77 @@
+{
+  "prediction_count": 12,
+  "logs": [
+    {
+      "time": "2026-04-22 15:58:34",
+      "mbti": "ISTP",
+      "khoi_thi": "Khối B (Toán – Hóa học – Sinh học)",
+      "top1_major": "Y tế & Sức khỏe"
+    },
+    {
+      "time": "2026-04-22 15:58:41",
+      "mbti": "ISTJ",
+      "khoi_thi": "Khối B (Toán – Hóa học – Sinh học)",
+      "top1_major": "Y tế & Sức khỏe"
+    },
+    {
+      "time": "2026-04-22 15:58:46",
+      "mbti": "ENTJ",
+      "khoi_thi": "Khối B (Toán – Hóa học – Sinh học)",
+      "top1_major": "Y tế & Sức khỏe"
+    },
+    {
+      "time": "2026-04-22 16:24:12",
+      "mbti": "ESTP",
+      "khoi_thi": "Khối C (Ngữ văn – Lịch sử – Địa lí)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:24:26",
+      "mbti": "ESTP",
+      "khoi_thi": "Khối C (Ngữ văn – Lịch sử – Địa lí)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:34:15",
+      "mbti": "ESTP",
+      "khoi_thi": "Khối C (Ngữ văn – Lịch sử – Địa lí)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:36:58",
+      "mbti": "ESTP",
+      "khoi_thi": "Khối C (Ngữ văn – Lịch sử – Địa lí)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:39:42",
+      "mbti": "ESTP",
+      "khoi_thi": "Khối C (Ngữ văn – Lịch sử – Địa lí)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:40:01",
+      "mbti": "ENTJ",
+      "khoi_thi": "Khối A1 (Toán – Vật lý – Tiếng Anh)",
+      "top1_major": "Sư phạm & Giáo dục"
+    },
+    {
+      "time": "2026-04-22 16:40:13",
+      "mbti": "ENTJ",
+      "khoi_thi": "Khối A1 (Toán – Vật lý – Tiếng Anh)",
+      "top1_major": "Sư phạm & Giáo dục"
+    },
+    {
+      "time": "2026-04-22 16:40:18",
+      "mbti": "ISTJ",
+      "khoi_thi": "Khối A1 (Toán – Vật lý – Tiếng Anh)",
+      "top1_major": "Nghệ thuật & Thiết kế"
+    },
+    {
+      "time": "2026-04-22 16:40:31",
+      "mbti": "ISTJ",
+      "khoi_thi": "Khối A1 (Toán – Vật lý – Tiếng Anh)",
+      "top1_major": "Công nghệ Thông tin & Kỹ thuật Máy tính"
+    }
+  ]
+}

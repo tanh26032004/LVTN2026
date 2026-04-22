@@ -4,21 +4,36 @@ import os
 import json
 from scripts.hybrid_recommender import get_hybrid_recommendations
 from data.major_db import get_major_code
+from assets.mbti_assets import get_major_image
 
-def record_prediction_usage():
+def record_prediction_usage(user_mbti="", khoi_thi="", top1_major=""):
+    """Ghi nhận chi tiết mỗi lần dự đoán thành công vào file JSON."""
     try:
+        from datetime import datetime
         stats_file = os.path.join(os.path.dirname(__file__), "..", "data", "usage_statistics.json")
-        stats_data = {"prediction_count": 0}
+        stats_data = {"prediction_count": 0, "logs": []}
         
         if os.path.exists(stats_file):
             with open(stats_file, 'r', encoding='utf-8') as f:
                 stats_data = json.load(f)
+        
+        # Đảm bảo key logs tồn tại (tương thích file cũ)
+        if "logs" not in stats_data:
+            stats_data["logs"] = []
                 
         stats_data["prediction_count"] = stats_data.get("prediction_count", 0) + 1
         
+        # Ghi chi tiết lượt sử dụng
+        stats_data["logs"].append({
+            "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "mbti": user_mbti,
+            "khoi_thi": khoi_thi,
+            "top1_major": top1_major
+        })
+        
         with open(stats_file, 'w', encoding='utf-8') as f:
-            json.dump(stats_data, f)
-    except Exception as e:
+            json.dump(stats_data, f, ensure_ascii=False, indent=2)
+    except Exception:
         pass # Ignore minor file write errors in UI
 
 
@@ -109,51 +124,67 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
                     top1_group = top_3_hybrid[0][0]
                     top1_prob = top_3_hybrid[0][1] * 100
                     
-                    record_prediction_usage()
+                    record_prediction_usage(user_mbti=user_mbti, khoi_thi=khoi_choice, top1_major=top1_group)
                     
                     # Lấy danh sách toàn bộ các ngành thuộc TOP 1
                     top1_majors_list = list(major_dict.get(top1_group, []))
                     
-                    # QUAN TRỌNG: Căn lề trái tuyệt đối để tránh Markdown lỗi Code Block
+                    # ============ KẾT QUẢ TOP 1 - CARD CHÍNH ============
                     st.markdown(f"""
-<div style='background: #f0f9ff; border: 1px solid #bae6fd; padding: 24px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 16px;'>
-<p style='color: #0284c7; font-weight: 800; margin: 0 0 8px 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;'>Đề xuất Phù hợp nhất</p>
-<h2 style='color: #0369a1; margin: 0 0 16px 0; font-weight: 900; font-size: 2rem; letter-spacing: -0.5px;'>{top1_group}</h2>
-<div style='display: flex; align-items: center;'>
-<div style='flex-grow: 1; background-color: #e0f2fe; height: 10px; border-radius: 5px; overflow: hidden;'>
-<div style='width: {top1_prob:.2f}%; background-color: #0ea5e9; height: 100%; border-radius: 5px;'></div>
-</div>
-<span style='margin-left: 15px; font-weight: 800; color: #0284c7; font-size: 1.1rem;'>{top1_prob:.2f}%</span>
-</div>
+<div style='background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #7dd3fc; padding: 18px 28px; border-radius: 20px; box-shadow: 0 8px 30px -5px rgba(14, 165, 233, 0.15); margin-bottom: 20px; text-align: center;'>
+<p style='color: #0284c7; font-weight: 900; margin: 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 3px;'>Đề xuất Phù hợp nhất</p>
 </div>
 """, unsafe_allow_html=True)
+                    top1_col_img, top1_col_info = st.columns([1, 2.5])
+                    with top1_col_img:
+                        try:
+                            major_img_path = get_major_image(top1_group)
+                            st.image(major_img_path, use_container_width=True)
+                        except:
+                            pass
+                    with top1_col_info:
+                        st.markdown(f"""
+<h2 style='color: #0369a1; margin: 0 0 10px 0; font-weight: 900; font-size: 1.8rem; letter-spacing: -0.5px;'>{top1_group}</h2>
+<div style='display: flex; align-items: center; gap: 12px; margin-bottom: 8px;'>
+<div style='flex-grow: 1; background-color: #e0f2fe; height: 12px; border-radius: 6px; overflow: hidden;'>
+<div style='width: {top1_prob:.1f}%; background: linear-gradient(90deg, #38bdf8, #0ea5e9); height: 100%; border-radius: 6px;'></div>
+</div>
+<span style='font-weight: 900; color: #0284c7; font-size: 1.2rem; min-width: 60px; text-align:right;'>{top1_prob:.1f}%</span>
+</div>
+<p style='color: #64748b; font-size: 0.9rem; margin: 0;'>Mức độ phù hợp dựa trên phân tích tổ hợp MBTI, khối thi và điểm số của bạn.</p>
+""", unsafe_allow_html=True)
                     
-                    # --- TÍNH NĂNG MỚI: DANH SÁCH CHI TIẾT NGÀNH TOP 1 ---
+                    # --- DANH SÁCH CHI TIẾT NGÀNH TOP 1 ---
                     with st.expander(f"Bấm để xem mã ngành thuộc **{top1_group}**", expanded=False):
                         st.markdown("<p style='color:#475569; font-size:0.9rem; margin-bottom:12px;'>Danh sách các chuyên ngành đào tạo đại học:</p>", unsafe_allow_html=True)
                         for major in top1_majors_list:
                             code = get_major_code(major)
-                            # Trang trí mã ngành bằng nhãn nền xám, tên ngành in đậm (Không có dấu chấm)
                             st.markdown(f"<div style='margin-bottom: 8px; padding-left: 5px;'><code style='color:#0ea5e9; background:#f1f5f9; padding:4px 8px; border-radius:6px; font-weight:600; font-size:0.85rem; margin-right:8px;'>{code}</code> <span style='font-weight:600; color:#334155; font-size: 0.95rem;'>{major}</span></div>", unsafe_allow_html=True)
 
                     st.markdown("<h4 style='color: #334155; font-size: 1.1rem; font-weight: 700; margin-top: 25px; margin-bottom: 15px;'>Các nhóm ngành tiềm năng khác</h4>", unsafe_allow_html=True)
                     
-                    # --- GIAO DIỆN TOP 2 & 3 ---
+                    # ============ KẾT QUẢ TOP 2 & 3 ============
                     for i, (group_name, prob) in enumerate(top_3_hybrid[1:]):
                         percentage = prob * 100
                         group_majors_list = list(major_dict.get(group_name, []))
                         
                         with st.container(border=True):
-                            # QUAN TRỌNG: Căn lề trái tuyệt đối 
-                            st.markdown(f"""
+                            sub_col_img, sub_col_info = st.columns([1, 3])
+                            with sub_col_img:
+                                try:
+                                    sub_img_path = get_major_image(group_name)
+                                    st.image(sub_img_path, use_container_width=True)
+                                except:
+                                    pass
+                            with sub_col_info:
+                                st.markdown(f"""
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <b style="color: #0f172a; font-size: 1.05rem;">{i+2}. {group_name}</b>
 <span style="color: #64748b; font-weight: 600; font-size: 0.95rem;">{percentage:.1f}%</span>
 </div>
 """, unsafe_allow_html=True)
-                            st.progress(float(prob))
+                                st.progress(float(prob))
                             
-                            # --- TÍNH NĂNG MỚI: DANH SÁCH CHI TIẾT NGÀNH TOP 2, 3 ---
                             with st.expander(f"Xem mã ngành thuộc nhóm này", expanded=False):
                                 for major in group_majors_list:
                                     code = get_major_code(major)
@@ -165,10 +196,10 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
             # QUAN TRỌNG: Căn lề trái tuyệt đối để xử lý lỗi HTML trắng nhách
             st.markdown("""
 <div style='background-color: #f8fafc; padding: 50px 20px; border-radius: 20px; border: 2px dashed #cbd5e1; text-align: center; margin-top: 10px;'>
-<h1 style='font-size: 3.5rem; margin: 0; color: #94a3b8; margin-bottom: 15px;'></h1>
-<h4 style='color: #475569; font-weight: 700; margin-bottom: 10px;'>Hệ thống đang chờ dữ liệu</h4>
-<p style='color: #64748b; font-size: 0.95rem; max-width: 80%; margin: 0 auto; line-height: 1.6;'>
-Vui lòng thiết lập các tham số đầu vào ở bảng bên trái và nhấn nút <b style="color: #0ea5e9;">Xử lý Dữ liệu & Gợi ý</b> để AI bắt đầu phân tích.
-</p>
+    <h1 style='font-size: 3rem; margin: 0; margin-bottom: 10px;'></h1>
+    <h4 style='color: #475569; font-weight: 700; margin-bottom: 10px;'>Đang chờ thông tin từ bạn</h4>
+    <p style='color: #64748b; font-size: 0.95rem; max-width: 85%; margin: 0 auto; line-height: 1.6;'>
+        Vui lòng chọn <b>Nhóm tính cách MBTI</b> và <b>Khối thi</b> ở bên trái, sau đó nhấn nút <b style="color: #0ea5e9;">Khám phá Ngành phù hợp</b> để hệ thống bắt đầu gợi ý nhé.
+    </p>
 </div>
 """, unsafe_allow_html=True)
