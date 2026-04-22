@@ -1,7 +1,26 @@
 import streamlit as st
 import random
+import os
+import json
 from scripts.hybrid_recommender import get_hybrid_recommendations
 from data.major_db import get_major_code
+
+def record_prediction_usage():
+    try:
+        stats_file = os.path.join(os.path.dirname(__file__), "..", "data", "usage_statistics.json")
+        stats_data = {"prediction_count": 0}
+        
+        if os.path.exists(stats_file):
+            with open(stats_file, 'r', encoding='utf-8') as f:
+                stats_data = json.load(f)
+                
+        stats_data["prediction_count"] = stats_data.get("prediction_count", 0) + 1
+        
+        with open(stats_file, 'w', encoding='utf-8') as f:
+            json.dump(stats_data, f)
+    except Exception as e:
+        pass # Ignore minor file write errors in UI
+
 
 def render_tab(active_model, active_model_name, preprocessor, target_encoder, major_dict):
     col_input, col_result = st.columns([1.2, 1], gap="large")
@@ -66,7 +85,7 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
 
     with col_result:
         st.markdown("<h3 style='font-weight: 800; margin-top: 0; margin-bottom: 10px;'>Ngành học dự đoán</h3>", unsafe_allow_html=True)
-        st.markdown("<div style='background-color: #fffbeb; color: #92400e; padding: 12px 16px; border-radius: 12px; border: 1px solid #fde68a; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5;'><b>Lưu ý:</b> Cỗ máy AI của hệ thống hiện đang đạt độ chính xác ước tính khoảng <b>80-85%</b>. Các kết quả gợi ý dưới đây có giá trị <b>tham khảo và định hướng</b>, học sinh nên kết hợp chặt chẽ với đam mê cá nhân và điều kiện gia đình trước khi đưa ra quyết định cuối cùng.</div>", unsafe_allow_html=True)
+        st.markdown("<div style='background-color: #fffbeb; color: #92400e; padding: 12px 16px; border-radius: 12px; border: 1px solid #fde68a; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5;'><b>Lưu ý:</b> Hệ thống dự đoán hiện đang đạt độ chính xác ước tính khoảng <b>80-85%</b>. Các kết quả gợi ý dưới đây có giá trị <b>tham khảo và định hướng</b>, học sinh nên kết hợp chặt chẽ với đam mê cá nhân và điều kiện gia đình trước khi đưa ra quyết định cuối cùng.</div>", unsafe_allow_html=True)
         
         if predict_btn and (not user_mbti or not khoi_choice):
              st.warning("⚠️ Vui lòng hoàn thành thao tác **Chọn Nhóm tính cách MBTI** và **Khối thi THPT** ở bảng bên trái trước khi phân tích!")
@@ -89,6 +108,8 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
                     st.session_state['matching_students'] = matching_students
                     top1_group = top_3_hybrid[0][0]
                     top1_prob = top_3_hybrid[0][1] * 100
+                    
+                    record_prediction_usage()
                     
                     # Lấy danh sách toàn bộ các ngành thuộc TOP 1
                     top1_majors_list = list(major_dict.get(top1_group, []))

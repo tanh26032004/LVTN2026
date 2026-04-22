@@ -11,7 +11,7 @@ def get_abs_path(relative_path):
 def load_mbti_questions():
     try:
         # Hỗ trợ đường dẫn tuyệt đối hoặc tương đối
-        file_path = os.path.join(os.path.dirname(__file__), 'data', 'questions', 'mbti_questions.json')
+        file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'questions', 'mbti_questions.json')
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
@@ -180,7 +180,7 @@ def get_major_image_path(major_name):
 
 def load_mbti_comprehensive():
     try:
-        file_path = os.path.join(os.path.dirname(__file__), 'data', 'mbti_comprehensive.json')
+        file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'mbti_comprehensive.json')
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:

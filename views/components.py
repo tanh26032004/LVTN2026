@@ -6,6 +6,13 @@ def inject_custom_css():
         /* 1. HIỆU ỨNG CHUNG */
         * { transition: all 0.3s ease; }
     
+        /* 1.5 TÙY CHỈNH CĂN GIỮA NÚT CHUYỂN TAB (PILLS) */
+        div[data-testid="stPills"], div[data-testid="stPills"] > div,
+        div[data-testid="stSegmentedControl"], div[data-testid="stSegmentedControl"] > div {
+            display: flex !important;
+            justify-content: center !important;
+        }
+
         /* 2. TÙY CHỈNH PHẦN CHỌN TAB (KIỂU VIÊN THUỐC - PILL TABS) */
         /* Loại bỏ triệt để đường kẻ ngang màu xám mặc định của hệ thống */
         div[data-testid="stTabs"] > div:first-child,

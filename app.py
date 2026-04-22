@@ -12,7 +12,7 @@ from views import tab1_survey, tab2_mbti, tab3_xai
 st.set_page_config(
     page_title="Hệ thống Gợi ý Chuyên ngành",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Khởi tạo state gốc
@@ -46,34 +46,36 @@ if rf_model is None or dt_model is None or svm_model is None:
     st.stop()
 
 # ==========================================
-# 3. RENDER SIDEBAR
+# 3. ROUTING (QUẢN TRỊ VIÊN)
 # ==========================================
-model_choice, active_model = sidebar.render_sidebar(rf_model, dt_model, svm_model)
+query_params = st.query_params
+if query_params.get("admin") == "true":
+    from views import admin_dashboard
+    model_choice, active_model = admin_dashboard.render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_encoder, major_dict)
+    st.stop() # Ngăn không render giao diện User bên dưới
 
 # ==========================================
-# 4. RENDER CÁC TAB CHÍNH
+# 4. RENDER GIAO DIỆN NGƯỜI DÙNG BÌNH THƯỜNG
 # ==========================================
-# Khai báo các tab
-tab_options = ["Khảo sát Phân tích", "Trắc nghiệm MBTI", "Giải thích Mô hình (XAI)"]
+model_choice = st.session_state.get('admin_model_choice', "Random Forest (Khuyên dùng)")
+active_model = st.session_state.get('admin_active_model', rf_model)
 
-if 'active_panel' not in st.session_state:
+# Khai báo các tab công khai
+tab_options = ["Khảo sát Phân tích", "Trắc nghiệm MBTI"]
+
+if 'active_panel' not in st.session_state or st.session_state['active_panel'] not in tab_options:
     st.session_state['active_panel'] = tab_options[0]
 
 # --- 4.1. RENDER HERO BANNER (TRÊN CÙNG) ---
 if st.session_state['active_panel'] == tab_options[0]:
     components.render_hero(
         title="Hệ Thống Gợi Ý Chuyên Ngành Đại Học", 
-        subtitle=f"Nhận diện năng lực cốt lõi dựa trên <b>{model_choice}</b> kết hợp không gian vector <b>KNN</b>"
+        subtitle="Khơi dậy tiềm năng, vững bước tương lai: Cùng AI khám phá ngành học dành riêng cho bạn!"
     )
 elif st.session_state['active_panel'] == tab_options[1]:
     components.render_hero(
         title="TRẮC NGHIỆM TÍNH CÁCH MBTI", 
         subtitle="Khám phá bản thân - Định vị năng lực cốt lõi"
-    )
-elif st.session_state['active_panel'] == tab_options[2]:
-    components.render_hero(
-        title="GIẢI THÍCH HOẠT ĐỘNG CỦA MÔ HÌNH", 
-        subtitle="Hiểu rõ cách thuật toán phân tích và đưa ra gợi ý chuyên ngành"
     )
 
 # --- 4.2. RENDER MENU TABS (DƯỚI BANNER) ---
@@ -88,7 +90,7 @@ selected_tab = st.pills(
     selection_mode="single"
 )
 
-# Cập nhật trạng thái nếu người dùng đổi tab (và tránh load lại vô ích nếu như click tab hiện tại hoặc hủy chọn)
+# Cập nhật trạng thái nếu người dùng đổi tab
 if selected_tab and selected_tab != st.session_state['active_panel']:
     st.session_state['active_panel'] = selected_tab
     st.rerun()
@@ -96,9 +98,7 @@ if selected_tab and selected_tab != st.session_state['active_panel']:
 st.markdown("<hr style='margin-top: 5px; margin-bottom: 25px;'>", unsafe_allow_html=True)
 
 # --- 4.3. RENDER NỘI DUNG TƯƠNG ỨNG MỖI TAB ---
-if st.session_state['active_panel'] == tab_options[0]:
+if st.session_state['active_panel'] == "Khảo sát Phân tích":
     tab1_survey.render_tab(active_model, model_choice, preprocessor, target_encoder, major_dict)
-elif st.session_state['active_panel'] == tab_options[1]:
+elif st.session_state['active_panel'] == "Trắc nghiệm MBTI":
     tab2_mbti.render_tab()
-elif st.session_state['active_panel'] == tab_options[2]:
-    tab3_xai.render_tab(active_model, model_choice)

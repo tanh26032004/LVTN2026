@@ -13,10 +13,10 @@ def render_tab():
         st.session_state['mbti_answers'] = {}
         st.session_state['mbti_form_error'] = ""
         try:
-            q_e_i = random.sample(MBTI_QUESTIONS[0:15], 3)
-            q_s_n = random.sample(MBTI_QUESTIONS[15:30], 3)
-            q_t_f = random.sample(MBTI_QUESTIONS[30:45], 3)
-            q_j_p = random.sample(MBTI_QUESTIONS[45:60], 3)
+            q_e_i = random.sample(MBTI_QUESTIONS[0:15], 4)
+            q_s_n = random.sample(MBTI_QUESTIONS[15:30], 4)
+            q_t_f = random.sample(MBTI_QUESTIONS[30:45], 4)
+            q_j_p = random.sample(MBTI_QUESTIONS[45:60], 4)
             st.session_state['selected_mbti_questions'] = q_e_i + q_s_n + q_t_f + q_j_p
         except Exception:
             st.session_state['selected_mbti_questions'] = MBTI_QUESTIONS
