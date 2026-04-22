@@ -7,7 +7,7 @@ def get_abs_path(relative_path):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", relative_path))
 
 def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_encoder, major_dict):
-    st.markdown("<h2 style='color:#0ea5e9; text-align:center;'>Trang Quản Trị Hệ Thống (Admin Dashboard)</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#0ea5e9; text-align:center;'>Trang Quản Trị Hệ Thống</h2>", unsafe_allow_html=True)
     st.divider()
 
     # 1. Đăng nhập
