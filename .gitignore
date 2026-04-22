@@ -8,3 +8,7 @@ __pycache__/
 # Ignore actual models and data if desired (though for simple projects it might be fine to commit them)
 # data/raw_data.csv
 # model/*.joblib
+
+# Streamlit secrets and Firebase credentials
+.streamlit/*.json
+.streamlit/secrets.toml

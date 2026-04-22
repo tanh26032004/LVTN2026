@@ -1,10 +1,6 @@
 import streamlit as st
 import joblib
-
-# ===== UI Components (Views) =====
-from views import components
-from views import sidebar
-from views import tab1_survey, tab2_mbti, tab3_xai
+from utils.firebase_client import seed_firebase_if_empty
 
 # ==========================================
 # 1. CẤU HÌNH TRANG & CSS
@@ -15,6 +11,20 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# Seed Firebase on cold start (chỉ cần chạy một lần)
+try:
+    seed_firebase_if_empty()
+except:
+    pass
+
+# ===== UI Components (Views) =====
+from views import components
+from views import sidebar
+from views import tab1_survey, tab2_mbti, tab3_xai
+
+# ==========================================
+# 1. CẤU HÌNH TRANG & CSS
+# ==========================================
 # Khởi tạo state gốc
 if 'theme_mode' not in st.session_state:
     st.session_state['theme_mode'] = 'Light'

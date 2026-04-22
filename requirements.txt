@@ -6,3 +6,4 @@ matplotlib==3.10.0
 seaborn==0.13.2
 fastparquet==2024.11.0 # Useful for storing/loading datasets in production
 joblib==1.4.2
+firebase-admin==7.4.0

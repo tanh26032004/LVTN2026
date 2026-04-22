@@ -13,23 +13,23 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
     # 1. Đăng nhập
     if not st.session_state.get('is_admin_logged_in', False):
         st.markdown("<div style='background-color: #f8fafc; padding: 30px; border-radius: 15px; border: 1px solid #e2e8f0; width: 60%; margin: auto;'>", unsafe_allow_html=True)
-        st.markdown("<h3 style='text-align: center; color: #0ea5e9; font-weight: 800; margin-bottom: 25px;'>Xác Thực Cấp Cao</h3>", unsafe_allow_html=True)
-        pwd = st.text_input("Nhập mã truy cập (Password):", type="password")
-        import hashlib
-        if st.button("Đăng Nhập Quản Trị", type="primary", use_container_width=True):
-            # Check secret hash
-            pwd_hash = hashlib.sha256(pwd.encode()).hexdigest()
-            try:
-                secret_hash = st.secrets["admin"]["password_hash"]
-            except Exception:
-
-                secret_hash = "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9" 
+        st.markdown("<h3 style='text-align: center; color: #0ea5e9; font-weight: 800; margin-bottom: 25px;'>Quản Trị Viên (Firebase Auth)</h3>", unsafe_allow_html=True)
+        
+        email = st.text_input("Email Quản trị:", placeholder="admin@example.com")
+        pwd = st.text_input("Mật khẩu:", type="password")
+        
+        if st.button("Đăng Nhập Hệ Thống", type="primary", use_container_width=True):
+            from utils.firebase_client import verify_admin_login
+            success, message = verify_admin_login(email, pwd)
             
-            if pwd_hash == secret_hash:
+            if success:
                 st.session_state['is_admin_logged_in'] = True
+                st.success(message)
                 st.rerun()
             else:
-                st.error("Mật khẩu không chính xác!")
+                st.error(f"Đăng nhập thất bại: {message}")
+        
+        st.markdown("<p style='text-align:center; font-size:0.8rem; color:gray; margin-top:20px;'>Hệ thống sử dụng xác thực bảo mật qua Google Firebase</p>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
         return "Random Forest (Khuyên dùng)", rf_model # model_choice, active_model fallback
     
@@ -57,28 +57,50 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
         
     # Tab 2: Quản lý JSON MBTI
     with admin_tab2:
-        st.subheader("Trình Quản Lý Dữ liệu Câu hỏi MBTI")
-        mbti_path = get_abs_path("data/questions/mbti_questions.json")
-        try:
-            with open(mbti_path, 'r', encoding='utf-8') as f:
-                mbti_data = json.load(f)
-            
-            st.info(f"Đang hiển thị {len(mbti_data)} câu hỏi MBTI trong cơ sở dữ liệu. Bấm đúp vào ô để sửa. Có thể thêm dòng mới ở cuối bảng.")
-            edited_data = st.data_editor(mbti_data, num_rows="dynamic", use_container_width=True, height=500)
-            
-            if st.button("Lưu file JSON", type="primary"):
-                with open(mbti_path, 'w', encoding='utf-8') as f:
-                    json.dump(edited_data, f, ensure_ascii=False, indent=4)
-                st.success("Đã ghi đè file mbti_questions.json thành công!")
-        except Exception as e:
-            st.error(f"Lỗi khi tải dữ liệu MBTI: {e}")
+        st.subheader("Trình Quản Lý Dữ liệu MBTI (Firebase)")
+        
+        mbti_sub_tab1, mbti_sub_tab2 = st.tabs(["Câu hỏi Trắc nghiệm", "Mô tả Chi tiết (Markdown)"])
+        
+        with mbti_sub_tab1:
+            try:
+                from utils.firebase_client import fb_get_mbti_questions, fb_save_mbti_questions
+                mbti_data = fb_get_mbti_questions()
+                
+                st.info(f"Đang hiển thị {len(mbti_data)} câu hỏi MBTI. Bấm đúp vào ô để sửa.")
+                edited_questions = st.data_editor(mbti_data, num_rows="dynamic", use_container_width=True, height=400, key="editor_questions")
+                
+                if st.button("Lưu Câu hỏi", type="primary"):
+                    fb_save_mbti_questions(edited_questions)
+                    st.success("Đã đồng bộ câu hỏi lên Firebase!")
+                    st.cache_data.clear() # Clear cache to reflect changes
+            except Exception as e:
+                st.error(f"Lỗi: {e}")
+
+        with mbti_sub_tab2:
+            try:
+                from utils.firebase_client import fb_get_mbti_comprehensive, fb_save_mbti_comprehensive
+                comp_data = fb_get_mbti_comprehensive()
+                
+                st.info("Chỉnh sửa nội dung Markdown mô tả chi tiết cho từng nhóm tính cách.")
+                
+                all_types = ["INTJ","INTP","ENTJ","ENTP","INFJ","INFP","ENFJ","ENFP","ISTJ","ISFJ","ESTJ","ESFJ","ISTP","ISFP","ESTP","ESFP"]
+                selected_type = st.selectbox("Chọn nhóm tính cách để sửa nội dung:", all_types)
+                
+                current_text = comp_data.get(selected_type, "Chưa có dữ liệu.")
+                new_text = st.text_area(f"Nội dung Markdown cho {selected_type}:", value=current_text, height=300)
+                
+                if st.button(f"Lưu Nội dung {selected_type}", type="primary"):
+                    comp_data[selected_type] = new_text
+                    fb_save_mbti_comprehensive(comp_data)
+                    st.success(f"Đã cập nhật nội dung cho {selected_type} trên Firebase!")
+                    st.cache_data.clear()
+            except Exception as e:
+                st.error(f"Lỗi: {e}")
             
     # Tab 3: Quản lý Assets Hình ảnh
     with admin_tab3:
         st.subheader("Quản lý Hình ảnh & Gán Tính cách / Ngành học")
         img_dir = get_abs_path("assets/images")
-        mbti_mapping_file = get_abs_path("data/mbti_image_mapping.json")
-        major_mapping_file = get_abs_path("data/major_image_mapping.json")
         
         if not os.path.exists(img_dir):
             st.warning("Thư mục assets/images chưa tồn tại!")
@@ -86,15 +108,18 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
             images = sorted([f for f in os.listdir(img_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
             
             # --- Load mappings ---
+            from utils.firebase_client import (
+                fb_get_mbti_image_mapping, fb_get_major_image_mapping,
+                fb_save_mbti_image_mapping, fb_save_major_image_mapping
+            )
+            
             ALL_MBTI = ["INTJ","INTP","ENTJ","ENTP","INFJ","INFP","ENFJ","ENFP","ISTJ","ISFJ","ESTJ","ESFJ","ISTP","ISFP","ESTP","ESFP"]
             DEFAULT_MBTI_MAP = {m: f"mbti_{m.lower()}.png" for m in ALL_MBTI}
             
             current_mbti_map = DEFAULT_MBTI_MAP.copy()
-            if os.path.exists(mbti_mapping_file):
-                try:
-                    with open(mbti_mapping_file, 'r', encoding='utf-8') as f:
-                        current_mbti_map.update(json.load(f))
-                except: pass
+            fb_mbti_map = fb_get_mbti_image_mapping()
+            if fb_mbti_map:
+                current_mbti_map.update(fb_mbti_map)
             
             ALL_MAJORS = [
                 "CNTT & Kỹ thuật Máy tính", "Kinh tế & Quản lý", "Y tế & Sức khỏe",
@@ -111,11 +136,9 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                 "Nông Lâm Ngư nghiệp": "major_engineering.png", "Báo chí & Truyền thông": "major_business.png",
             }
             current_major_map = DEFAULT_MAJOR_MAP.copy()
-            if os.path.exists(major_mapping_file):
-                try:
-                    with open(major_mapping_file, 'r', encoding='utf-8') as f:
-                        current_major_map.update(json.load(f))
-                except: pass
+            fb_major_map = fb_get_major_image_mapping()
+            if fb_major_map:
+                current_major_map.update(fb_major_map)
             
             # === PHẦN 1: Upload ảnh mới ===
             st.markdown("#### Upload hình ảnh mới")
@@ -165,9 +188,8 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
             if mbti_changed:
                 st.warning("Bạn đã thay đổi cấu hình ảnh MBTI.")
             if st.button("Lưu cấu hình Ảnh MBTI", type="primary", use_container_width=True):
-                with open(mbti_mapping_file, 'w', encoding='utf-8') as f:
-                    json.dump(current_mbti_map, f, ensure_ascii=False, indent=2)
-                st.success("Đã lưu! Giao diện Người dùng sẽ cập nhật ảnh MBTI mới.")
+                fb_save_mbti_image_mapping(current_mbti_map)
+                st.success("Đã lưu! Giao diện Người dùng sẽ cập nhật ảnh MBTI mới trên Firebase.")
                 st.rerun()
             
             st.divider()
@@ -197,30 +219,22 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                 if major_changed:
                     st.warning("Bạn đã thay đổi cấu hình ảnh Ngành học.")
                 if st.button("Lưu cấu hình Ảnh Ngành học", type="primary", use_container_width=True):
-                    with open(major_mapping_file, 'w', encoding='utf-8') as f:
-                        json.dump(current_major_map, f, ensure_ascii=False, indent=2)
-                    st.success("Đã lưu! Ảnh minh họa ngành học sẽ cập nhật ngay.")
+                    fb_save_major_image_mapping(current_major_map)
+                    st.success("Đã lưu lên Firebase! Ảnh minh họa ngành học sẽ cập nhật ngay.")
                     st.rerun()
 
     # Tab 4: Thống Kê & XAI
     with admin_tab4:
         import pandas as pd
         from collections import Counter
+        from utils.firebase_client import fb_get_usage_statistics, fb_save_usage_statistics
         
         st.subheader("Báo Cáo Hoạt Động & Phân Tích")
         
-        # 1. Đọc dữ liệu thống kê
-        stats_file = get_abs_path("data/usage_statistics.json")
-        pred_count = 0
-        logs = []
-        if os.path.exists(stats_file):
-            try:
-                with open(stats_file, 'r', encoding='utf-8') as f:
-                    stats_data = json.load(f)
-                    pred_count = stats_data.get("prediction_count", 0)
-                    logs = stats_data.get("logs", [])
-            except:
-                pass
+        # 1. Đọc dữ liệu thống kê từ Firebase
+        stats_data = fb_get_usage_statistics()
+        pred_count = stats_data.get("prediction_count", 0)
+        logs = stats_data.get("logs", [])
         
         # ---- METRIC TỔNG QUAN ----
         m1, m2, m3 = st.columns(3)
@@ -293,9 +307,8 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
 
             # Nút reset
             if st.button("Xoá toàn bộ dữ liệu Thống kê", type="secondary"):
-                with open(stats_file, 'w', encoding='utf-8') as f:
-                    json.dump({"prediction_count": 0, "logs": []}, f)
-                st.success("Đã xoá dữ liệu thống kê!")
+                fb_save_usage_statistics({"prediction_count": 0, "logs": []})
+                st.success("Đã xoá dữ liệu thống kê trên Firebase!")
                 st.rerun()
         else:
             st.info("Chưa có dữ liệu thống kê nào. Hệ thống sẽ bắt đầu ghi nhận khi người dùng thực hiện dự đoán.")

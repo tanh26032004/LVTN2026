@@ -2,27 +2,27 @@
 
 import json
 import os
+import streamlit as st
+from utils.firebase_client import (
+    fb_get_mbti_image_mapping, fb_get_major_image_mapping, 
+    fb_get_mbti_questions, fb_get_mbti_comprehensive
+)
 
 # Hàm bổ trợ lấy đường dẫn tuyệt đối để tránh lỗi MediaFileHandler của Streamlit
 def get_abs_path(relative_path):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), relative_path))
 
 def _load_mbti_image_mapping():
-    """Đọc file cấu hình ảnh MBTI do Admin quản lý. Nếu không có thì dùng mặc định."""
-    mapping_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'mbti_image_mapping.json')
+    """Đọc file cấu hình ảnh MBTI do Admin quản lý từ Firebase. Nếu không có thì dùng mặc định."""
     default_map = {
         "INTJ": "mbti_intj.png", "INTP": "mbti_intp.png", "ENTJ": "mbti_entj.png", "ENTP": "mbti_entp.png",
         "INFJ": "mbti_infj.png", "INFP": "mbti_infp.png", "ENFJ": "mbti_enfj.png", "ENFP": "mbti_enfp.png",
         "ISTJ": "mbti_istj.png", "ISFJ": "mbti_isfj.png", "ESTJ": "mbti_estj.png", "ESFJ": "mbti_esfj.png",
         "ISTP": "mbti_istp.png", "ISFP": "mbti_isfp.png", "ESTP": "mbti_estp.png", "ESFP": "mbti_esfp.png",
     }
-    if os.path.exists(mapping_file):
-        try:
-            with open(mapping_file, 'r', encoding='utf-8') as f:
-                saved = json.load(f)
-                default_map.update(saved)
-        except:
-            pass
+    fb_map = fb_get_mbti_image_mapping()
+    if fb_map:
+        default_map.update(fb_map)
     return default_map
 
 def get_mbti_image(mbti_type):
@@ -31,7 +31,7 @@ def get_mbti_image(mbti_type):
     img_name = mapping.get(mbti_type, "mbti_analyst.png")
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_name))
 
-# Mapping ảnh cho 12 nhóm ngành — Admin có thể thay đổi qua data/major_image_mapping.json
+# Mapping ảnh cho 12 nhóm ngành — Admin có thể thay đổi qua Firebase
 MAJOR_IMAGE_DEFAULT = {
     "CNTT & Kỹ thuật Máy tính": "major_cntt.png",
     "Kinh tế & Quản lý": "major_kinhtequanly.png",
@@ -47,24 +47,24 @@ MAJOR_IMAGE_DEFAULT = {
     "Báo chí & Truyền thông": "major_business.png",
 }
 
+@st.cache_data(ttl=5)
 def get_major_image(major_name):
     """Trả về đường dẫn tuyệt đối ảnh đại diện cho nhóm ngành."""
-    mapping_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'major_image_mapping.json')
     current_map = MAJOR_IMAGE_DEFAULT.copy()
-    if os.path.exists(mapping_file):
-        try:
-            with open(mapping_file, 'r', encoding='utf-8') as f:
-                saved = json.load(f)
-                current_map.update(saved)
-        except:
-            pass
+    fb_map = fb_get_major_image_mapping()
+    if fb_map:
+        current_map.update(fb_map)
     img_name = current_map.get(major_name, "major_it.png")
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_name))
 
-# 1. Load cấu trúc câu hỏi động từ file quản lý (JSON)
-def load_mbti_questions():
+# 1. Load cấu trúc câu hỏi động từ file quản lý (Firebase)
+@st.cache_data(ttl=5)
+def get_mbti_questions():
     try:
-        # Hỗ trợ đường dẫn tuyệt đối hoặc tương đối
+        qs = fb_get_mbti_questions()
+        if qs: return qs
+        
+        # Fallback to local json if firebase is empty or fails
         file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'questions', 'mbti_questions.json')
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -72,10 +72,11 @@ def load_mbti_questions():
         print(f"Lỗi khi load danh sách câu hỏi: {e}")
         return []
 
-MBTI_QUESTIONS = load_mbti_questions()
 
 # 2. Định nghĩa MBTI Detail (Nhóm, tiêu đề phụ, mô tả, ảnh)
-MBTI_DETAILS = {
+@st.cache_data(ttl=5)
+def get_mbti_details():
+    return {
     # ---------------- 4 NHÀ PHÂN TÍCH (ANALYSTS) ----------------
     "INTJ": {
         "title": "Kiến trúc sư",
@@ -232,8 +233,14 @@ def get_major_image_path(major_name):
     else:
         return get_abs_path("assets/images/major_engineering.png")
 
-def load_mbti_comprehensive():
+@st.cache_data(ttl=5)
+def get_mbti_comprehensive():
     try:
+        data = fb_get_mbti_comprehensive()
+        if data:
+            return data
+        
+        # Fallback to local json
         file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'mbti_comprehensive.json')
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -241,4 +248,3 @@ def load_mbti_comprehensive():
         print(f"Lỗi khi load danh sách mbti comprehensive: {e}")
         return {}
 
-MBTI_COMPREHENSIVE = load_mbti_comprehensive()

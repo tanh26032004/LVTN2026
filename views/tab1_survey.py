@@ -7,34 +7,22 @@ from data.major_db import get_major_code
 from assets.mbti_assets import get_major_image
 
 def record_prediction_usage(user_mbti="", khoi_thi="", top1_major=""):
-    """Ghi nhận chi tiết mỗi lần dự đoán thành công vào file JSON."""
+    """Ghi nhận chi tiết mỗi lần dự đoán thành công vào Firebase."""
     try:
         from datetime import datetime
-        stats_file = os.path.join(os.path.dirname(__file__), "..", "data", "usage_statistics.json")
-        stats_data = {"prediction_count": 0, "logs": []}
-        
-        if os.path.exists(stats_file):
-            with open(stats_file, 'r', encoding='utf-8') as f:
-                stats_data = json.load(f)
-        
-        # Đảm bảo key logs tồn tại (tương thích file cũ)
-        if "logs" not in stats_data:
-            stats_data["logs"] = []
-                
-        stats_data["prediction_count"] = stats_data.get("prediction_count", 0) + 1
+        from utils.firebase_client import fb_increment_prediction
         
         # Ghi chi tiết lượt sử dụng
-        stats_data["logs"].append({
+        log_entry = {
             "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "mbti": user_mbti,
             "khoi_thi": khoi_thi,
             "top1_major": top1_major
-        })
+        }
+        fb_increment_prediction(log_entry)
         
-        with open(stats_file, 'w', encoding='utf-8') as f:
-            json.dump(stats_data, f, ensure_ascii=False, indent=2)
     except Exception:
-        pass # Ignore minor file write errors in UI
+        pass # Ignore minor network errors in UI
 
 
 def render_tab(active_model, active_model_name, preprocessor, target_encoder, major_dict):

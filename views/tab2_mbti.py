@@ -1,6 +1,6 @@
 import streamlit as st
 import random
-from assets.mbti_assets import MBTI_DETAILS, MBTI_QUESTIONS, MBTI_COMPREHENSIVE
+from assets.mbti_assets import get_mbti_details, get_mbti_questions, get_mbti_comprehensive
 
 def render_tab():
     if 'mbti_step' not in st.session_state:
@@ -13,18 +13,18 @@ def render_tab():
         st.session_state['mbti_answers'] = {}
         st.session_state['mbti_form_error'] = ""
         try:
-            q_e_i = random.sample(MBTI_QUESTIONS[0:15], 4)
-            q_s_n = random.sample(MBTI_QUESTIONS[15:30], 4)
-            q_t_f = random.sample(MBTI_QUESTIONS[30:45], 4)
-            q_j_p = random.sample(MBTI_QUESTIONS[45:60], 4)
+            q_e_i = random.sample(get_mbti_questions()[0:15], 4)
+            q_s_n = random.sample(get_mbti_questions()[15:30], 4)
+            q_t_f = random.sample(get_mbti_questions()[30:45], 4)
+            q_j_p = random.sample(get_mbti_questions()[45:60], 4)
             st.session_state['selected_mbti_questions'] = q_e_i + q_s_n + q_t_f + q_j_p
         except Exception:
-            st.session_state['selected_mbti_questions'] = MBTI_QUESTIONS
+            st.session_state['selected_mbti_questions'] = get_mbti_questions()
 
     def set_step_0():
         st.session_state['mbti_step'] = 0
 
-    selected_qs = st.session_state.get('selected_mbti_questions', MBTI_QUESTIONS)
+    selected_qs = st.session_state.get('selected_mbti_questions', get_mbti_questions())
 
     def process_mbti_form():
         s = st.session_state
@@ -42,6 +42,16 @@ def render_tab():
         
         s['user_mbti_result'] = f"{type_1}{type_2}{type_3}{type_4}"
         s['mbti_step'] = 2
+
+        # Ghi nhật ký vào Firebase
+        from utils.firebase_client import fb_increment_prediction
+        from datetime import datetime
+        log_entry = {
+            "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "mbti": s['user_mbti_result'],
+            "type": "MBTI_TEST_ONLY"
+        }
+        fb_increment_prediction(log_entry)
 
     # ==========================================
     # GIAO DIỆN BƯỚC 0: TỔNG QUAN
@@ -154,7 +164,7 @@ def render_tab():
             {"bg": "#fff7ed", "text": "#c2410c", "border": "#fdba74"}  # Explorers (Cam)
         ]
         
-        mbti_keys = list(MBTI_DETAILS.keys())
+        mbti_keys = list(get_mbti_details().keys())
         mbti_groups = [
             "Nhóm Nhà Phân Tích (Analysts - Tư duy chiến lược & Độc lập)",
             "Nhóm Nhà Ngoại Giao (Diplomats - Sâu sắc & Thấu cảm)",
@@ -177,7 +187,7 @@ def render_tab():
                     idx = row * 4 + col
                     if idx < len(mbti_keys):
                         key = mbti_keys[idx]
-                        info = MBTI_DETAILS[key]
+                        info = get_mbti_details()[key]
                         
                         with cols[col]:
                             st.markdown(f"""
@@ -349,7 +359,7 @@ def render_tab():
     # ==========================================
     elif st.session_state['mbti_step'] == 2:
         mbti_res = st.session_state['user_mbti_result']
-        mbti_info = MBTI_DETAILS.get(mbti_res, {"title": mbti_res, "description": "Thông tin chi tiết đang được cập nhật...", "image": "assets/images/mbti_analyst.png"})
+        mbti_info = get_mbti_details().get(mbti_res, {"title": mbti_res, "description": "Thông tin chi tiết đang được cập nhật...", "image": "assets/images/mbti_analyst.png"})
         
         # Phần Header hiển thị Kết quả MBTI dạng Card hiện đại
         st.markdown(f"""
@@ -394,9 +404,9 @@ def render_tab():
         st.divider()
 
         # Phần hiển thị chi tiết toàn diện (Tràn toàn bộ chiều rộng)
-        if mbti_res in MBTI_COMPREHENSIVE:
+        if mbti_res in get_mbti_comprehensive():
             st.markdown("<h3 style='color: #1e293b; font-weight: 800;'>Phân tích chuyên sâu</h3>", unsafe_allow_html=True)
-            st.markdown(MBTI_COMPREHENSIVE[mbti_res])
+            st.markdown(get_mbti_comprehensive()[mbti_res])
             st.divider()
         
         # Khối CTA (Call To Action) điều hướng
@@ -413,11 +423,5 @@ def render_tab():
             st.button("Làm lại trắc nghiệm", type="secondary", on_click=set_step_0, use_container_width=True)
         with b_col2:
             if st.button("Sang trang Dự đoán Ngành", type="primary", use_container_width=True):
-                st.components.v1.html("""
-                    <script>
-                    const tabs = window.parent.document.querySelectorAll('button[data-baseweb="tab"]');
-                    if (tabs.length > 0) {
-                        tabs[0].click();
-                    }
-                    </script>
-                """, height=0)
+                st.session_state['active_panel'] = "Khảo sát Phân tích"
+                st.rerun()
