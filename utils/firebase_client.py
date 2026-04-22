@@ -17,6 +17,10 @@ def get_db():
             if "firebase_service_account" in st.secrets:
                 # Chuyển toml sang dict sạch cho SDK
                 service_account_info = dict(st.secrets["firebase_service_account"])
+                # Fix newline issue in private_key if needed
+                if "private_key" in service_account_info:
+                    service_account_info["private_key"] = service_account_info["private_key"].replace("\\n", "\n")
+                
                 cred = credentials.Certificate(service_account_info)
             else:
                 # Fallback dùng file local
