@@ -97,76 +97,126 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
             except Exception as e:
                 st.error(f"Lỗi: {e}")
             
-    # Tab 3: Quản lý Assets Hình ảnh
+    # Tab 3: Quản lý Assets Hình ảnh (Cloudinary + Local Fallback)
     with admin_tab3:
         st.subheader("Quản lý Hình ảnh & Gán Tính cách / Ngành học")
         img_dir = get_abs_path("assets/images")
         
-        if not os.path.exists(img_dir):
-            st.warning("Thư mục assets/images chưa tồn tại!")
+        # --- Load mappings từ Firebase ---
+        from utils.firebase_client import (
+            fb_get_mbti_image_mapping, fb_get_major_image_mapping,
+            fb_save_mbti_image_mapping, fb_save_major_image_mapping
+        )
+        
+        ALL_MBTI = ["INTJ","INTP","ENTJ","ENTP","INFJ","INFP","ENFJ","ENFP","ISTJ","ISFJ","ESTJ","ESFJ","ISTP","ISFP","ESTP","ESFP"]
+        
+        # Lấy danh sách ngành thực tế từ dữ liệu hệ thống (major_dict)
+        ALL_MAJORS = sorted(list(major_dict.keys()))
+        
+        current_mbti_map = fb_get_mbti_image_mapping() or {}
+        current_major_map = fb_get_major_image_mapping() or {}
+        
+        # --- Kiểm tra Cloudinary ---
+        use_cloudinary = "cloudinary" in st.secrets
+        cloud_images = []
+        
+        if use_cloudinary:
+            from utils.cloudinary_client import upload_image, delete_image, list_images
+            cloud_images = list_images()
+        
+        # Dict tra cứu nhanh: filename -> url, filename -> public_id
+        cloud_url_map = {img["filename"]: img["url"] for img in cloud_images}
+        cloud_pid_map = {img["filename"]: img["public_id"] for img in cloud_images}
+        cloud_names = sorted(cloud_url_map.keys())
+        
+        # Fallback: ảnh cục bộ
+        local_images = []
+        if os.path.exists(img_dir):
+            local_images = sorted([f for f in os.listdir(img_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+        
+        # Danh sách ảnh khả dụng (ưu tiên Cloud)
+        available_names = cloud_names if use_cloudinary else local_images
+        
+        # === PHẦN 1: Upload ảnh mới ===
+        st.markdown("#### Upload hình ảnh mới")
+        if use_cloudinary:
+            st.info("Ảnh sẽ được tải lên **Cloudinary CDN** và đồng bộ tới người dùng ngay lập tức.")
         else:
-            images = sorted([f for f in os.listdir(img_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
-            
-            # --- Load mappings ---
-            from utils.firebase_client import (
-                fb_get_mbti_image_mapping, fb_get_major_image_mapping,
-                fb_save_mbti_image_mapping, fb_save_major_image_mapping
-            )
-            
-            ALL_MBTI = ["INTJ","INTP","ENTJ","ENTP","INFJ","INFP","ENFJ","ENFP","ISTJ","ISFJ","ESTJ","ESFJ","ISTP","ISFP","ESTP","ESFP"]
-            DEFAULT_MBTI_MAP = {m: f"mbti_{m.lower()}.png" for m in ALL_MBTI}
-            
-            current_mbti_map = DEFAULT_MBTI_MAP.copy()
-            fb_mbti_map = fb_get_mbti_image_mapping()
-            if fb_mbti_map:
-                current_mbti_map.update(fb_mbti_map)
-            
-            ALL_MAJORS = [
-                "CNTT & Kỹ thuật Máy tính", "Kinh tế & Quản lý", "Y tế & Sức khỏe",
-                "Sư phạm & Giáo dục", "Luật & Chính trị", "Ngoại ngữ & Ngôn ngữ",
-                "Nghệ thuật & Thiết kế", "Kỹ thuật & Công nghệ", "Khoa học Tự nhiên",
-                "Khoa học Xã hội & Nhân văn", "Nông Lâm Ngư nghiệp", "Báo chí & Truyền thông"
-            ]
-            DEFAULT_MAJOR_MAP = {
-                "CNTT & Kỹ thuật Máy tính": "major_cntt.png", "Kinh tế & Quản lý": "major_kinhtequanly.png",
-                "Y tế & Sức khỏe": "major_medical.png", "Sư phạm & Giáo dục": "major_education.png",
-                "Luật & Chính trị": "major_education.png", "Ngoại ngữ & Ngôn ngữ": "major_education.png",
-                "Nghệ thuật & Thiết kế": "major_education.png", "Kỹ thuật & Công nghệ": "major_engineering.png",
-                "Khoa học Tự nhiên": "major_engineering.png", "Khoa học Xã hội & Nhân văn": "major_education.png",
-                "Nông Lâm Ngư nghiệp": "major_engineering.png", "Báo chí & Truyền thông": "major_business.png",
-            }
-            current_major_map = DEFAULT_MAJOR_MAP.copy()
-            fb_major_map = fb_get_major_image_mapping()
-            if fb_major_map:
-                current_major_map.update(fb_major_map)
-            
-            # === PHẦN 1: Upload ảnh mới ===
-            st.markdown("#### Upload hình ảnh mới")
-            st.info("Tải lên ảnh mới hoặc ghi đè ảnh cũ. Ảnh sẽ được lưu vào thư mục assets/images/.")
-            up_col1, up_col2 = st.columns([1, 1])
-            with up_col1:
-                uploaded_file = st.file_uploader("Chọn file ảnh từ máy tính", type=["png", "jpg", "jpeg"], key="upload_new")
-            with up_col2:
-                if uploaded_file:
-                    new_filename = st.text_input("Tên file lưu (có đuôi .png/.jpg):", value=uploaded_file.name)
-                    if st.button("Tải lên & Lưu", type="primary"):
+            st.warning("Chưa cấu hình Cloudinary. Ảnh sẽ lưu cục bộ vào `assets/images/`.")
+        
+        up_col1, up_col2 = st.columns([1, 1])
+        with up_col1:
+            uploaded_file = st.file_uploader("Chọn file ảnh từ máy tính", type=["png", "jpg", "jpeg"], key="upload_new")
+        with up_col2:
+            if uploaded_file:
+                new_filename = st.text_input("Tên file lưu:", value=uploaded_file.name)
+                if st.button("Tải lên & Lưu", type="primary"):
+                    if use_cloudinary:
+                        result = upload_image(uploaded_file.getvalue(), new_filename)
+                        if result:
+                            st.success(f"Đã tải lên Cloudinary: {new_filename}")
+                            st.caption(f"URL: `{result['url']}`")
+                            st.rerun()
+                        else:
+                            st.error("Upload lên Cloudinary thất bại!")
+                    else:
                         save_path = os.path.join(img_dir, new_filename)
                         with open(save_path, "wb") as f:
                             f.write(uploaded_file.getbuffer())
-                        st.success(f"Đã lưu thành công: {new_filename}")
+                        st.success(f"Đã lưu cục bộ: {new_filename}")
                         st.rerun()
+        
+        st.divider()
+        
+        # === PHẦN 0: Danh sách ảnh hiện có ===
+        used_urls = set(current_mbti_map.values()) | set(current_major_map.values())
+        
+        if use_cloudinary:
+            # Refresh danh sách sau upload
+            cloud_images = list_images()
+            cloud_url_map = {img["filename"]: img["url"] for img in cloud_images}
+            cloud_pid_map = {img["filename"]: img["public_id"] for img in cloud_images}
+            cloud_names = sorted(cloud_url_map.keys())
+            available_names = cloud_names
             
-            st.divider()
-            images = sorted([f for f in os.listdir(img_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
-            
-            # === PHẦN 0: Danh sách ảnh hiện có ===
-            # Tìm các ảnh đang được sử dụng (tham chiếu bởi MBTI hoặc Ngành)
-            used_images = set(current_mbti_map.values()) | set(current_major_map.values())
-            
-            with st.expander(f"Danh sách hình ảnh hiện có ({len(images)} ảnh)", expanded=False):
-                for img_name in images:
+            with st.expander(f"Danh sách hình ảnh trên Cloud ({len(cloud_images)} ảnh)", expanded=False):
+                for img in cloud_images:
+                    fname = img["filename"]
+                    url = img["url"]
+                    pid = img["public_id"]
+                    is_used = url in used_urls or fname in used_urls
+                    status = "đang sử dụng" if is_used else "chưa gán"
+                    
+                    col_name, col_status, col_preview, col_action = st.columns([3, 2, 1, 1])
+                    with col_name:
+                        st.markdown(f"**{fname}**")
+                    with col_status:
+                        if is_used:
+                            st.markdown(f"<span style='color:#16a34a; font-size:0.85rem;'>● {status}</span>", unsafe_allow_html=True)
+                        else:
+                            st.markdown(f"<span style='color:#9ca3af; font-size:0.85rem;'>○ {status}</span>", unsafe_allow_html=True)
+                    with col_preview:
+                        if st.button("Xem", key=f"preview_{fname}"):
+                            st.session_state[f"show_preview_{fname}"] = not st.session_state.get(f"show_preview_{fname}", False)
+                    with col_action:
+                        if is_used:
+                            st.button("Xóa", key=f"del_{fname}", disabled=True, help="Ảnh đang được gán, không thể xóa.")
+                        else:
+                            if st.button("Xóa", key=f"del_{fname}", type="secondary"):
+                                if delete_image(pid):
+                                    st.success(f"Đã xóa khỏi Cloudinary: {fname}")
+                                else:
+                                    st.error("Xóa thất bại!")
+                                st.rerun()
+                    
+                    if st.session_state.get(f"show_preview_{fname}", False):
+                        st.image(url, width=200, caption=fname)
+        else:
+            # Fallback: hiển thị ảnh cục bộ
+            with st.expander(f"Danh sách hình ảnh cục bộ ({len(local_images)} ảnh)", expanded=False):
+                for img_name in local_images:
                     img_path = os.path.join(img_dir, img_name)
-                    is_used = img_name in used_images
+                    is_used = img_name in used_urls
                     status = "đang sử dụng" if is_used else "chưa gán"
                     
                     col_name, col_status, col_preview, col_action = st.columns([3, 2, 1, 1])
@@ -189,16 +239,18 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                                 st.success(f"Đã xóa: {img_name}")
                                 st.rerun()
                     
-                    # Hiển thị xem trước nếu đang bật
                     if st.session_state.get(f"show_preview_{img_name}", False):
                         st.image(img_path, width=200, caption=img_name)
-            
-            st.divider()
-            
-            # === PHẦN 2: Gán ảnh cho TỪNG loại MBTI ===
-            st.markdown("#### Gán hình ảnh cho từng Tính cách MBTI (16 loại)")
-            st.info("Chọn ảnh riêng biệt cho mỗi loại MBTI. Thay đổi sẽ cập nhật ngay tới giao diện Người dùng.")
-            
+        
+        st.divider()
+        
+        # === PHẦN 2: Gán ảnh cho TỪNG loại MBTI ===
+        st.markdown("#### Gán hình ảnh cho từng Tính cách MBTI (16 loại)")
+        st.info("Chọn ảnh riêng biệt cho mỗi loại MBTI. Thay đổi sẽ cập nhật ngay tới giao diện Người dùng.")
+        
+        if len(available_names) == 0:
+            st.warning("Chưa có ảnh nào. Vui lòng upload ảnh trước khi gán.")
+        else:
             mbti_changed = False
             MBTI_GROUPS_DISPLAY = {
                 "Nhà Phân Tích (Analysts)": ["INTJ", "INTP", "ENTJ", "ENTP"],
@@ -211,21 +263,33 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                     cols = st.columns(len(types))
                     for i, mbti_type in enumerate(types):
                         with cols[i]:
-                            cur_img = current_mbti_map.get(mbti_type, images[0] if images else "")
-                            cur_idx = images.index(cur_img) if cur_img in images else 0
+                            cur_val = current_mbti_map.get(mbti_type, "")
+                            cur_fname = cur_val
+                            if use_cloudinary:
+                                for cn, cu in cloud_url_map.items():
+                                    if cu == cur_val or cn == cur_val:
+                                        cur_fname = cn
+                                        break
+                            cur_idx = available_names.index(cur_fname) if cur_fname in available_names else 0
+                            
                             st.markdown(f"**{mbti_type}**")
-                            if cur_img in images:
-                                st.image(os.path.join(img_dir, cur_img), use_container_width=True)
-                            new_choice = st.selectbox(f"Ảnh {mbti_type}:", images, index=cur_idx, key=f"mbti_img_{mbti_type}", label_visibility="collapsed")
-                            if current_mbti_map.get(mbti_type) != new_choice:
-                                current_mbti_map[mbti_type] = new_choice
+                            if use_cloudinary and cur_fname in cloud_url_map:
+                                st.image(cloud_url_map[cur_fname], use_container_width=True)
+                            elif not use_cloudinary and cur_fname in local_images:
+                                st.image(os.path.join(img_dir, cur_fname), use_container_width=True)
+                            
+                            new_choice = st.selectbox(f"Ảnh {mbti_type}:", available_names, index=cur_idx, key=f"mbti_img_{mbti_type}", label_visibility="collapsed")
+                            new_val = cloud_url_map.get(new_choice, new_choice) if use_cloudinary else new_choice
+                            if current_mbti_map.get(mbti_type) != new_val:
+                                current_mbti_map[mbti_type] = new_val
                                 mbti_changed = True
             
             if mbti_changed:
                 st.warning("Bạn đã thay đổi cấu hình ảnh MBTI.")
             if st.button("Lưu cấu hình Ảnh MBTI", type="primary", use_container_width=True):
                 fb_save_mbti_image_mapping(current_mbti_map)
-                st.success("Đã lưu! Giao diện Người dùng sẽ cập nhật ảnh MBTI mới trên Firebase.")
+                st.success("Đã lưu! Giao diện Người dùng sẽ cập nhật ảnh MBTI mới.")
+                st.cache_data.clear()
                 st.rerun()
             
             st.divider()
@@ -241,15 +305,26 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                     m_cols = st.columns(m_cols_per_row)
                     for i, major in enumerate(row_majors):
                         with m_cols[i]:
-                            cur_img = current_major_map.get(major, images[0] if images else "")
-                            cur_idx = images.index(cur_img) if cur_img in images else 0
+                            cur_val = current_major_map.get(major, "")
+                            cur_fname = cur_val
+                            if use_cloudinary:
+                                for cn, cu in cloud_url_map.items():
+                                    if cu == cur_val or cn == cur_val:
+                                        cur_fname = cn
+                                        break
+                            cur_idx = available_names.index(cur_fname) if cur_fname in available_names else 0
+                            
                             st.markdown(f"**{major}**")
-                            new_choice = st.selectbox(f"Ảnh:", images, index=cur_idx, key=f"major_img_{major}", label_visibility="collapsed")
-                            # Hiển thị ảnh đang chọn (cập nhật ngay khi đổi)
-                            if new_choice and new_choice in images:
+                            new_choice = st.selectbox(f"Ảnh:", available_names, index=cur_idx, key=f"major_img_{major}", label_visibility="collapsed")
+                            
+                            if use_cloudinary and new_choice in cloud_url_map:
+                                st.image(cloud_url_map[new_choice], use_container_width=True, caption=new_choice)
+                            elif not use_cloudinary and new_choice in local_images:
                                 st.image(os.path.join(img_dir, new_choice), use_container_width=True, caption=new_choice)
-                            if current_major_map.get(major) != new_choice:
-                                current_major_map[major] = new_choice
+                            
+                            new_val = cloud_url_map.get(new_choice, new_choice) if use_cloudinary else new_choice
+                            if current_major_map.get(major) != new_val:
+                                current_major_map[major] = new_val
                                 major_changed = True
                 
                 if major_changed:
@@ -257,6 +332,7 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
                 if st.button("Lưu cấu hình Ảnh Ngành học", type="primary", use_container_width=True):
                     fb_save_major_image_mapping(current_major_map)
                     st.success("Đã lưu lên Firebase! Ảnh minh họa ngành học sẽ cập nhật ngay.")
+                    st.cache_data.clear()
                     st.rerun()
 
     # Tab 4: Thống Kê & XAI

@@ -12,6 +12,7 @@ from utils.firebase_client import (
 def get_abs_path(relative_path):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), relative_path))
 
+@st.cache_data(ttl=1)
 def _load_mbti_image_mapping():
     """Đọc file cấu hình ảnh MBTI do Admin quản lý từ Firebase. Nếu không có thì dùng mặc định."""
     default_map = {
@@ -20,16 +21,23 @@ def _load_mbti_image_mapping():
         "ISTJ": "mbti_istj.png", "ISFJ": "mbti_isfj.png", "ESTJ": "mbti_estj.png", "ESFJ": "mbti_esfj.png",
         "ISTP": "mbti_istp.png", "ISFP": "mbti_isfp.png", "ESTP": "mbti_estp.png", "ESFP": "mbti_esfp.png",
     }
-    fb_map = fb_get_mbti_image_mapping()
-    if fb_map:
-        default_map.update(fb_map)
+    try:
+        fb_map = fb_get_mbti_image_mapping()
+        if fb_map:
+            default_map.update(fb_map)
+    except:
+        pass
     return default_map
 
 def get_mbti_image(mbti_type):
-    """Trả về đường dẫn tuyệt đối của ảnh đại diện cho một nhóm MBTI cụ thể."""
+    """Trả về URL (Cloudinary) hoặc đường dẫn cục bộ của ảnh MBTI."""
     mapping = _load_mbti_image_mapping()
-    img_name = mapping.get(mbti_type, "mbti_analyst.png")
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_name))
+    img_val = mapping.get(mbti_type, "mbti_analyst.png")
+    # Kiểm tra URL Cloudinary
+    if isinstance(img_val, str) and (img_val.startswith("http") or "res.cloudinary.com" in img_val):
+        return img_val
+    # Fallback: đường dẫn cục bộ
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_val))
 
 # Mapping ảnh cho 12 nhóm ngành — Admin có thể thay đổi qua Firebase
 MAJOR_IMAGE_DEFAULT = {
@@ -47,15 +55,23 @@ MAJOR_IMAGE_DEFAULT = {
     "Báo chí & Truyền thông": "major_business.png",
 }
 
-@st.cache_data(ttl=5)
+@st.cache_data(ttl=1)
 def get_major_image(major_name):
-    """Trả về đường dẫn tuyệt đối ảnh đại diện cho nhóm ngành."""
+    """Trả về URL (Cloudinary) hoặc đường dẫn cục bộ ảnh nhóm ngành."""
     current_map = MAJOR_IMAGE_DEFAULT.copy()
-    fb_map = fb_get_major_image_mapping()
-    if fb_map:
-        current_map.update(fb_map)
-    img_name = current_map.get(major_name, "major_it.png")
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_name))
+    try:
+        fb_map = fb_get_major_image_mapping()
+        if fb_map:
+            current_map.update(fb_map)
+    except:
+        pass
+    
+    img_val = current_map.get(major_name, "major_it.png")
+    # Kiểm tra xem img_val có phải là URL hợp lệ không (Cloudinary)
+    if isinstance(img_val, str) and (img_val.startswith("http") or "res.cloudinary.com" in img_val):
+        return img_val
+    # Fallback: đường dẫn cục bộ
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "images", img_val))
 
 # 1. Load cấu trúc câu hỏi động từ file quản lý (Firebase)
 @st.cache_data(ttl=5)
