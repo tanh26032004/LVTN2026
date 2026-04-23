@@ -7,7 +7,7 @@ def get_abs_path(relative_path):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", relative_path))
 
 def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_encoder, major_dict):
-    st.markdown("<h2 style='color:#0ea5e9; text-align:center;'>Trang Quản Trị Hệ Thống</h2>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:#0ea5e9; text-align:center;'>Trang Quản Trị Hệ Thống</h1>", unsafe_allow_html=True)
     st.divider()
 
     # 1. Đăng nhập
@@ -158,6 +158,42 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
             
             st.divider()
             images = sorted([f for f in os.listdir(img_dir) if f.endswith(('.png', '.jpg', '.jpeg'))])
+            
+            # === PHẦN 0: Danh sách ảnh hiện có ===
+            # Tìm các ảnh đang được sử dụng (tham chiếu bởi MBTI hoặc Ngành)
+            used_images = set(current_mbti_map.values()) | set(current_major_map.values())
+            
+            with st.expander(f"Danh sách hình ảnh hiện có ({len(images)} ảnh)", expanded=False):
+                for img_name in images:
+                    img_path = os.path.join(img_dir, img_name)
+                    is_used = img_name in used_images
+                    status = "đang sử dụng" if is_used else "chưa gán"
+                    
+                    col_name, col_status, col_preview, col_action = st.columns([3, 2, 1, 1])
+                    with col_name:
+                        st.markdown(f"**{img_name}**")
+                    with col_status:
+                        if is_used:
+                            st.markdown(f"<span style='color:#16a34a; font-size:0.85rem;'>● {status}</span>", unsafe_allow_html=True)
+                        else:
+                            st.markdown(f"<span style='color:#9ca3af; font-size:0.85rem;'>○ {status}</span>", unsafe_allow_html=True)
+                    with col_preview:
+                        if st.button("Xem", key=f"preview_{img_name}"):
+                            st.session_state[f"show_preview_{img_name}"] = not st.session_state.get(f"show_preview_{img_name}", False)
+                    with col_action:
+                        if is_used:
+                            st.button("Xóa", key=f"del_{img_name}", disabled=True, help="Ảnh đang được gán, không thể xóa.")
+                        else:
+                            if st.button("Xóa", key=f"del_{img_name}", type="secondary"):
+                                os.remove(img_path)
+                                st.success(f"Đã xóa: {img_name}")
+                                st.rerun()
+                    
+                    # Hiển thị xem trước nếu đang bật
+                    if st.session_state.get(f"show_preview_{img_name}", False):
+                        st.image(img_path, width=200, caption=img_name)
+            
+            st.divider()
             
             # === PHẦN 2: Gán ảnh cho TỪNG loại MBTI ===
             st.markdown("#### Gán hình ảnh cho từng Tính cách MBTI (16 loại)")
