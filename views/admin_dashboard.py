@@ -34,8 +34,8 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
         return "Random Forest (Khuyên dùng)", rf_model # model_choice, active_model fallback
     
     # KHI ĐÃ ĐĂNG NHẬP
-    admin_tab1, admin_tab2, admin_tab3, admin_tab4, admin_tab5, admin_tab6 = st.tabs([
-        "Lõi Mô Hình", "Quản lý MBTI", "Quản lý Hình Ảnh", "Thống Kê & XAI", "Test: Khảo sát", "Test: MBTI"
+    admin_tab1, admin_tab2, admin_tab3, admin_tab4, admin_tab_schools, admin_tab_chatbot, admin_tab5, admin_tab6 = st.tabs([
+        "Lõi Mô Hình", "Quản lý MBTI", "Quản lý Hình Ảnh", "Thống Kê & XAI", "Quản lý Trường THPT", "Quản lý Chatbot", "Test: Khảo sát", "Test: MBTI"
     ])
     
     # Tab 1: Cấu hình mô hình
@@ -64,9 +64,43 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
         with mbti_sub_tab1:
             try:
                 from utils.firebase_client import fb_get_mbti_questions, fb_save_mbti_questions
+                import pandas as pd
+                
                 mbti_data = fb_get_mbti_questions()
                 
-                st.info(f"Đang hiển thị {len(mbti_data)} câu hỏi MBTI. Bấm đúp vào ô để sửa.")
+                st.info("Hỗ trợ tải lên file Excel (.xlsx) hoặc CSV. Cấu trúc bắt buộc: Cột 'id', 'text', 'option1', 'option2'.")
+                uploaded_file = st.file_uploader("Tải lên danh sách câu hỏi mới", type=["xlsx", "csv"])
+                
+                if uploaded_file is not None:
+                    try:
+                        if uploaded_file.name.endswith(".csv"):
+                            df = pd.read_csv(uploaded_file)
+                        else:
+                            df = pd.read_excel(uploaded_file)
+                            
+                        new_questions = []
+                        for index, row in df.iterrows():
+                            # Bỏ qua các dòng trống
+                            if pd.isna(row.get("text")): continue
+                            new_questions.append({
+                                "id": str(row.get("id", f"q{index}")).strip(),
+                                "text": str(row.get("text", "")).strip(),
+                                "options": [
+                                    str(row.get("option1", "")).strip(),
+                                    str(row.get("option2", "")).strip()
+                                ]
+                            })
+                        
+                        if len(new_questions) > 0:
+                            mbti_data = new_questions
+                            st.success(f"Tải thành công {len(mbti_data)} câu hỏi từ file! Vui lòng kiểm tra và lưu lại.")
+                        else:
+                            st.warning("File không có dữ liệu hợp lệ.")
+                            
+                    except Exception as e:
+                        st.error(f"Lỗi đọc file: {e}")
+                
+                st.markdown(f"**Đang hiển thị {len(mbti_data)} câu hỏi MBTI. Bấm đúp vào ô để sửa trực tiếp.**")
                 edited_questions = st.data_editor(mbti_data, num_rows="dynamic", use_container_width=True, height=400, key="editor_questions")
                 
                 if st.button("Lưu Câu hỏi", type="primary"):
@@ -413,8 +447,13 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
             # ---- BẢNG CHI TIẾT ----
             st.divider()
             st.markdown("##### Nhật ký Truy vấn Gần đây (Mới nhất → Cũ nhất)")
-            df_display = df_logs[["time", "mbti", "khoi_thi", "top1_major"]].copy()
-            df_display.columns = ["Thời gian", "MBTI", "Khối thi", "Ngành gợi ý Top 1"]
+            
+            for col in ["truong_thpt", "diem_1", "diem_2", "diem_3"]:
+                if col not in df_logs.columns:
+                    df_logs[col] = ""
+                    
+            df_display = df_logs[["time", "truong_thpt", "mbti", "khoi_thi", "diem_1", "diem_2", "diem_3", "top1_major"]].copy()
+            df_display.columns = ["Thời gian", "Trường THPT", "MBTI", "Khối thi", "Điểm 1", "Điểm 2", "Điểm 3", "Ngành gợi ý Top 1"]
             st.dataframe(df_display.iloc[::-1].reset_index(drop=True), use_container_width=True, height=300)
 
             # Nút reset
@@ -430,7 +469,99 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
         # Render tab XAI
         tab3_xai.render_tab(active_model, model_choice)
 
-    # Tab 5: Test Khảo sát
+    # Tab 5: Quản lý Trường THPT
+    with admin_tab_schools:
+        st.subheader("Quản lý Danh sách Trường THPT")
+        st.info("Danh sách này sẽ được hiển thị ở dạng tìm kiếm (Dropdown) trong giao diện Khảo sát.")
+        
+        try:
+            from utils.firebase_client import fb_get_high_schools, fb_save_high_schools
+            import pandas as pd
+            
+            schools_data = fb_get_high_schools()
+            
+            # Khởi tạo data mẫu nếu chưa có
+            if not schools_data:
+                schools_data = [{"name": "Trường THPT Mẫu", "province": "Hà Nội"}]
+                
+            st.markdown("##### Thêm trường hàng loạt từ tệp (Excel/CSV)")
+            st.caption("Hỗ trợ file có cột `name` (Bắt buộc) và `province` (Tuỳ chọn).")
+            uploaded_file = st.file_uploader("Chọn file dữ liệu", type=["csv", "xlsx"], label_visibility="collapsed")
+            
+            if uploaded_file is not None:
+                try:
+                    if uploaded_file.name.endswith(".csv"):
+                        df_import = pd.read_csv(uploaded_file)
+                    else:
+                        df_import = pd.read_excel(uploaded_file)
+                        
+                    if "name" in df_import.columns:
+                        import_list = df_import.to_dict('records')
+                        # Clean up nan values for JSON serialization and filter columns
+                        import_list = [{k: (v if pd.notna(v) else "") for k, v in d.items() if k in ['name', 'province']} for d in import_list]
+                        schools_data = import_list
+                        st.success(f"Tải thành công {len(import_list)} trường từ file! Vui lòng kiểm tra lại bảng bên dưới và bấm Lưu.")
+                    else:
+                        st.error("File tải lên phải có ít nhất cột 'name'.")
+                except Exception as e:
+                    st.error(f"Lỗi đọc file: {e}")
+                    
+            st.markdown("#####  Chỉnh sửa trực tiếp")
+            edited_schools = st.data_editor(schools_data, num_rows="dynamic", use_container_width=True, height=400, key="editor_schools")
+            
+            if st.button("Lưu Danh sách Trường", type="primary", use_container_width=True):
+                # Lọc các dòng trống
+                valid_schools = [s for s in edited_schools if s.get("name") and str(s.get("name")).strip() != ""]
+                fb_save_high_schools(valid_schools)
+                st.success(f"Đã lưu thành công {len(valid_schools)} trường lên Firebase!")
+                st.cache_data.clear()
+                        
+        except Exception as e:
+            st.error(f"Lỗi tải danh sách trường: {e}")
+
+    # Tab Quản lý Chatbot
+    with admin_tab_chatbot:
+        st.subheader("Trình Quản Lý Cấu Hình Chatbot AI")
+        st.info("Cấu hình bên dưới sẽ ảnh hưởng trực tiếp đến hành vi và giao diện gợi ý của Trợ lý AI.")
+        try:
+            from utils.firebase_client import fb_get_chatbot_config, fb_save_chatbot_config
+            chatbot_config = fb_get_chatbot_config()
+            
+            if chatbot_config is None:
+                st.warning("Không tìm thấy cấu hình Chatbot trên Firebase. Đang sử dụng cấu hình rỗng.")
+                chatbot_config = {"system_instruction": "", "preset_questions": []}
+            
+            st.markdown("##### 1. Chỉ thị Hệ thống (System Instruction)")
+            st.caption("Đây là 'não bộ' của chatbot, quyết định giọng điệu và giới hạn kiến thức của nó.")
+            new_instruction = st.text_area("System Instruction", value=chatbot_config.get("system_instruction", ""), height=400)
+            
+            st.markdown("##### 2. Câu hỏi Gợi ý Nhanh (Preset Questions)")
+            st.caption("Bạn có thể thêm không giới hạn câu hỏi, nhưng chỉ những câu hỏi được check chọn 'is_active' mới hiển thị bên ngoài (Nên giới hạn hiển thị tối đa 4 câu cùng lúc).")
+            current_presets = chatbot_config.get("preset_questions", [])
+            
+            # Đảm bảo có cột is_active cho các dữ liệu cũ
+            for p in current_presets:
+                if "is_active" not in p:
+                    p["is_active"] = True
+                    
+            edited_presets = st.data_editor(current_presets, num_rows="dynamic", use_container_width=True, key="editor_chatbot_presets")
+            
+            if st.button("Lưu Cấu Hình Chatbot", type="primary"):
+                active_count = sum(1 for p in edited_presets if p.get("is_active", True))
+                if active_count > 4:
+                    st.warning("⚠️ Đang có nhiều hơn 4 câu hỏi được chọn hiển thị ('is_active'). Chatbot chỉ hỗ trợ hiển thị đẹp nhất tối đa 4 câu. Vui lòng bỏ chọn bớt.")
+                else:
+                    new_config = {
+                        "system_instruction": new_instruction,
+                        "preset_questions": edited_presets
+                    }
+                    fb_save_chatbot_config(new_config)
+                    st.success("✅ Đã cập nhật Cấu hình Chatbot thành công!")
+                    
+        except Exception as e:
+            st.error(f"Lỗi quản lý chatbot: {e}")
+
+    # Tab 6: Test Khảo sát
     with admin_tab5:
         st.subheader("Giao diện Thử nghiệm Thực tế: Khảo sát Phân tích")
         tab1_survey.render_tab(active_model, model_choice, preprocessor, target_encoder, major_dict)

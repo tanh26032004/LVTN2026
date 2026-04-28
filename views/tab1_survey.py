@@ -5,9 +5,11 @@ import json
 from scripts.hybrid_recommender import get_hybrid_recommendations
 from data.major_db import get_major_code
 from assets.mbti_assets import get_major_image
+from views import chatbot_widget
 
-def record_prediction_usage(user_mbti="", khoi_thi="", top1_major=""):
+def record_prediction_usage(user_school="", user_mbti="", khoi_thi="", top1_major="", scores=None):
     """Ghi nhận chi tiết mỗi lần dự đoán thành công vào Firebase."""
+    if scores is None: scores = []
     try:
         from datetime import datetime
         from utils.firebase_client import fb_increment_prediction
@@ -15,8 +17,12 @@ def record_prediction_usage(user_mbti="", khoi_thi="", top1_major=""):
         # Ghi chi tiết lượt sử dụng
         log_entry = {
             "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "truong_thpt": user_school,
             "mbti": user_mbti,
             "khoi_thi": khoi_thi,
+            "diem_1": scores[0] if len(scores) > 0 else 0,
+            "diem_2": scores[1] if len(scores) > 1 else 0,
+            "diem_3": scores[2] if len(scores) > 2 else 0,
             "top1_major": top1_major
         }
         fb_increment_prediction(log_entry)
@@ -30,6 +36,17 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
     
     with col_input:
         st.markdown("<h3 style='font-weight: 800; margin-top: 0; margin-bottom: 20px;'>Thông tin của bạn</h3>", unsafe_allow_html=True)
+        
+        try:
+            from utils.firebase_client import fb_get_high_schools
+            schools_list = fb_get_high_schools()
+            if schools_list:
+                school_names = [f"{s.get('name', '')} - {s.get('province', '')}".strip(" -") for s in schools_list]
+                user_school = st.selectbox("Trường THPT bạn đang học", options=school_names, index=None, placeholder="-- Gõ tên trường để tìm kiếm --")
+            else:
+                user_school = st.text_input("Trường THPT bạn đang học", placeholder="Nhập tên trường THPT...")
+        except Exception:
+            user_school = st.text_input("Trường THPT bạn đang học", placeholder="Nhập tên trường THPT...")
         
         mbti_options = ["ISTJ", "ISFJ", "INFJ", "INTJ", "ISTP", "ISFP", "INFP", "INTP",
                         "ESTP", "ESFP", "ENFP", "ENTP", "ESTJ", "ESFJ", "ENFJ", "ENTJ"]
@@ -52,13 +69,13 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
             "Ngữ văn": "lit", "Lịch sử": "hist", "Địa lí": "geo", "Tiếng Anh": "eng",
         }
         
-        khoi_choice = st.selectbox("Khối thi THPT Quốc gia", list(KHOI_SUBJECTS.keys()), index=None, placeholder="-- Chọn Khối thi --")
+        khoi_choice = st.selectbox("Khối thi / Tổ hợp xét tuyển", list(KHOI_SUBJECTS.keys()), index=None, placeholder="-- Chọn Khối thi --")
         
         block_scores_input = {}
         if khoi_choice:
             block_subjects = KHOI_SUBJECTS[khoi_choice]
             
-            st.markdown("<div style='font-size: 0.95rem; font-weight: 600; margin-bottom: 10px; margin-top: 20px;'>Điểm xét tuyển các môn (Thang điểm 10)</div>", unsafe_allow_html=True)
+            st.markdown("<div style='font-size: 0.95rem; font-weight: 600; margin-bottom: 10px; margin-top: 20px;'>Điểm trung bình môn (Học bạ / Thi thử)</div>", unsafe_allow_html=True)
             
             # Khung nhập điểm gọn gàng
             block_cols = st.columns(3)
@@ -90,8 +107,8 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
         st.markdown("<h3 style='font-weight: 800; margin-top: 0; margin-bottom: 10px;'>Ngành học dự đoán</h3>", unsafe_allow_html=True)
         st.markdown("<div style='background-color: #fffbeb; color: #92400e; padding: 12px 16px; border-radius: 12px; border: 1px solid #fde68a; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5;'><b>Lưu ý:</b> Hệ thống dự đoán hiện đang đạt độ chính xác ước tính khoảng <b>80-85%</b>. Các kết quả gợi ý dưới đây có giá trị <b>tham khảo và định hướng</b>, học sinh nên kết hợp chặt chẽ với đam mê cá nhân và điều kiện gia đình trước khi đưa ra quyết định cuối cùng.</div>", unsafe_allow_html=True)
         
-        if predict_btn and (not user_mbti or not khoi_choice):
-             st.warning("⚠️ Vui lòng hoàn thành thao tác **Chọn Nhóm tính cách MBTI** và **Khối thi THPT** ở bảng bên trái trước khi phân tích!")
+        if predict_btn and (not user_school or not user_mbti or not khoi_choice):
+             st.warning("⚠️ Vui lòng hoàn thành thao tác **Nhập Trường THPT**, **Chọn Nhóm tính cách MBTI** và **Khối thi THPT** ở bảng bên trái trước khi phân tích!")
         elif predict_btn:
             with st.spinner('AI đang tính toán không gian vector và trích xuất đặc trưng...'):
                 try:
@@ -112,7 +129,7 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
                     top1_group = top_3_hybrid[0][0]
                     top1_prob = top_3_hybrid[0][1] * 100
                     
-                    record_prediction_usage(user_mbti=user_mbti, khoi_thi=khoi_choice, top1_major=top1_group)
+                    record_prediction_usage(user_school=user_school, user_mbti=user_mbti, khoi_thi=khoi_choice, top1_major=top1_group, scores=block_vals)
                     
                     # Lấy danh sách toàn bộ các ngành thuộc TOP 1
                     top1_majors_list = list(major_dict.get(top1_group, []))
@@ -191,3 +208,6 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
     </p>
 </div>
 """, unsafe_allow_html=True)
+
+    # Bật Chatbot nổi (Floating Chat Widget)
+    chatbot_widget.render_floating_chat()

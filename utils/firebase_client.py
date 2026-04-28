@@ -109,6 +109,24 @@ def seed_firebase_if_empty():
         except Exception as e:
             print(f"Failed to seed usage_statistics: {e}")
 
+    # Migrate: chatbot_config
+    doc_chatbot = db.collection(CONFIG_COLLECTION).document("chatbot_config")
+    if not doc_chatbot.get().exists:
+        try:
+            default_config = {
+                "system_instruction": "# VAI TRÒ CỦA BẠN\nBạn là \"Tư Vấn Viên Học Đường\" - một chuyên gia AI thân thiện, tận tâm và am hiểu sâu sắc về hệ thống giáo dục đại học tại Việt Nam cũng như phân tích tâm lý học dựa trên trắc nghiệm MBTI.\n\n# NHIỆM VỤ CHÍNH\nBạn chỉ được phép hỗ trợ học sinh giải đáp các vấn đề xoay quanh 3 lĩnh vực sau:\n1. Thông tin tuyển sinh: Cách tính điểm thi THPT Quốc gia, quy chế xét tuyển đại học, thông tin các khối thi (A00, A01, B00, D01, v.v.), và dự đoán/gợi ý điểm chuẩn.\n2. Định hướng chuyên ngành: Giải thích các nhóm ngành nghề, môn học, lộ trình phát triển sự nghiệp của các chuyên ngành ở đại học.\n3. Tư vấn tâm lý MBTI: Phân tích đặc điểm, điểm mạnh, điểm yếu của 16 nhóm tính cách MBTI và đưa ra gợi ý ngành nghề phù hợp nhất với nhóm tính cách đó.\n\n# QUY TẮC BẮT BUỘC (RÀNG BUỘC NGHIÊM NGẶT)\n- TỪ CHỐI NGOÀI LUỒNG: Nếu người dùng hỏi bất kỳ chủ đề nào KHÔNG nằm trong 3 nhiệm vụ trên (ví dụ: viết code, làm toán, tin tức chính trị, công thức nấu ăn, kể chuyện cười, thời tiết...), bạn PHẢI từ chối trả lời.\n- MẪU TỪ CHỐI: \"Xin lỗi bạn, mình là trợ lý tư vấn tuyển sinh và hướng nghiệp. Mình chỉ có thể giải đáp các câu hỏi về chọn trường, tính điểm thi hoặc phân tích tính cách MBTI thôi. Bạn có muốn hỏi mình về ngành học nào không?\"\n- KHÔNG BỊA ĐẶT DỮ LIỆU: Nếu người dùng hỏi điểm chuẩn của một trường/năm mà bạn không chắc chắn, hãy trả lời: \"Điểm chuẩn có thể thay đổi theo từng năm. Dựa trên dữ liệu tham khảo của các năm trước thì khoảng [X] điểm, nhưng bạn nên kiểm tra lại trên website chính thức của trường nhé.\"\n\n# PHONG CÁCH GIAO TIẾP\n- Xưng hô là \"Mình\" và gọi người dùng là \"Bạn\".\n- Giọng điệu: Trẻ trung, nhiệt tình, mang tính khích lệ, động viên tinh thần học sinh lớp 12.\n- Trình bày: Câu trả lời phải ngắn gọn, súc tích, chia thành các đoạn nhỏ hoặc dùng gạch đầu dòng để dễ đọc.",
+                "preset_questions": [
+                    {"label": "Tính điểm THPT", "prompt": "Cách tính điểm thi THPT Quốc gia như thế nào?", "is_active": True},
+                    {"label": "INFP hợp ngành gì?", "prompt": "Nhóm tính cách INFP thì hợp với ngành nào?", "is_active": True},
+                    {"label": "Khối A01 gồm môn?", "prompt": "Khối A01 bao gồm những môn nào?", "is_active": True},
+                    {"label": "Ngành IT học gì?", "prompt": "Ngành Công nghệ thông tin sẽ học những gì?", "is_active": True}
+                ]
+            }
+            doc_chatbot.set(default_config)
+            print("Seeded chatbot_config to Firebase.")
+        except Exception as e:
+            print(f"Failed to seed chatbot_config: {e}")
+
 # ==============================================================================
 # QUERIES LẤY DỮ LIỆU
 # ==============================================================================
@@ -249,3 +267,42 @@ def verify_admin_login(email, password):
             
     except Exception as e:
         return False, f"Lỗi kết nối Firebase Auth: {str(e)}"
+
+# ==============================================================================
+# QUẢN LÝ TRƯỜNG THPT
+# ==============================================================================
+
+def fb_get_high_schools():
+    """Lấy danh sách các trường THPT từ Firebase."""
+    try:
+        db = get_db()
+        doc = db.collection(CONFIG_COLLECTION).document("high_schools").get()
+        if doc.exists:
+            return doc.to_dict().get("schools", [])
+    except Exception as e:
+        print(f"Firebase fetch error (high_schools): {e}")
+    return []
+
+def fb_save_high_schools(schools_list):
+    """Lưu danh sách trường THPT lên Firebase."""
+    db.collection(CONFIG_COLLECTION).document("high_schools").set({"schools": schools_list})
+
+# ==============================================================================
+# QUẢN LÝ CHATBOT
+# ==============================================================================
+
+def fb_get_chatbot_config():
+    """Lấy cấu hình chatbot từ Firebase."""
+    try:
+        db = get_db()
+        doc = db.collection(CONFIG_COLLECTION).document("chatbot_config").get()
+        if doc.exists:
+            return doc.to_dict()
+    except Exception as e:
+        print(f"Firebase fetch error (chatbot_config): {e}")
+    return None
+
+def fb_save_chatbot_config(config_dict):
+    """Lưu cấu hình chatbot lên Firebase."""
+    db = get_db()
+    db.collection(CONFIG_COLLECTION).document("chatbot_config").set(config_dict)

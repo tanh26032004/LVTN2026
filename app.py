@@ -1,6 +1,10 @@
 import streamlit as st
 import joblib
+import pandas as pd
 from utils.firebase_client import seed_firebase_if_empty
+
+# Suppress pandas future warning caused by Streamlit dataframe
+pd.set_option('future.no_silent_downcasting', True)
 
 # ==========================================
 # 1. CẤU HÌNH TRANG & CSS

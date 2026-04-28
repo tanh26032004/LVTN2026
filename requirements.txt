@@ -9,3 +9,5 @@ joblib==1.4.2
 firebase-admin==7.4.0
 cloudinary==1.44.2
 requests
+google-genai
+openpyxl
