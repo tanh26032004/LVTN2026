@@ -41,18 +41,18 @@ def get_mbti_image(mbti_type):
 
 # Mapping ảnh cho 12 nhóm ngành — Admin có thể thay đổi qua Firebase
 MAJOR_IMAGE_DEFAULT = {
-    "CNTT & Kỹ thuật Máy tính": "major_cntt.png",
+    "Công nghệ Thông tin & Kỹ thuật Máy tính": "major_cntt.png",
+    "Du lịch & Dịch vụ": "major_dulich.png",
     "Kinh tế & Quản lý": "major_kinhtequanly.png",
-    "Y tế & Sức khỏe": "major_medical.png",
+    "Kỹ thuật, Cơ khí & Ô tô": "major_engineering.png",
+    "Luật & Xã hội": "major_luat.png",
+    "Nghệ thuật & Thiết kế": "major_art.png",
+    "Ngôn ngữ & Văn hóa": "major_language.png",
+    "Nông nghiệp & Môi trường": "major_agri.png",
     "Sư phạm & Giáo dục": "major_education.png",
-    "Luật & Chính trị": "major_education.png",
-    "Ngoại ngữ & Ngôn ngữ": "major_education.png",
-    "Nghệ thuật & Thiết kế": "major_education.png",
-    "Kỹ thuật & Công nghệ": "major_engineering.png",
-    "Khoa học Tự nhiên": "major_engineering.png",
-    "Khoa học Xã hội & Nhân văn": "major_education.png",
-    "Nông Lâm Ngư nghiệp": "major_engineering.png",
-    "Báo chí & Truyền thông": "major_business.png",
+    "Truyền thông & Báo chí": "major_media.png",
+    "Xây dựng & Quy hoạch": "major_xaydung.png",
+    "Y tế & Sức khỏe": "major_medical.png",
 }
 
 @st.cache_data(ttl=1)

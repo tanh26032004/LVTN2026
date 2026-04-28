@@ -285,7 +285,11 @@ def fb_get_high_schools():
 
 def fb_save_high_schools(schools_list):
     """Lưu danh sách trường THPT lên Firebase."""
-    db.collection(CONFIG_COLLECTION).document("high_schools").set({"schools": schools_list})
+    try:
+        db = get_db()
+        db.collection(CONFIG_COLLECTION).document("high_schools").set({"schools": schools_list})
+    except Exception as e:
+        print(f"Firebase save error (high_schools): {e}")
 
 # ==============================================================================
 # QUẢN LÝ CHATBOT
