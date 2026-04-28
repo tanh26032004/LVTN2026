@@ -47,17 +47,21 @@ LVTN2026/
 ├── README.md                      # Tài liệu dự án
 ├── requirements.txt               # Danh sách thư viện Python
 ├── utils/                         # Các module tiện ích hệ thống
-│   └── firebase_client.py         # Kết nối Firestore, Firebase Auth và Cloudinary Sync
+│   ├── cloudinary_client.py       # Client quản lý ảnh với Cloudinary
+│   └── firebase_client.py         # Kết nối Firestore, Firebase Auth và cấu hình hệ thống
 ├── data/                          # Chứa dữ liệu huấn luyện và script khai báo tĩnh
 │   ├── rawdata/                   # Các file dữ liệu thô gốc (Excel/CSV)
+│   ├── questions/                 # Dữ liệu câu hỏi trắc nghiệm
 │   ├── major_db.py                # Khai báo dữ liệu đặc tả mã nhóm ngành
-│   └── major_image_mapping.json   # Backup cục bộ cấu hình mapping ảnh-ngành
+│   └── major_image_mapping.json   # Cấu hình mapping ảnh-ngành
 ├── assets/                        # Các tài nguyên tĩnh đồ họa và module bổ trợ
-│   ├── images/                    # Thư mục chứa hình họa nhóm ngành và MBTI (Fallback)
+│   ├── images/                    # Thư mục chứa hình họa nhóm ngành và MBTI
 │   └── mbti_assets.py             # Bộ code xử lý dữ liệu logic MBTI & Ngành học đồng bộ Cloud
 ├── model/                         # Nơi lưu trữ Pipeline của thuật toán AI (files .joblib)
 ├── scripts/                       # Chứa mã nguồn tính toán và huấn luyện độc lập
 │   ├── data_augmentation.py       # Script tăng cường dữ liệu khớp với phổ Bộ GD ĐT
+│   ├── hybrid_recommender.py      # Hệ thống gợi ý lai (Content-based & CF)
+│   ├── merge_raw_data.py          # Script kết hợp dữ liệu thô
 │   └── train_model.py             # Script xử lý trích lập tập huấn luyện, chấm điểm 3 Models
 ├── views/                         # Kiến trúc Modules Frontend tách mảnh
 │   ├── admin_dashboard.py         # View quản trị nội dung, ảnh & Firebase Auth
@@ -66,8 +70,8 @@ LVTN2026/
 │   ├── sidebar.py                 # Render sidebar cài đặt thông số mô hình
 │   ├── tab1_survey.py             # View phân tích điểm và gợi ý tự động
 │   ├── tab2_mbti.py               # View giao diện trắc nghiệm MBTI tương tác
-│   ├── tab3_xai.py                # View Trí tuệ Giải Thích AI (XAI Charts)
-│   └── tab4_chatbot.py            # View quản lý cấu hình Chatbot dành cho Admin
+│   └── tab3_xai.py                # View Trí tuệ Giải Thích AI (XAI Charts)
+├── docs/                          # Thư mục chứa tài liệu báo cáo và slide bảo vệ
 └── .streamlit/                    # Thư mục cấu hình Streamlit
     ├── config.toml                # Quy định bảng màu Theme (Sky Blue) & thuộc tính CSS
     └── secrets.toml               # Lưu trữ Firebase, Cloudinary & Gemini API Keys (Git Ignored)
