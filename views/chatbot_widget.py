@@ -23,6 +23,16 @@ def get_base64_image(image_path):
     except Exception:
         return ""
 
+def _scroll_chat_js():
+    """Inject JS to auto-scroll the chat container to the bottom."""
+    st.components.v1.html(
+        '<script>setTimeout(function(){var p=window.parent.document.querySelector(\'div[data-testid="stPopoverBody"]\');'
+        'if(p){p.querySelectorAll("div").forEach(function(d){var s=window.getComputedStyle(d);'
+        'if((s.overflowY==="auto"||s.overflowY==="scroll")&&d.scrollHeight>d.clientHeight)'
+        '{d.scrollTop=d.scrollHeight}})}},100);</script>',
+        height=0
+    )
+
 def render_floating_chat():
     button_b64 = get_base64_image("assets/chat_button_icon.png")
     
@@ -263,7 +273,8 @@ def render_floating_chat():
                     with st.chat_message("assistant", avatar="assets/ai_bot_avatar.png"):
                         st.markdown(text)
 
-
+            # Auto-scroll xuống cuối khung chat
+            _scroll_chat_js()
         # ===== Ô NHẬP LIỆU =====
         prompt = st.chat_input("Nhập câu hỏi của bạn...") or preset_prompt
 
@@ -279,6 +290,9 @@ def render_floating_chat():
                 </div>
                 """, unsafe_allow_html=True)
                 
+                # Scroll xuống ngay khi gửi tin nhắn
+                _scroll_chat_js()
+                
                 with st.chat_message("assistant", avatar="assets/ai_bot_avatar.png"):
                     placeholder = st.empty()
                     with st.spinner("Đang trả lời..."):
@@ -289,4 +303,7 @@ def render_floating_chat():
                             st.session_state["chat_history"].append({"role": "model", "parts": [response.text]})
                         except Exception as e:
                             placeholder.error(f"Lỗi: {e}")
+                
+                # Scroll xuống sau khi AI trả lời xong
+                _scroll_chat_js()
             st.rerun()
