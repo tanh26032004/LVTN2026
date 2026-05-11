@@ -4,7 +4,7 @@ import os
 import json
 from scripts.hybrid_recommender import get_hybrid_recommendations
 from data.major_db import get_major_code
-from assets.mbti_assets import get_major_image
+from assets.mbti_assets import get_major_image, get_mbti_details
 from views import chatbot_widget
 
 def record_prediction_usage(user_school="", user_mbti="", khoi_thi="", top1_major="", scores=None):
@@ -29,6 +29,207 @@ def record_prediction_usage(user_school="", user_mbti="", khoi_thi="", top1_majo
         
     except Exception:
         pass # Ignore minor network errors in UI
+
+
+@st.dialog("Tại sao hệ thống gợi ý ngành học này cho bạn?", width="large")
+def show_xai_dialog(user_mbti, block_scores_input):
+    MBTI_DICT = {
+        "ISTJ": "Người trách nhiệm", "ISFJ": "Người nuôi dưỡng", "INFJ": "Người che chở", "INTJ": "Nhà chiến lược",
+        "ISTP": "Nhà kỹ thuật", "ISFP": "Người nghệ sĩ", "INFP": "Người lý tưởng hóa", "INTP": "Nhà tư duy",
+        "ESTP": "Người thực thi", "ESFP": "Người trình diễn", "ENFP": "Người truyền cảm hứng", "ENTP": "Người nhìn xa",
+        "ESTJ": "Người điều hành", "ESFJ": "Người quan tâm", "ENFJ": "Người truyền đạt", "ENTJ": "Nhà lãnh đạo"
+    }
+
+    try:
+        import joblib
+        import matplotlib.pyplot as plt
+        import numpy as np
+        
+        fi_df = joblib.load(os.path.join("model", "rf_feature_importances.joblib"))
+        
+        subject_map = {
+            "math": "math_score", "lit": "literature_score", "eng": "english_score",
+            "physics": "physics_score", "chem": "chemistry_score", "bio": "biology_score",
+            "hist": "history_score"
+        }
+        
+        readable_names = {
+            "math": "Môn Toán", "lit": "Môn Ngữ văn", "eng": "Môn Tiếng Anh",
+            "physics": "Môn Vật lý", "chem": "Môn Hóa học", "bio": "Môn Sinh học", "hist": "Môn Lịch sử"
+        }
+        
+        user_input_features = {}
+        
+        # Chỉ lấy những môn học mà người dùng đã nhập (thuộc khối thi)
+        for subj_key, score in block_scores_input.items():
+            feature_name = subject_map.get(subj_key)
+            if feature_name:
+                imp = fi_df[fi_df['Feature'] == feature_name]['Importance (%)'].values
+                if len(imp) > 0:
+                    user_input_features[subj_key] = imp[0]
+                    
+        # Lấy tỷ trọng MBTI
+        mbti_feature_name = f"mbti_type_{user_mbti}"
+        imp_mbti = fi_df[fi_df['Feature'] == mbti_feature_name]['Importance (%)'].values
+        if len(imp_mbti) > 0:
+            user_input_features[f"MBTI ({user_mbti})"] = imp_mbti[0]
+        else:
+            mbti_total = fi_df[fi_df['Feature'].str.contains('mbti_type')]['Importance (%)'].sum()
+            user_input_features[f"MBTI ({user_mbti})"] = mbti_total
+            
+        # Chuẩn hóa về 100%
+        total_imp = sum(user_input_features.values())
+        if total_imp > 0:
+            normalized_features = {k: (v / total_imp) * 100 for k, v in user_input_features.items()}
+        else:
+            normalized_features = user_input_features
+            
+        # Sắp xếp theo mức độ ảnh hưởng giảm dần
+        sorted_features = dict(sorted(normalized_features.items(), key=lambda item: item[1], reverse=True))
+        
+        highest_feature_key = list(sorted_features.keys())[0]
+        highest_feature_name = readable_names.get(highest_feature_key, highest_feature_key)
+        highest_feature_val = sorted_features[highest_feature_key]
+
+        mbti_desc = MBTI_DICT.get(user_mbti, "Đặc trưng tính cách")
+        mbti_key = f"MBTI ({user_mbti})"
+        mbti_val = sorted_features.get(mbti_key, 0)
+        
+        st.markdown("<p style='color: #64748b; font-size: 0.95rem; margin-bottom: 15px; font-weight: 600; text-align: center; text-transform: uppercase; letter-spacing: 1px;'>Chi tiết Phân tích Tỷ trọng</p>", unsafe_allow_html=True)
+
+        labels = []
+        values = []
+        for k, v in sorted_features.items():
+            name = readable_names.get(k, k)
+            labels.append(name)
+            values.append(v)
+            
+        with st.container(border=True):
+            xai_col1, xai_col2 = st.columns([1, 1.2], gap="large")
+            
+            with xai_col1:
+                st.markdown("<div style='text-align: center; font-weight: 700; color: #475569; margin-bottom: 15px; font-size: 0.95rem;'>Biểu đồ Tròn: Phân bổ Tỷ trọng</div>", unsafe_allow_html=True)
+                fig1, ax1 = plt.subplots(figsize=(5, 5))
+                
+                # Custom colors that look good together
+                colors = ['#0ea5e9', '#38bdf8', '#7dd3fc', '#bae6fd', '#e0f2fe']
+                if len(labels) > len(colors):
+                    colors = plt.cm.Blues(np.linspace(0.8, 0.3, len(labels)))
+                else:
+                    colors = colors[:len(labels)]
+                    
+                wedges, texts, autotexts = ax1.pie(
+                    values, labels=labels, autopct='%1.1f%%', startangle=140, 
+                    colors=colors, wedgeprops={'edgecolor': 'white', 'linewidth': 1.5},
+                    textprops={'fontsize': 10, 'color': '#1e293b'}
+                )
+                
+                for autotext in autotexts:
+                    autotext.set_color('#0f172a')
+                    autotext.set_weight('bold')
+                    
+                ax1.axis('equal')
+                fig1.patch.set_alpha(0.0)
+                st.pyplot(fig1)
+                
+            with xai_col2:
+                st.markdown("<div style='text-align: center; font-weight: 700; color: #475569; margin-bottom: 15px; font-size: 0.95rem;'>Biểu đồ Cột: Mức độ Ảnh hưởng (%)</div>", unsafe_allow_html=True)
+                fig2, ax2 = plt.subplots(figsize=(6, 5))
+                
+                y_pos = np.arange(len(labels))
+                bars = ax2.barh(y_pos, values, color='#38bdf8', height=0.6, edgecolor='#0284c7')
+                
+                ax2.set_yticks(y_pos)
+                ax2.set_yticklabels(labels, fontsize=10, color='#1e293b')
+                ax2.invert_yaxis()
+                ax2.set_xlabel('Mức độ ảnh hưởng (%)', fontsize=10, color='#64748b', fontweight='bold')
+                
+                fig2.patch.set_alpha(0.0)
+                ax2.patch.set_alpha(0.0)
+                
+                for bar in bars:
+                    width = bar.get_width()
+                    ax2.text(width + 0.5, bar.get_y() + bar.get_height()/2, f'{width:.1f}%', 
+                             va='center', ha='left', color='#0f172a', fontsize=10, fontweight='bold')
+                             
+                ax2.spines['top'].set_visible(False)
+                ax2.spines['right'].set_visible(False)
+                ax2.spines['bottom'].set_color('#cbd5e1')
+                ax2.spines['left'].set_color('#cbd5e1')
+                ax2.tick_params(axis='x', colors='#64748b')
+                ax2.tick_params(axis='y', colors='#334155')
+                ax2.set_xlim(0, max(values) + 15)
+                
+                st.pyplot(fig2)
+                
+        # Hiển thị lời giải thích chi tiết bên dưới
+        st.markdown("<hr style='margin: 25px 0; border-color: #e2e8f0;'>", unsafe_allow_html=True)
+        
+        # Lấy dữ liệu MBTI chi tiết từ nguồn chung
+        mbti_full_info = get_mbti_details().get(user_mbti, {})
+        mbti_title = mbti_full_info.get('title', mbti_desc)
+        mbti_description = mbti_full_info.get('description', '')
+        mbti_strengths = mbti_full_info.get('strengths', [])
+        mbti_weaknesses = mbti_full_info.get('weaknesses', [])
+        mbti_careers = mbti_full_info.get('careers', [])
+        
+        # Tạo danh sách điểm mạnh dạng HTML
+        strengths_html = ''.join([f"<li style='margin-bottom: 4px;'>{s}</li>" for s in mbti_strengths[:4]])
+        weaknesses_html = ''.join([f"<li style='margin-bottom: 4px;'>{w}</li>" for w in mbti_weaknesses[:3]])
+        careers_html = ''.join([f"<span style='display: inline-block; background-color: #f0f9ff; color: #0284c7; padding: 4px 12px; border-radius: 20px; margin: 0 6px 6px 0; font-size: 0.85rem; font-weight: 600; border: 1px solid #bae6fd;'>{c}</span>" for c in mbti_careers])
+        
+        # Tạo danh sách điểm từng môn học
+        score_detail_rows = ''
+        for k, v in sorted_features.items():
+            feat_name = readable_names.get(k, k)
+            if 'MBTI' not in k:
+                bar_color = '#0ea5e9' if v == highest_feature_val else '#94a3b8'
+                score_detail_rows += f"""<div style='display: flex; align-items: center; gap: 10px; margin-bottom: 6px;'>
+<span style='min-width: 100px; font-weight: 600; color: #334155; font-size: 0.9rem;'>{feat_name}</span>
+<div style='flex-grow: 1; background-color: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;'>
+<div style='width: {v:.1f}%; background-color: {bar_color}; height: 100%; border-radius: 4px;'></div>
+</div>
+<span style='min-width: 50px; text-align: right; font-weight: 700; color: #0f172a; font-size: 0.9rem;'>{v:.1f}%</span>
+</div>"""
+
+        st.markdown(f"""
+<div style='background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 22px 28px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);'>
+<h4 style='color: #0f172a; margin-top: 0; margin-bottom: 20px; font-size: 1.15rem; font-weight: 800;'>Chi tiết lý do gợi ý ngành học</h4>
+<div style='background-color: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 20px;'>
+<div style='display: inline-block; background-color: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; margin-bottom: 10px;'>Phân tích Điểm số</div>
+<p style='color: #334155; margin: 0 0 12px 0; font-size: 0.95rem; line-height: 1.7;'>
+Trong khối thi bạn chọn, <b>{highest_feature_name}</b> đóng vai trò nền tảng nhất, chiếm <b>{highest_feature_val:.1f}%</b> trọng số quyết định. Hệ thống đánh giá rằng kiến thức và tư duy từ môn học này không chỉ giúp bạn dễ dàng tiếp thu các học phần chuyên ngành phức tạp ở bậc Đại học, mà còn rèn luyện tư duy logic cốt lõi được các nhà tuyển dụng đặc biệt săn đón. Việc bạn có thế mạnh ở môn này là một tín hiệu cực kỳ tích cực!
+</p>
+{score_detail_rows}
+</div>
+<div style='background-color: #fdf2f8; border-left: 4px solid #ec4899; padding: 16px 20px; border-radius: 0 10px 10px 0;'>
+<div style='display: inline-block; background-color: #fce7f3; color: #be185d; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; margin-bottom: 10px;'>Phân tích Tính cách — {user_mbti} ({mbti_title})</div>
+<p style='color: #334155; margin: 0 0 10px 0; font-size: 0.95rem; line-height: 1.7;'>
+Về mặt tâm lý học, nhóm tính cách <b>{user_mbti} ({mbti_title})</b> của bạn đóng góp <b>{mbti_val:.1f}%</b> vào sự phù hợp với ngành. {mbti_description}
+</p>
+<div style='display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px;'>
+<div style='flex: 1; min-width: 220px;'>
+<p style='font-weight: 700; color: #0ea5e9; margin: 0 0 6px 0; font-size: 0.9rem;'>Điểm mạnh nổi bật:</p>
+<ul style='margin: 0; padding-left: 18px; color: #334155; font-size: 0.9rem; line-height: 1.6;'>
+{strengths_html}
+</ul>
+</div>
+<div style='flex: 1; min-width: 220px;'>
+<p style='font-weight: 700; color: #f43f5e; margin: 0 0 6px 0; font-size: 0.9rem;'>Điểm cần lưu ý:</p>
+<ul style='margin: 0; padding-left: 18px; color: #334155; font-size: 0.9rem; line-height: 1.6;'>
+{weaknesses_html}
+</ul>
+</div>
+</div>
+<p style='font-weight: 700; color: #7c3aed; margin: 0 0 8px 0; font-size: 0.9rem;'>Nghề nghiệp tiêu biểu phù hợp với {user_mbti}:</p>
+<div>{careers_html}</div>
+</div>
+</div>
+""", unsafe_allow_html=True)
+
+    except Exception as e_xai:
+        st.info("Không thể hiển thị biểu đồ phân tích (XAI) do thiếu dữ liệu hoặc mô hình chưa được huấn luyện đầy đủ.")
+        print(f"XAI Error: {e_xai}")
 
 
 def render_tab(active_model, active_model_name, preprocessor, target_encoder, major_dict):
@@ -107,9 +308,12 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
         st.markdown("<h3 style='font-weight: 800; margin-top: 0; margin-bottom: 10px;'>Ngành học dự đoán</h3>", unsafe_allow_html=True)
         st.markdown("<div style='background-color: #fffbeb; color: #92400e; padding: 12px 16px; border-radius: 12px; border: 1px solid #fde68a; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5;'><b>Lưu ý:</b> Hệ thống dự đoán hiện đang đạt độ chính xác ước tính khoảng <b>80-85%</b>. Các kết quả gợi ý dưới đây có giá trị <b>tham khảo và định hướng</b>, học sinh nên kết hợp chặt chẽ với đam mê cá nhân và điều kiện gia đình trước khi đưa ra quyết định cuối cùng.</div>", unsafe_allow_html=True)
         
-        if predict_btn and (not user_school or not user_mbti or not khoi_choice):
+        if predict_btn:
+            st.session_state['predict_triggered'] = True
+            
+        if st.session_state.get('predict_triggered', False) and (not user_school or not user_mbti or not khoi_choice):
              st.warning("⚠️ Vui lòng hoàn thành thao tác **Nhập Trường THPT**, **Chọn Nhóm tính cách MBTI** và **Khối thi THPT** ở bảng bên trái trước khi phân tích!")
-        elif predict_btn:
+        elif st.session_state.get('predict_triggered', False):
             with st.spinner('AI đang tính toán không gian vector và trích xuất đặc trưng...'):
                 try:
                     neutral_score = 5.0 
@@ -158,6 +362,10 @@ def render_tab(active_model, active_model_name, preprocessor, target_encoder, ma
 </div>
 <p style='color: #64748b; font-size: 0.9rem; margin: 0;'>Mức độ phù hợp dựa trên phân tích tổ hợp MBTI, khối thi và điểm số của bạn.</p>
 """, unsafe_allow_html=True)
+                    
+                    st.markdown("<div style='margin-top: 15px;'></div>", unsafe_allow_html=True)
+                    if st.button("Xem chi tiết lý do gợi ý", use_container_width=True, type="secondary"):
+                        show_xai_dialog(user_mbti, block_scores_input)
                     
                     # --- DANH SÁCH CHI TIẾT NGÀNH TOP 1 ---
                     with st.expander(f"Bấm để xem mã ngành thuộc **{top1_group}**", expanded=False):
