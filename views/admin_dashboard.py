@@ -12,25 +12,27 @@ def render_admin_dashboard(rf_model, dt_model, svm_model, preprocessor, target_e
 
     # 1. Đăng nhập
     if not st.session_state.get('is_admin_logged_in', False):
-        st.markdown("<div style='background-color: #f8fafc; padding: 30px; border-radius: 15px; border: 1px solid #e2e8f0; width: 60%; margin: auto;'>", unsafe_allow_html=True)
-        st.markdown("<h3 style='text-align: center; color: #0ea5e9; font-weight: 800; margin-bottom: 25px;'>Quản Trị Viên (Firebase Auth)</h3>", unsafe_allow_html=True)
-        
-        email = st.text_input("Email Quản trị:", placeholder="admin@example.com")
-        pwd = st.text_input("Mật khẩu:", type="password")
-        
-        if st.button("Đăng Nhập Hệ Thống", type="primary", use_container_width=True):
-            from utils.firebase_client import verify_admin_login
-            success, message = verify_admin_login(email, pwd)
-            
-            if success:
-                st.session_state['is_admin_logged_in'] = True
-                st.success(message)
-                st.rerun()
-            else:
-                st.error(f"Đăng nhập thất bại: {message}")
-        
-        st.markdown("<p style='text-align:center; font-size:0.8rem; color:gray; margin-top:20px;'>Hệ thống sử dụng xác thực bảo mật qua Google Firebase</p>", unsafe_allow_html=True)
-        st.markdown("</div>", unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            with st.container(border=True):
+                st.markdown("<h3 style='text-align: center; color: #0ea5e9; font-weight: 800; margin-bottom: 25px;'>Đăng Nhập</h3>", unsafe_allow_html=True)
+                
+                email = st.text_input("Email Quản trị:", placeholder="admin@example.com")
+                pwd = st.text_input("Mật khẩu:", type="password")
+                
+                st.markdown("<br>", unsafe_allow_html=True)
+                if st.button("Đăng Nhập Hệ Thống", type="primary", use_container_width=True):
+                    from utils.firebase_client import verify_admin_login
+                    success, message = verify_admin_login(email, pwd)
+                    
+                    if success:
+                        st.session_state['is_admin_logged_in'] = True
+                        st.success(message)
+                        st.rerun()
+                    else:
+                        st.error(f"Đăng nhập thất bại: {message}")
+                
+                st.markdown("<p style='text-align:center; font-size:0.8rem; color:gray; margin-top:20px;'>Hệ thống sử dụng xác thực bảo mật qua Google Firebase</p>", unsafe_allow_html=True)
         return "Random Forest (Khuyên dùng)", rf_model # model_choice, active_model fallback
     
     # KHI ĐÃ ĐĂNG NHẬP
