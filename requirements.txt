@@ -11,3 +11,4 @@ cloudinary==1.44.2
 requests
 google-genai
 openpyxl
+plotly==5.24.1
