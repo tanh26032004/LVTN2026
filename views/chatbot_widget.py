@@ -170,6 +170,34 @@ def render_floating_chat():
     div[data-testid="stChatMessageContent"] p:last-child {
         margin-bottom: 0 !important;
     }
+    
+    /* ===== NÚT MIC / BÀN PHÍM TOGGLE (tròn, căn giữa) ===== */
+    div[data-testid="stPopoverBody"] div[data-testid="stButton"]:has(button[data-testid="stBaseButton-secondary"][kind="secondary"]) button[key*="mic_toggle"],
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_on"],
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_off"] {
+        border-radius: 50% !important;
+        width: 42px !important;
+        height: 42px !important;
+        min-height: 42px !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(148,163,184,0.06) !important;
+        color: #94a3b8 !important;
+    }
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_on"]:hover,
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_off"]:hover {
+        background: rgba(14,165,233,0.1) !important;
+        border-color: #0ea5e9 !important;
+        color: #0ea5e9 !important;
+    }
+    /* Ẩn text trống trong nút toggle, chỉ giữ icon */
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_on"] p,
+    div[data-testid="stPopoverBody"] button[key="mic_toggle_off"] p {
+        display: none !important;
+    }
+
     </style>
     """, unsafe_allow_html=True)
     
@@ -196,7 +224,7 @@ def render_floating_chat():
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 0 12px 0;">
             <div style="margin-bottom: 6px;">{icon_html}</div>
             <div style="text-align: center; line-height: 1.3;">
-                <span style="font-size:1.15rem; font-weight:800; color:#0ea5e9;">Tư Vấn Học Đường AI</span><br>
+                <span style="font-size:1.15rem; font-weight:800; color:#0ea5e9;">Chatbot Tư Vấn Ngành Học</span><br>
                 <span style="font-size:0.75rem; color:gray;">Hỏi đáp tuyển sinh · Điểm chuẩn · MBTI</span>
             </div>
         </div>
@@ -219,6 +247,10 @@ def render_floating_chat():
 
         if "chat_history" not in st.session_state:
             st.session_state["chat_history"] = []
+        
+        # Khởi tạo chế độ nhập liệu: "text" hoặc "voice"
+        if "chat_input_mode" not in st.session_state:
+            st.session_state["chat_input_mode"] = "text"
 
         # Chuẩn bị history cho SDK
         history_for_sdk = []
@@ -275,8 +307,105 @@ def render_floating_chat():
 
             # Auto-scroll xuống cuối khung chat
             _scroll_chat_js()
-        # ===== Ô NHẬP LIỆU =====
-        prompt = st.chat_input("Nhập câu hỏi của bạn...") or preset_prompt
+
+        # ===== Ô NHẬP LIỆU: CHUYỂN ĐỔI TEXT ↔ VOICE ↔ REVIEW =====
+        prompt = preset_prompt  # Nhận preset nếu có
+
+        # SVG icons màu xám (#94a3b8) phù hợp tổng thể hệ thống
+        mic_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>'
+        kbd_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="M6 8h.001"/><path d="M10 8h.001"/><path d="M14 8h.001"/><path d="M18 8h.001"/><path d="M8 12h.001"/><path d="M12 12h.001"/><path d="M16 12h.001"/><path d="M7 16h10"/></svg>'
+        send_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>'
+        retry_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>'
+        cancel_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>'
+
+        if st.session_state["chat_input_mode"] == "text":
+            # --- CHẾ ĐỘ NHẬP TEXT ---
+            col_input, col_mic = st.columns([0.9, 0.1], vertical_alignment="bottom")
+            with col_input:
+                text_prompt = st.chat_input("Nhập câu hỏi của bạn...")
+                if text_prompt:
+                    prompt = text_prompt
+            with col_mic:
+                # Nút mic dạng HTML để dùng SVG icon xám
+                if st.button("", key="mic_toggle_on", help="Chuyển sang nhập bằng giọng nói", use_container_width=True, icon=":material/mic:"):
+                    st.session_state["chat_input_mode"] = "voice"
+                    st.rerun()
+
+        elif st.session_state["chat_input_mode"] == "voice":
+            # --- CHẾ ĐỘ GHI ÂM ---
+            st.markdown(f"""
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px; padding:6px 10px; background:rgba(148,163,184,0.08); border-radius:10px; border:1px solid rgba(148,163,184,0.25);">
+                {mic_svg}
+                <span style="font-size:0.85rem; color:#64748b; font-weight:600;">Chế độ giọng nói</span>
+                <span style="font-size:0.72rem; color:#94a3b8;">— Nhấn ● ghi âm, nhấn ■ dừng</span>
+            </div>
+            """, unsafe_allow_html=True)
+
+            col_voice, col_back = st.columns([0.9, 0.1], vertical_alignment="bottom")
+            with col_voice:
+                audio_value = st.audio_input("Ghi âm câu hỏi của bạn", key="voice_input", label_visibility="collapsed")
+            with col_back:
+                if st.button("", key="mic_toggle_off", help="Quay lại nhập bằng bàn phím", use_container_width=True, icon=":material/keyboard:"):
+                    st.session_state["chat_input_mode"] = "text"
+                    st.rerun()
+
+            # Xử lý audio sau khi ghi xong
+            if audio_value is not None:
+                audio_bytes = audio_value.read()
+                if audio_bytes and st.session_state.get("_last_audio_id") != id(audio_value):
+                    st.session_state["_last_audio_id"] = id(audio_value)
+                    with st.spinner("Đang nhận diện giọng nói..."):
+                        try:
+                            stt_response = client.models.generate_content(
+                                model="gemini-2.5-flash",
+                                contents=[
+                                    "You are an expert transcriber. Transcribe the following audio accurately in the language spoken. Output ONLY the transcription, without any extra text.",
+                                    types.Part.from_bytes(data=audio_bytes, mime_type="audio/wav")
+                                ]
+                            )
+                            transcribed = stt_response.text.strip()
+                            if transcribed:
+                                st.session_state["voice_transcribed_text"] = transcribed
+                                st.session_state["chat_input_mode"] = "review"
+                                st.rerun()
+                        except Exception as e:
+                            st.error(f"Lỗi nhận diện giọng nói: {e}")
+
+        elif st.session_state["chat_input_mode"] == "review":
+            # --- CHẾ ĐỘ XEM LẠI VĂN BẢN SAU KHI NHẬN DIỆN ---
+            st.markdown(f"""
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px; padding:6px 10px; background:rgba(148,163,184,0.08); border-radius:10px; border:1px solid rgba(148,163,184,0.25);">
+                {mic_svg}
+                <span style="font-size:0.85rem; color:#64748b; font-weight:600;">Kết quả nhận diện</span>
+                <span style="font-size:0.72rem; color:#94a3b8;">— Chỉnh sửa nếu cần, rồi nhấn Gửi</span>
+            </div>
+            """, unsafe_allow_html=True)
+
+            draft = st.text_area(
+                "Nội dung nhận diện",
+                value=st.session_state.get("voice_transcribed_text", ""),
+                height=80,
+                label_visibility="collapsed",
+                key="voice_review_area"
+            )
+
+            col_send, col_retry, col_cancel = st.columns([0.4, 0.3, 0.3])
+            with col_send:
+                if st.button("Gửi", key="voice_send", use_container_width=True, type="primary", icon=":material/send:"):
+                    if draft and draft.strip():
+                        prompt = draft.strip()
+                    st.session_state["chat_input_mode"] = "text"
+                    st.session_state.pop("voice_transcribed_text", None)
+            with col_retry:
+                if st.button("Ghi lại", key="voice_retry", use_container_width=True, icon=":material/mic:"):
+                    st.session_state["chat_input_mode"] = "voice"
+                    st.session_state.pop("voice_transcribed_text", None)
+                    st.rerun()
+            with col_cancel:
+                if st.button("Hủy", key="voice_cancel", use_container_width=True, icon=":material/close:"):
+                    st.session_state["chat_input_mode"] = "text"
+                    st.session_state.pop("voice_transcribed_text", None)
+                    st.rerun()
 
         if prompt:
             with chat_container:
@@ -307,3 +436,4 @@ def render_floating_chat():
                 # Scroll xuống sau khi AI trả lời xong
                 _scroll_chat_js()
             st.rerun()
+
