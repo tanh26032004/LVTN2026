@@ -6,26 +6,17 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import requests
 
-# Firebase Service Account Path (Legacy - using st.secrets now)
-CREDENTIAL_PATH = "/Users/wocten/Documents/LVTN2026/.streamlit/lvtn2026-firebase-adminsdk-fbsvc-13fe218315.json"
-
 @st.cache_resource
 def get_db():
     if not firebase_admin._apps:
         try:
-            # Ưu tiên lấy từ st.secrets (để an toàn khi push GitHub)
-            if "firebase_service_account" in st.secrets:
-                # Chuyển toml sang dict sạch cho SDK
-                service_account_info = dict(st.secrets["firebase_service_account"])
-                # Fix newline issue in private_key if needed
-                if "private_key" in service_account_info:
-                    service_account_info["private_key"] = service_account_info["private_key"].replace("\\n", "\n")
-                
-                cred = credentials.Certificate(service_account_info)
-            else:
-                # Fallback dùng file local
-                cred = credentials.Certificate(CREDENTIAL_PATH)
+            # Lấy toàn bộ dict từ st.secrets
+            service_account_info = dict(st.secrets["firebase_service_account"])
+            # Đảm bảo fix lỗi newline trong private_key nếu có
+            if "private_key" in service_account_info:
+                service_account_info["private_key"] = service_account_info["private_key"].replace("\\n", "\n")
             
+            cred = credentials.Certificate(service_account_info)
             firebase_admin.initialize_app(cred)
         except Exception as e:
             print(f"Lỗi khởi tạo Firebase: {e}")
