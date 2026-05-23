@@ -171,6 +171,31 @@ def render_floating_chat():
         margin-bottom: 0 !important;
     }
     
+    /* Xóa hoàn toàn không gian của text trống để icon không bị đẩy lệch */
+    div[data-testid="stPopoverBody"] div[data-testid="stHorizontalBlock"] div[data-testid="stColumn"]:last-child div[data-testid="stButton"] > button p,
+    div[data-testid="stPopoverBody"] div[data-testid="stHorizontalBlock"] div[data-testid="stColumn"]:last-child div[data-testid="stButton"] > button div[data-testid="stMarkdownContainer"] {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ===== TỐI ƯU GIAO DIỆN ĐIỆN THOẠI ===== */
+    /* Ép các cột (columns) không được rớt dòng trên màn hình nhỏ */
+    div[data-testid="stPopoverBody"] div[data-testid="stHorizontalBlock"] {
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+    }
+    div[data-testid="stPopoverBody"] div[data-testid="stColumn"] {
+        min-width: 0 !important; /* Đảm bảo các cột có thể co lại được */
+    }
+    /* Đảm bảo nội dung chữ trong các nút review không bị tràn */
+    div[data-testid="stPopoverBody"] div[data-testid="stHorizontalBlock"] div[data-testid="stButton"] > button p {
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+    }
+
     /* ===== NÚT MIC / BÀN PHÍM TOGGLE (tròn, căn giữa) ===== */
     div[data-testid="stPopoverBody"] div[data-testid="stButton"]:has(button[data-testid="stBaseButton-secondary"][kind="secondary"]) button[key*="mic_toggle"],
     div[data-testid="stPopoverBody"] button[key="mic_toggle_on"],
@@ -271,7 +296,7 @@ def render_floating_chat():
         preset_prompt = None
         
         # ===== KHUNG TIN NHẮN (scrollable, có border) =====
-        chat_container = st.container(height=340, border=True)
+        chat_container = st.container(height=300, border=True)
 
         with chat_container:
             student_b64 = get_base64_image("assets/student_avatar.png")
@@ -384,7 +409,7 @@ def render_floating_chat():
             draft = st.text_area(
                 "Nội dung nhận diện",
                 value=st.session_state.get("voice_transcribed_text", ""),
-                height=80,
+                height=68,
                 label_visibility="collapsed",
                 key="voice_review_area"
             )
