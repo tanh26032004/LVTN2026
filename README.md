@@ -138,11 +138,11 @@ Bộ Dữ liệu được xây dựng theo hình thức Data Synthesizing & Augm
 
 Kết quả đo lường khách quan thông qua **GridSearchCV** (với tập Test):
 
-| Thuật Toán (Algorithm)            | Vai trò           | Accuracy (Thực tế) | Nhận Xét Mục Đích Sử Dụng |
-| ---------------------------------- | ----------------- | -------- | ---------------- |
-| **Random Forest Classifier**       | **Mô Hình Chính** | `~87.99%` | Tư vấn chính và tính Feature Importances đa chiều. |
-| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `~86.99%` | Phân cách siêu phẳng Nonlinear (RBF Kernel). |
-| **Decision Tree**                  | Đối trọng / XAI   | `~82.36%` | Diễn giải If-Else tường minh sự rẽ nhánh. |
+| Thuật Toán (Algorithm)            | Vai trò           | Train Accuracy | Test Accuracy | Nhận Xét Mục Đích Sử Dụng |
+| ---------------------------------- | ----------------- | -------------- | ------------- | ---------------- |
+| **Random Forest Classifier**       | **Mô Hình Chính** | `~93.98%`      | `~87.37%`     | Tư vấn chính và tính Feature Importances đa chiều. |
+| **SVM (Support Vector Machine)**   | Đối trọng so sánh | `~87.14%`      | `~86.80%`     | Phân cách siêu phẳng Nonlinear (RBF Kernel). |
+| **Decision Tree**                  | Đối trọng / XAI   | `~83.50%`      | `~79.55%`     | Diễn giải If-Else tường minh sự rẽ nhánh. |
 
 ---
 *(Bản quyền mã nguồn mở LVTN2026. Tích hợp AI toàn diện và Cloud-Native architecture).*

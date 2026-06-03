@@ -84,10 +84,10 @@ def train_and_save_heuristic_model(data_path="data/student_data.csv", model_dir=
     ])
     
     param_grid = {
-        'classifier__n_estimators': [100, 200, 300],
-        'classifier__max_depth': [20, 30, 40, None],
-        'classifier__min_samples_split': [2, 5, 10],
-        'classifier__min_samples_leaf': [1, 2, 4]
+        'classifier__n_estimators': [100, 200],
+        'classifier__max_depth': [8, 12, 16],
+        'classifier__min_samples_split': [10, 15, 20],
+        'classifier__min_samples_leaf': [4, 6, 8]
     }
     
     grid_search = GridSearchCV(estimator=rf_pipeline, param_grid=param_grid, cv=5, n_jobs=-1, scoring='f1_macro')
@@ -99,7 +99,7 @@ def train_and_save_heuristic_model(data_path="data/student_data.csv", model_dir=
     # 2. Decision Tree (MÔ HÌNH SO SÁNH)
     dt_pipeline = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        ('classifier', DecisionTreeClassifier(max_depth=25, class_weight='balanced', random_state=random_state))
+        ('classifier', DecisionTreeClassifier(max_depth=10, min_samples_split=15, min_samples_leaf=4, class_weight='balanced', random_state=random_state))
     ])
     dt_pipeline.fit(X_train, y_train)
 
@@ -117,17 +117,20 @@ def train_and_save_heuristic_model(data_path="data/student_data.csv", model_dir=
         "SVM (RBF Kernel)    ": svm_pipeline
     }
 
-    print(f"\n{'MÔ HÌNH':<25} | {'ACCURACY':<10} | {'PRECISION':<10} | {'RECALL':<10} | {'F1-SCORE':<10}")
-    print("-" * 75)
+    print(f"\n{'MÔ HÌNH':<25} | {'TRAIN ACC':<10} | {'TEST ACC':<10} | {'PRECISION':<10} | {'RECALL':<10} | {'F1-SCORE':<10}")
+    print("-" * 88)
 
     for name, model in models.items():
+        y_train_pred = model.predict(X_train)
         y_pred = model.predict(X_test)
+        
+        train_acc = accuracy_score(y_train, y_train_pred)
         acc = accuracy_score(y_test, y_pred)
         precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_pred, average='macro', zero_division=0)
         
-        print(f"{name:<25} | {acc*100:>8.2f}% | {precision*100:>8.2f}% | {recall*100:>8.2f}% | {f1*100:>8.2f}%")
+        print(f"{name:<25} | {train_acc*100:>8.2f}% | {acc*100:>8.2f}% | {precision*100:>8.2f}% | {recall*100:>8.2f}% | {f1*100:>8.2f}%")
 
-    print("-" * 75)
+    print("-" * 88)
 
     # In Báo cáo chi tiết và Feature Importances riêng cho Random Forest
     print("\n[BÁO CÁO ĐÁNH GIÁ CHI TIẾT CỦA MÔ HÌNH RANDOM FOREST]:")
